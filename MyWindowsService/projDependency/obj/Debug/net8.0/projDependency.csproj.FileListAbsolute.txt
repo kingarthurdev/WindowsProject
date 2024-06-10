@@ -1,0 +1,11 @@
+C:\Users\E1495970\source\repos\MyWindowsService\projDependency\bin\Debug\net8.0\projDependency.deps.json
+C:\Users\E1495970\source\repos\MyWindowsService\projDependency\bin\Debug\net8.0\projDependency.dll
+C:\Users\E1495970\source\repos\MyWindowsService\projDependency\bin\Debug\net8.0\projDependency.pdb
+C:\Users\E1495970\source\repos\MyWindowsService\projDependency\obj\Debug\net8.0\projDependency.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\E1495970\source\repos\MyWindowsService\projDependency\obj\Debug\net8.0\projDependency.AssemblyInfoInputs.cache
+C:\Users\E1495970\source\repos\MyWindowsService\projDependency\obj\Debug\net8.0\projDependency.AssemblyInfo.cs
+C:\Users\E1495970\source\repos\MyWindowsService\projDependency\obj\Debug\net8.0\projDependency.csproj.CoreCompileInputs.cache
+C:\Users\E1495970\source\repos\MyWindowsService\projDependency\obj\Debug\net8.0\projDependency.dll
+C:\Users\E1495970\source\repos\MyWindowsService\projDependency\obj\Debug\net8.0\refint\projDependency.dll
+C:\Users\E1495970\source\repos\MyWindowsService\projDependency\obj\Debug\net8.0\projDependency.pdb
+C:\Users\E1495970\source\repos\MyWindowsService\projDependency\obj\Debug\net8.0\ref\projDependency.dll

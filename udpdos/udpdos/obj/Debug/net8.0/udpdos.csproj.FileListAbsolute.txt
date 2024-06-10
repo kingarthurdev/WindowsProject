@@ -1,0 +1,14 @@
+C:\Users\E1495970\source\repos\udpdos\udpdos\bin\Debug\net8.0\udpdos.exe
+C:\Users\E1495970\source\repos\udpdos\udpdos\bin\Debug\net8.0\udpdos.deps.json
+C:\Users\E1495970\source\repos\udpdos\udpdos\bin\Debug\net8.0\udpdos.runtimeconfig.json
+C:\Users\E1495970\source\repos\udpdos\udpdos\bin\Debug\net8.0\udpdos.dll
+C:\Users\E1495970\source\repos\udpdos\udpdos\bin\Debug\net8.0\udpdos.pdb
+C:\Users\E1495970\source\repos\udpdos\udpdos\obj\Debug\net8.0\udpdos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\E1495970\source\repos\udpdos\udpdos\obj\Debug\net8.0\udpdos.AssemblyInfoInputs.cache
+C:\Users\E1495970\source\repos\udpdos\udpdos\obj\Debug\net8.0\udpdos.AssemblyInfo.cs
+C:\Users\E1495970\source\repos\udpdos\udpdos\obj\Debug\net8.0\udpdos.csproj.CoreCompileInputs.cache
+C:\Users\E1495970\source\repos\udpdos\udpdos\obj\Debug\net8.0\udpdos.dll
+C:\Users\E1495970\source\repos\udpdos\udpdos\obj\Debug\net8.0\refint\udpdos.dll
+C:\Users\E1495970\source\repos\udpdos\udpdos\obj\Debug\net8.0\udpdos.pdb
+C:\Users\E1495970\source\repos\udpdos\udpdos\obj\Debug\net8.0\udpdos.genruntimeconfig.cache
+C:\Users\E1495970\source\repos\udpdos\udpdos\obj\Debug\net8.0\ref\udpdos.dll

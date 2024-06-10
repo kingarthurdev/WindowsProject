@@ -1,0 +1,12 @@
+C:\Users\E1495970\source\repos\WindowsService1\dotNetService\obj\Debug\dotNetService.csproj.AssemblyReference.cache
+C:\Users\E1495970\source\repos\WindowsService1\dotNetService\obj\Debug\dotNetService.ProjectInstaller.resources
+C:\Users\E1495970\source\repos\WindowsService1\dotNetService\obj\Debug\dotNetService.csproj.GenerateResource.cache
+C:\Users\E1495970\source\repos\WindowsService1\dotNetService\obj\Debug\dotNetService.csproj.CoreCompileInputs.cache
+C:\Users\E1495970\source\repos\WindowsService1\dotNetService\bin\Debug\dotNetService.exe.config
+C:\Users\E1495970\source\repos\WindowsService1\dotNetService\bin\Debug\dotNetService.exe
+C:\Users\E1495970\source\repos\WindowsService1\dotNetService\bin\Debug\dotNetService.pdb
+C:\Users\E1495970\source\repos\WindowsService1\dotNetService\obj\Debug\dotNetService.exe
+C:\Users\E1495970\source\repos\WindowsService1\dotNetService\obj\Debug\dotNetService.pdb
+C:\Users\E1495970\source\repos\WindowsService1\dotNetService\bin\Debug\dotNetClassLibrary.dll
+C:\Users\E1495970\source\repos\WindowsService1\dotNetService\bin\Debug\dotNetClassLibrary.pdb
+C:\Users\E1495970\source\repos\WindowsService1\dotNetService\obj\Debug\dotNetSe.42C5F813.Up2Date
