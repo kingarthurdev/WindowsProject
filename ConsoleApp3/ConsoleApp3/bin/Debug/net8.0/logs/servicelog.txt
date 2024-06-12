@@ -1,0 +1,4 @@
+Timestamp: 6/12/2024 1:22:20 PM User input: 1 was input as the uint, ; was input as the character delimeter, asdsdfa was input as the string message.
+Timestamp: 6/12/2024 1:22:41 PM User input: 1 was input as the uint, ; was input as the character delimeter, adsffdsa was input as the string message.
+Timestamp: 6/12/2024 1:23:57 PM User input: 1 was input as the uint, ; was input as the character delimeter, asff was input as the string message.
+Timestamp: 6/12/2024 1:25:08 PM User input: 1 was input as the uint, ; was input as the character delimeter, 1 was input as the string message.
