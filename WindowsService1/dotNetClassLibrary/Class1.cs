@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Net.Sockets;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -51,21 +53,36 @@ namespace dotNetClassLibrary
             byte[] final = new byte[timeless.Length +8]; // Ensure 8 bytes, not 9
             Buffer.BlockCopy(time, 0, final, 0, time.Length);
             Buffer.BlockCopy(timeless, 0, final, 8, timeless.Length);
+
             return final; 
         }
 
-        public static void convertFromTimestampedBytes(byte[] bytes)
+        //return uint, char, string, date
+        public static (uint, char, string, DateTime) convertFromTimestampedBytes(byte[] bytes)
         {
-
+            DateTime sentTime = DateTime.FromBinary(BitConverter.ToInt64(bytes, 0));
+            byte[] timeless = new byte[bytes.Length - 8];
+            Buffer.BlockCopy(bytes, 8, timeless, 0, timeless.Length);
+            (uint tempUint, char tempChar, string tempMessage) = convertFromByteArray(timeless);
+            return (tempUint,  tempChar,  tempMessage, sentTime);
         }
-        
+
         //send an acknowledgement with the timestamp of when the original request was first recieved
-        public static void sendACK(byte[] recieved)
+        public static void sendACK(byte[] recieved, string ip)
         {
             byte[] ack = Encoding.ASCII.GetBytes("ack");
             byte[] final = new byte[ack.Length+ 8];
             Buffer.BlockCopy(recieved, 0, final, 0, 8);
             Buffer.BlockCopy(ack, 0, final, 8, ack.Length);
+
+            //todo: remove duplicate code 
+            //recipient address and 'port', sends ack to port 1543
+            IPEndPoint endpoint = new IPEndPoint(IPAddress.Parse(ip), 1543);
+
+            //the parameters are: specifies that communicates with ipv4, socket will use datagrams -- independent messages with udp  ,socket will use udp 
+            Socket sock = new Socket(AddressFamily.InterNetwork, SocketType.Dgram, ProtocolType.Udp);
+            sock.SendTo(final, endpoint);
+
         }
 
         public static void WriteToFile(string message, string extension)
@@ -93,5 +110,14 @@ namespace dotNetClassLibrary
 
         }
 
+        //not necessary? 
+        public static double getLatency(byte[] ack)
+        {
+            DateTime sentTime = DateTime.FromBinary(BitConverter.ToInt64(ack, 0));
+            return (DateTime.Now - sentTime).TotalMilliseconds;
+
+        }
+
+        // have another one, communicate this way, but with upstream filtering 
     }
 }

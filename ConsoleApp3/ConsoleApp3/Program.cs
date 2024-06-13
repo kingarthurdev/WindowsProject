@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Net;
 using System.Net.Sockets;
 using System.Text;
@@ -10,8 +11,9 @@ class Program
         //ip addr, port
         var results = setup(12000);
 
-        //send the packets based on user input from the console
+        //send the packets based on user input from the console, starts listener for ack responses
         send(results.Item1, results.Item2);
+
     }
 
     public static (Socket, IPEndPoint) setup(int port)
@@ -60,6 +62,9 @@ class Program
 
                 //Log the user inputs into the program
                 ProcessContent.WriteToFile($"Timestamp: {DateTime.Now} User input: {num} was input as the uint, {delim} was input as the character delimeter, {message} was input as the string message.");
+                
+                Thread listener = new Thread(new ThreadStart(listenForACK));
+                listener.Start();
             }
             catch (Exception ex)
             {
@@ -68,4 +73,20 @@ class Program
 
         }
     }
-}
+    public static void listenForACK()
+    {
+        ProcessContent.WriteToFile("Listening on port 1543");
+        UdpClient listener = new UdpClient(1543);
+        IPEndPoint groupEP = new IPEndPoint(IPAddress.Any, 1543);
+        while (true)
+        {
+            byte[] bytes = listener.Receive(ref groupEP);
+            if (Encoding.ASCII.GetString(bytes, 8, bytes.Length - 8).Equals("ack"))
+            {
+                DateTime send = DateTime.FromBinary(BitConverter.ToInt64(bytes, 0));
+                double latencyMilliseconds = (DateTime.Now - send).Milliseconds;
+                Console.WriteLine(latencyMilliseconds + "ms of latency");
+            }
+        }
+    }
+}   

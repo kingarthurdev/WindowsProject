@@ -18,7 +18,7 @@ namespace dotNetService
         protected override void OnStart(string[] args)
         {
 
-            ProcessContent.WriteToFile("Service started at " + DateTime.Now, ".txt");
+            ProcessContent.WriteToFile("Service started at " + DateTime.Now, AppDomain.CurrentDomain.BaseDirectory + "\\logs");
 
             try
             {
@@ -27,7 +27,7 @@ namespace dotNetService
             }
             catch (Exception exception)
             {
-                ProcessContent.WriteToFile(exception.ToString(), ".txt");
+                ProcessContent.WriteToFile(exception.ToString(), AppDomain.CurrentDomain.BaseDirectory + "\\logs");
             }
 
 
@@ -35,7 +35,7 @@ namespace dotNetService
 
         protected override void OnStop()
         {
-            ProcessContent.WriteToFile("Service stopped at " + DateTime.Now);
+            ProcessContent.WriteToFile("Service stopped at " + DateTime.Now, AppDomain.CurrentDomain.BaseDirectory + "\\logs");
         }
 
         public static void listen()
@@ -47,14 +47,16 @@ namespace dotNetService
 
                 byte[] bytes = listener.Receive(ref groupEP);
                 //string representation = Encoding.ASCII.GetString(bytes, 0, bytes.Length);
-                (uint num, char delim, string message) = ProcessContent.convertFromByteArray(bytes);
+                (uint num, char delim, string message, DateTime sendTime) = ProcessContent.convertFromTimestampedBytes(bytes);
 
 
                 string total = num+""+delim+message;
 
                 //console log where the data came from in the format ipaddr:port
-                ProcessContent.WriteToFile($"Received broadcast from {groupEP} :");
-                ProcessContent.WriteToFile($" {total}");
+                ProcessContent.WriteToFile($"\nReceived broadcast from {groupEP}", AppDomain.CurrentDomain.BaseDirectory + "\\logs");
+                ProcessContent.WriteToFile($"Recieved time: {DateTime.Now}, Sent time: {sendTime}, Latency: {(DateTime.Now - sendTime).Milliseconds}ms", AppDomain.CurrentDomain.BaseDirectory + "\\logs");
+                ProcessContent.WriteToFile($" {total}\n", AppDomain.CurrentDomain.BaseDirectory + "\\logs");
+                ProcessContent.sendACK(bytes, groupEP.Address.ToString());
 
             }
             
