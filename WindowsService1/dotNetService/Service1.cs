@@ -40,6 +40,7 @@ namespace dotNetService
 
         public static void listen()
         {
+            ProcessContent.WriteToFile("Listening on port 12000");
             UdpClient listener = new UdpClient(12000);
             IPEndPoint groupEP = new IPEndPoint(IPAddress.Any, 12000);
             while (true)
@@ -50,18 +51,18 @@ namespace dotNetService
                 (uint num, char delim, string message, DateTime sendTime) = ProcessContent.convertFromTimestampedBytes(bytes);
 
 
-                string total = num+""+delim+message;
+                string total = num + "" + delim + message;
 
                 //console log where the data came from in the format ipaddr:port
                 ProcessContent.WriteToFile($"\nReceived broadcast from {groupEP}");
                 ProcessContent.WriteToFile($"Recieved time: {DateTime.Now}, Sent time: {sendTime}, Latency: {(DateTime.Now - sendTime).Milliseconds}ms");
                 ProcessContent.WriteToFile($" {total}\n");
-                //ProcessContent.sendACK(bytes, groupEP.Address.ToString());
+                ProcessContent.sendACK(bytes, groupEP.Address.ToString());
 
             }
-            
+
         }
 
-        
+
     }
 }

@@ -34,3 +34,4 @@ C:\Users\chena\source\repos\WindowsService1\plainconsolefortesting\bin\Debug\net
 C:\Users\chena\source\repos\WindowsService1\plainconsolefortesting\obj\Debug\net8.0\plaincon.B37F450A.Up2Date
 C:\Users\chena\source\repos\WindowsService1\plainconsolefortesting\obj\Debug\net8.0\plainconsolefortesting.genruntimeconfig.cache
 C:\Users\chena\source\repos\WindowsService1\plainconsolefortesting\obj\Debug\net8.0\ref\plainconsolefortesting.dll
+C:\Users\chena\source\repos\WindowsService1\plainconsolefortesting\obj\Debug\net8.0\plainconsolefortesting.sourcelink.json

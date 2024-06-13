@@ -3,10 +3,6 @@
   "WorkspaceRootPath": "C:\\Users\\chena\\source\\repos\\WindowsService1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6877B8C2-9D67-4092-AA3C-75C9540AB77C}|dotNetClassLibrary\\dotNetClassLibrary.csproj|C:\\Users\\chena\\source\\repos\\WindowsService1\\dotnetclasslibrary\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6877B8C2-9D67-4092-AA3C-75C9540AB77C}|dotNetClassLibrary\\dotNetClassLibrary.csproj|solutionrelative:dotnetclasslibrary\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{215E20C6-E18A-400A-97F0-B49366089069}|dotNetService\\dotNetService.csproj|C:\\Users\\chena\\source\\repos\\WindowsService1\\dotnetservice\\service1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{215E20C6-E18A-400A-97F0-B49366089069}|dotNetService\\dotNetService.csproj|solutionrelative:dotnetservice\\service1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -15,11 +11,15 @@
       "RelativeMoniker": "D:0:0:{215E20C6-E18A-400A-97F0-B49366089069}|dotNetService\\dotNetService.csproj|solutionrelative:dotnetservice\\service1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8F0A0EA7-C0A6-4A93-8F9C-2F629FBC01B7}|..\\ConsoleApp3\\ConsoleApp3\\ConsoleApp3.csproj|c:\\users\\chena\\source\\repos\\consoleapp3\\consoleapp3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C0DB4B8A-C687-4B9C-A63A-9CDF5E105B4A}|plainconsolefortesting\\plainconsolefortesting.csproj|c:\\users\\chena\\source\\repos\\windowsservice1\\plainconsolefortesting\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C0DB4B8A-C687-4B9C-A63A-9CDF5E105B4A}|plainconsolefortesting\\plainconsolefortesting.csproj|solutionrelative:plainconsolefortesting\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6877B8C2-9D67-4092-AA3C-75C9540AB77C}|dotNetClassLibrary\\dotNetClassLibrary.csproj|c:\\users\\chena\\source\\repos\\windowsservice1\\dotnetclasslibrary\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6877B8C2-9D67-4092-AA3C-75C9540AB77C}|dotNetClassLibrary\\dotNetClassLibrary.csproj|solutionrelative:dotnetclasslibrary\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F0A0EA7-C0A6-4A93-8F9C-2F629FBC01B7}|..\\ConsoleApp3\\ConsoleApp3\\ConsoleApp3.csproj|c:\\users\\chena\\source\\repos\\consoleapp3\\consoleapp3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\E1495970\\source\\repos\\ConsoleApp3\\ConsoleApp3\\ConsoleApp3.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
@@ -43,11 +43,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Service1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\chena\\source\\repos\\WindowsService1\\dotNetService\\Service1.cs",
               "RelativeDocumentMoniker": "dotNetService\\Service1.cs",
@@ -59,39 +59,39 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\chena\\source\\repos\\ConsoleApp3\\ConsoleApp3\\Program.cs",
               "RelativeDocumentMoniker": "..\\ConsoleApp3\\ConsoleApp3\\Program.cs",
               "ToolTip": "C:\\Users\\chena\\source\\repos\\ConsoleApp3\\ConsoleApp3\\Program.cs",
               "RelativeToolTip": "..\\ConsoleApp3\\ConsoleApp3\\Program.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAFMAAAAUAAAA",
+              "ViewState": "AQIAAEsAAAAAAAAAAAAuwFwAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-12T16:43:47.227Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Class1.cs",
               "DocumentMoniker": "C:\\Users\\chena\\source\\repos\\WindowsService1\\dotNetClassLibrary\\Class1.cs",
               "RelativeDocumentMoniker": "dotNetClassLibrary\\Class1.cs",
               "ToolTip": "C:\\Users\\chena\\source\\repos\\WindowsService1\\dotNetClassLibrary\\Class1.cs",
               "RelativeToolTip": "dotNetClassLibrary\\Class1.cs",
-              "ViewState": "AQIAAFcAAAAAAAAAAAAowAwAAAAmAAAA",
+              "ViewState": "AQIAAGYAAAAAAAAAAAAowC8AAAA2AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-12T13:48:37.746Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Service1.cs",
               "DocumentMoniker": "C:\\Users\\chena\\source\\repos\\WindowsService1\\dotNetService\\Service1.cs",
               "RelativeDocumentMoniker": "dotNetService\\Service1.cs",
               "ToolTip": "C:\\Users\\chena\\source\\repos\\WindowsService1\\dotNetService\\Service1.cs",
               "RelativeToolTip": "dotNetService\\Service1.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAADIAAAAAAAAA",
+              "ViewState": "AQIAACgAAAAAAAAAAAA5wBUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-07T21:20:44.664Z",
               "EditorCaption": ""
@@ -109,15 +109,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\chena\\source\\repos\\WindowsService1\\plainconsolefortesting\\Program.cs",
               "RelativeDocumentMoniker": "plainconsolefortesting\\Program.cs",
               "ToolTip": "C:\\Users\\chena\\source\\repos\\WindowsService1\\plainconsolefortesting\\Program.cs",
               "RelativeToolTip": "plainconsolefortesting\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAIMAAAAAAAAA",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAAC4AAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-07T16:23:58.932Z"
+              "WhenOpened": "2024-06-07T16:23:58.932Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",

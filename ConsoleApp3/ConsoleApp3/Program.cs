@@ -57,7 +57,7 @@ class Program
                 Console.WriteLine("Enter in your message (string)");
                 message = Console.ReadLine();
 
-                sendBytes = ProcessContent.convertToByteArray(num, delim, message);
+                sendBytes = ProcessContent.convertToTimestampedBytes(num, delim, message);
                 sock.SendTo(sendBytes, endpoint);
                 Console.WriteLine("_________________________________________");
                 Console.WriteLine("\nMessage sent to the broadcast address");
@@ -77,8 +77,9 @@ class Program
     }
     public static void listenForACK()
     {
-        
-        ProcessContent.WriteToFile("Listening on port 1543");
+        Console.WriteLine("Listening on port 1543 for ack responses");
+
+        ProcessContent.WriteToFile("Listening on port 1543 for ack responses");
         UdpClient listener = new UdpClient(1543);
         IPEndPoint groupEP = new IPEndPoint(IPAddress.Any, 1543);
         while (true)
@@ -88,7 +89,7 @@ class Program
             {
                 DateTime send = DateTime.FromBinary(BitConverter.ToInt64(bytes, 0));
                 double latencyMilliseconds = (DateTime.Now - send).Milliseconds;
-                Console.WriteLine(latencyMilliseconds + "ms of latency");
+                Console.WriteLine("ACK recieved, "+latencyMilliseconds + "ms of latency");
             }
         }
     }
