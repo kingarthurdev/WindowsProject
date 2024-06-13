@@ -26,6 +26,9 @@ class Program
         //the parameters are: specifies that communicates with ipv4, socket will use datagrams -- independent messages with udp  ,socket will use udp 
         Socket sock = new Socket(AddressFamily.InterNetwork, SocketType.Dgram, ProtocolType.Udp);
 
+        Thread listener = new Thread(new ThreadStart(listenForACK));
+        listener.Start();
+
         return (sock, endpoint);
     }
 
@@ -63,8 +66,7 @@ class Program
                 //Log the user inputs into the program
                 ProcessContent.WriteToFile($"Timestamp: {DateTime.Now} User input: {num} was input as the uint, {delim} was input as the character delimeter, {message} was input as the string message.");
                 
-                Thread listener = new Thread(new ThreadStart(listenForACK));
-                listener.Start();
+                
             }
             catch (Exception ex)
             {
@@ -75,6 +77,7 @@ class Program
     }
     public static void listenForACK()
     {
+        
         ProcessContent.WriteToFile("Listening on port 1543");
         UdpClient listener = new UdpClient(1543);
         IPEndPoint groupEP = new IPEndPoint(IPAddress.Any, 1543);

@@ -18,7 +18,7 @@ namespace dotNetService
         protected override void OnStart(string[] args)
         {
 
-            ProcessContent.WriteToFile("Service started at " + DateTime.Now, AppDomain.CurrentDomain.BaseDirectory + "\\logs");
+            ProcessContent.WriteToFile("Service started at " + DateTime.Now);
 
             try
             {
@@ -27,7 +27,7 @@ namespace dotNetService
             }
             catch (Exception exception)
             {
-                ProcessContent.WriteToFile(exception.ToString(), AppDomain.CurrentDomain.BaseDirectory + "\\logs");
+                ProcessContent.WriteToFile(exception.ToString());
             }
 
 
@@ -35,7 +35,7 @@ namespace dotNetService
 
         protected override void OnStop()
         {
-            ProcessContent.WriteToFile("Service stopped at " + DateTime.Now, AppDomain.CurrentDomain.BaseDirectory + "\\logs");
+            ProcessContent.WriteToFile("Service stopped at " + DateTime.Now);
         }
 
         public static void listen()
@@ -53,10 +53,10 @@ namespace dotNetService
                 string total = num+""+delim+message;
 
                 //console log where the data came from in the format ipaddr:port
-                ProcessContent.WriteToFile($"\nReceived broadcast from {groupEP}", AppDomain.CurrentDomain.BaseDirectory + "\\logs");
-                ProcessContent.WriteToFile($"Recieved time: {DateTime.Now}, Sent time: {sendTime}, Latency: {(DateTime.Now - sendTime).Milliseconds}ms", AppDomain.CurrentDomain.BaseDirectory + "\\logs");
-                ProcessContent.WriteToFile($" {total}\n", AppDomain.CurrentDomain.BaseDirectory + "\\logs");
-                ProcessContent.sendACK(bytes, groupEP.Address.ToString());
+                ProcessContent.WriteToFile($"\nReceived broadcast from {groupEP}");
+                ProcessContent.WriteToFile($"Recieved time: {DateTime.Now}, Sent time: {sendTime}, Latency: {(DateTime.Now - sendTime).Milliseconds}ms");
+                ProcessContent.WriteToFile($" {total}\n");
+                //ProcessContent.sendACK(bytes, groupEP.Address.ToString());
 
             }
             
