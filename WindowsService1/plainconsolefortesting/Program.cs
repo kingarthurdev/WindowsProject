@@ -7,6 +7,8 @@ using static System.Runtime.InteropServices.JavaScript.JSType;
 using System;
 using dotNetClassLibrary;
 using System.Windows;
+using System.Text.RegularExpressions;
+
 
 
 try
@@ -16,14 +18,14 @@ try
 }
 catch (Exception exception)
 {
-    ProcessContent.WriteToFile(exception.ToString());
+    Console.WriteLine(exception.ToString());
 }
 
 
 
 static void listen()
 {
-    ProcessContent.WriteToFile("Listening...");
+    Console.WriteLine("Listening...");
     UdpClient listener = new UdpClient(12000);
     IPEndPoint groupEP = new IPEndPoint(IPAddress.Any, 12000);
     while (true)
@@ -37,11 +39,20 @@ static void listen()
         string total = num + "" + delim + message;
 
         //console log where the data came from in the format ipaddr:port
-        ProcessContent.WriteToFile($"\nReceived broadcast from {groupEP}");
-        ProcessContent.WriteToFile($"Recieved time: {DateTime.Now}, Sent time: {sendTime}, Latency: {(DateTime.Now - sendTime).Milliseconds}ms");
-        ProcessContent.WriteToFile($" {total}\n");
+        Console.WriteLine($"\nReceived broadcast from {groupEP}");
+        Console.WriteLine($"Recieved time: {DateTime.Now}, Sent time: {sendTime}, Latency: {(DateTime.Now - sendTime).Milliseconds}ms");
+        Console.WriteLine($" {total}\n");
+        Console.WriteLine($"Sending ack to {groupEP.Address.ToString()}");
         ProcessContent.sendACK(bytes, groupEP.Address.ToString());
 
     }
 
 }
+/*
+while(true)
+{
+    DateTime dt = DateTime.Now;
+    byte[] bytes = BitConverter.GetBytes(dt.Ticks);
+    ProcessContent.sendACK(bytes, "192.168.0.180");
+    Thread.Sleep(1000);
+}*/
