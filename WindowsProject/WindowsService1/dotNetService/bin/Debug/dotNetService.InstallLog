@@ -1,0 +1,26 @@
+﻿Installing assembly 'C:\Users\E1495970\source\repos\WindowsService1\dotNetService\bin\Debug\dotNetService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\E1495970\source\repos\WindowsService1\dotNetService\bin\Debug\dotNetService.InstallLog
+   assemblypath = C:\Users\E1495970\source\repos\WindowsService1\dotNetService\bin\Debug\dotNetService.exe
+Installing service dotnetservice...
+Service dotnetservice has been successfully installed.
+Creating EventLog source dotnetservice in log Application...
+Committing assembly 'C:\Users\E1495970\source\repos\WindowsService1\dotNetService\bin\Debug\dotNetService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\E1495970\source\repos\WindowsService1\dotNetService\bin\Debug\dotNetService.InstallLog
+   assemblypath = C:\Users\E1495970\source\repos\WindowsService1\dotNetService\bin\Debug\dotNetService.exe
+Installing assembly 'C:\Users\chena\source\repos\WindowsService1\dotNetService\bin\Debug\dotNetService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\chena\source\repos\WindowsService1\dotNetService\bin\Debug\dotNetService.InstallLog
+   assemblypath = C:\Users\chena\source\repos\WindowsService1\dotNetService\bin\Debug\dotNetService.exe
+Installing service dotnetservice...
+Service dotnetservice has been successfully installed.
+Creating EventLog source dotnetservice in log Application...
+Committing assembly 'C:\Users\chena\source\repos\WindowsService1\dotNetService\bin\Debug\dotNetService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\chena\source\repos\WindowsService1\dotNetService\bin\Debug\dotNetService.InstallLog
+   assemblypath = C:\Users\chena\source\repos\WindowsService1\dotNetService\bin\Debug\dotNetService.exe

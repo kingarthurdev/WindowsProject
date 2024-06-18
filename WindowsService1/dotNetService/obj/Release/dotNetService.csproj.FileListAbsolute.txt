@@ -1,0 +1,16 @@
+C:\Users\chena\source\repos\WindowsService1\dotNetService\bin\Release\dotNetService.exe.config
+C:\Users\chena\source\repos\WindowsService1\dotNetService\bin\Release\dotNetService.exe.manifest
+C:\Users\chena\source\repos\WindowsService1\dotNetService\bin\Release\dotNetService.application
+C:\Users\chena\source\repos\WindowsService1\dotNetService\bin\Release\dotNetService.exe
+C:\Users\chena\source\repos\WindowsService1\dotNetService\bin\Release\dotNetService.pdb
+C:\Users\chena\source\repos\WindowsService1\dotNetService\bin\Release\dotNetClassLibrary.dll
+C:\Users\chena\source\repos\WindowsService1\dotNetService\bin\Release\dotNetClassLibrary.pdb
+C:\Users\chena\source\repos\WindowsService1\dotNetService\obj\Release\dotNetService.csproj.AssemblyReference.cache
+C:\Users\chena\source\repos\WindowsService1\dotNetService\obj\Release\dotNetService.ProjectInstaller.resources
+C:\Users\chena\source\repos\WindowsService1\dotNetService\obj\Release\dotNetService.csproj.GenerateResource.cache
+C:\Users\chena\source\repos\WindowsService1\dotNetService\obj\Release\dotNetService.csproj.CoreCompileInputs.cache
+C:\Users\chena\source\repos\WindowsService1\dotNetService\obj\Release\dotNetService.exe.manifest
+C:\Users\chena\source\repos\WindowsService1\dotNetService\obj\Release\dotNetService.application
+C:\Users\chena\source\repos\WindowsService1\dotNetService\obj\Release\dotNetSe.42C5F813.Up2Date
+C:\Users\chena\source\repos\WindowsService1\dotNetService\obj\Release\dotNetService.exe
+C:\Users\chena\source\repos\WindowsService1\dotNetService\obj\Release\dotNetService.pdb
