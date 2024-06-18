@@ -26,3 +26,5 @@ C:\Users\chena\source\repos\udpdos\udpdos\bin\Debug\net8.0\udpdos.dll
 C:\Users\chena\source\repos\udpdos\udpdos\bin\Debug\net8.0\udpdos.pdb
 C:\Users\chena\source\repos\udpdos\udpdos\obj\Debug\net8.0\udpdos.genruntimeconfig.cache
 C:\Users\chena\source\repos\udpdos\udpdos\obj\Debug\net8.0\ref\udpdos.dll
+C:\Users\chena\source\repos\udpdos\udpdos\obj\Debug\net8.0\udpdos.sourcelink.json
+C:\Users\E1495970\source\repos\udpdos\udpdos\obj\Debug\net8.0\udpdos.sourcelink.json

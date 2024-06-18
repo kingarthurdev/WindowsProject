@@ -21,7 +21,7 @@ namespace TimedPinger
 
                 //recipient address and port
                 IPAddress broadcast = IPAddress.Parse(Console.ReadLine());
-                IPEndPoint endpoint = new IPEndPoint(broadcast, 12000);
+                IPEndPoint endpoint = new IPEndPoint(broadcast, 1001);
 
                 //the parameters are: specifies that communicates with ipv4, socket will use datagrams -- independent messages with udp  ,socket will use udp 
                 Socket sock = new Socket(AddressFamily.InterNetwork, SocketType.Dgram, ProtocolType.Udp);

@@ -14,7 +14,7 @@ namespace RateFilter
     {
         public static Dictionary<string, int> ipCount = new Dictionary<string, int>();
         public static List<string> Blacklist = new List<string>();
-
+        public static int clearCount = 0;
         static void Main(string[] args)
         {
 
@@ -34,6 +34,7 @@ namespace RateFilter
                         ipCount[ip] += 1;
                         if (ipCount[ip] > 50)
                         {
+                            Console.WriteLine("SOMEBODY BLOCKED!!!");
                             Blacklist.Add(ip);
                         }
                     }
@@ -75,8 +76,14 @@ namespace RateFilter
         {
             while (true)
             {
+                if(clearCount == 15)
+                {
+                    clearCount = 0;
+                    Blacklist.Clear();
+                }
                 ipCount.Clear();
                 Thread.Sleep(2000);
+                clearCount++;
                 Console.WriteLine("CLEAR");
             }
             
