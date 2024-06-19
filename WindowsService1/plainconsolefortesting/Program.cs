@@ -1,39 +1,61 @@
-﻿
-
+﻿using System;
 using System.Net.Sockets;
 using System.Net;
-using System.Text;
-using static System.Runtime.InteropServices.JavaScript.JSType;
-using System;
+using System.ServiceProcess;
+using System.Threading;
 using dotNetClassLibrary;
-using System.Windows;
 
 
-// ProcessContent.convertToByteArray(1, ';', "asdf");   //This works well
+namespace dotNetService
+{
+    public class Service
+    {
+        
 
-/*
-string filename = "C:\\Users\\E1495970\\Downloads\\examplenote.xml";
-FileStream fs = new FileStream(filename, FileMode.Open, FileAccess.Read);
+        public static void Main(string[] args)
+        {
 
-byte[] ImageData = new byte[fs.Length];
-fs.Read(ImageData, 0, (int) fs.Length);
+            ProcessContent.WriteToFile("Service started at " + DateTime.Now);
 
-//Close the File Stream
-fs.Close();
+            try
+            {
+                Thread listenThread = new Thread(new ThreadStart(listen));
+                listenThread.Start();
+            }
+            catch (Exception exception)
+            {
+                ProcessContent.WriteToFile(exception.ToString());
+            }
 
 
-Socket sock = new Socket(AddressFamily.InterNetwork, SocketType.Dgram, ProtocolType.Udp);
+        }
 
-IPAddress broadcast = IPAddress.Parse("127.0.0.1");
 
-IPEndPoint endpoint = new IPEndPoint(broadcast, 12000);
-sock.SendTo(ImageData, endpoint);
-*/
+        public static void listen()
+        {
+            ProcessContent.WriteToFile("Listening on port 12000");
+            UdpClient listener = new UdpClient(12000);
+            IPEndPoint groupEP = new IPEndPoint(IPAddress.Any, 12000);
+            while (true)
+            {
 
-byte[] a = ProcessContent.convertToByteArray(1, ':', "abcdefg");
-(uint num, char delim, string message) = ProcessContent.convertFromByteArray(a);
+                byte[] bytes = listener.Receive(ref groupEP);
+                //string representation = Encoding.ASCII.GetString(bytes, 0, bytes.Length);
+                (uint num, char delim, string message, DateTime sendTime) = ProcessContent.convertFromTimestampedBytes(bytes);
 
-Console.WriteLine(num+""+delim+message);
 
-string message2 = "Simple MessageBox";
-MessageBox.Show(message2);
+                string total = num + "" + delim + message;
+
+                //console log where the data came from in the format ipaddr:port
+                ProcessContent.WriteToFile($"\nReceived broadcast from {groupEP}");
+                ProcessContent.WriteToFile($"Recieved time: {DateTime.Now}, Sent time: {sendTime}, Latency: {(DateTime.Now - sendTime).Milliseconds}ms");
+                ProcessContent.WriteToFile($" {total}\n");
+                ProcessContent.sendACK(bytes, groupEP.Address.ToString());
+
+            }
+
+        }
+
+
+    }
+}

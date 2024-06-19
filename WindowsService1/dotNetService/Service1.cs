@@ -1,5 +1,4 @@
 ﻿using System;
-using System.IO;
 using System.Net.Sockets;
 using System.Net;
 using System.ServiceProcess;
@@ -19,7 +18,7 @@ namespace dotNetService
         protected override void OnStart(string[] args)
         {
 
-            WriteToFile("Service started at " + DateTime.Now, ".txt");
+            ProcessContent.WriteToFile("Service started at " + DateTime.Now);
 
             try
             {
@@ -28,7 +27,7 @@ namespace dotNetService
             }
             catch (Exception exception)
             {
-                WriteToFile(exception.ToString(), ".txt");
+                ProcessContent.WriteToFile(exception.ToString());
             }
 
 
@@ -36,11 +35,12 @@ namespace dotNetService
 
         protected override void OnStop()
         {
-            WriteToFile("Service stopped at " + DateTime.Now);
+            ProcessContent.WriteToFile("Service stopped at " + DateTime.Now);
         }
 
         public static void listen()
         {
+            ProcessContent.WriteToFile("Listening on port 12000");
             UdpClient listener = new UdpClient(12000);
             IPEndPoint groupEP = new IPEndPoint(IPAddress.Any, 12000);
             while (true)
@@ -48,43 +48,21 @@ namespace dotNetService
 
                 byte[] bytes = listener.Receive(ref groupEP);
                 //string representation = Encoding.ASCII.GetString(bytes, 0, bytes.Length);
-                (uint num, char delim, string message) = ProcessContent.convertFromByteArray(bytes);
+                (uint num, char delim, string message, DateTime sendTime) = ProcessContent.convertFromTimestampedBytes(bytes);
 
-                string total = num+""+delim+message;
+
+                string total = num + "" + delim + message;
 
                 //console log where the data came from in the format ipaddr:port
-                WriteToFile($"Received broadcast from {groupEP} :");
+                ProcessContent.WriteToFile($"\nReceived broadcast from {groupEP}");
+                ProcessContent.WriteToFile($"Recieved time: {DateTime.Now}, Sent time: {sendTime}, Latency: {(DateTime.Now - sendTime).Milliseconds}ms");
+                ProcessContent.WriteToFile($" {total}\n");
+                ProcessContent.sendACK(bytes, groupEP.Address.ToString());
 
-                //writes complete message
-                WriteToFile($" {total}");
-
-            }
-            
-        }
-
-        public static void WriteToFile(string message, string extension)
-        {
-            string path = AppDomain.CurrentDomain.BaseDirectory + "\\logs";
-            if (!Directory.Exists(path))
-            {
-                Directory.CreateDirectory(path);
-            }
-
-            string filepath = AppDomain.CurrentDomain.BaseDirectory + "\\logs\\servicelog" + extension;
-            if (!File.Exists(filepath))
-            {
-                using (StreamWriter sw = File.CreateText(filepath)) { sw.WriteLine(message); }
-            }
-            else
-            {
-                using (StreamWriter sw = File.AppendText(filepath)) { sw.WriteLine(message); }
             }
 
         }
-        public static void WriteToFile(string message)
-        {
-            WriteToFile(message, ".txt");
 
-        }
+
     }
 }

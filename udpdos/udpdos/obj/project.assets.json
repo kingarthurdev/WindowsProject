@@ -8,19 +8,19 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\E1495970\\.nuget\\packages\\": {}
+    "C:\\Users\\chena\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\E1495970\\source\\repos\\udpdos\\udpdos\\udpdos.csproj",
+      "projectUniqueName": "C:\\Users\\chena\\Downloads\\repos\\repos\\udpdos\\udpdos\\udpdos.csproj",
       "projectName": "udpdos",
-      "projectPath": "C:\\Users\\E1495970\\source\\repos\\udpdos\\udpdos\\udpdos.csproj",
-      "packagesPath": "C:\\Users\\E1495970\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\E1495970\\source\\repos\\udpdos\\udpdos\\obj\\",
+      "projectPath": "C:\\Users\\chena\\Downloads\\repos\\repos\\udpdos\\udpdos\\udpdos.csproj",
+      "packagesPath": "C:\\Users\\chena\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\chena\\Downloads\\repos\\repos\\udpdos\\udpdos\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\E1495970\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\chena\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

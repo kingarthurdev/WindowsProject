@@ -1,6 +1,0 @@
-C:\Users\E1495970\source\repos\WindowsService1\projDependency2\bin\Debug\projDependency2.dll
-C:\Users\E1495970\source\repos\WindowsService1\projDependency2\bin\Debug\projDependency2.pdb
-C:\Users\E1495970\source\repos\WindowsService1\projDependency2\obj\Debug\projDependency2.csproj.AssemblyReference.cache
-C:\Users\E1495970\source\repos\WindowsService1\projDependency2\obj\Debug\projDependency2.csproj.CoreCompileInputs.cache
-C:\Users\E1495970\source\repos\WindowsService1\projDependency2\obj\Debug\projDependency2.dll
-C:\Users\E1495970\source\repos\WindowsService1\projDependency2\obj\Debug\projDependency2.pdb

@@ -1,0 +1,6 @@
+C:\Users\chena\source\repos\WindowsService1\dotNetClassLibrary\bin\Release\dotNetClassLibrary.dll
+C:\Users\chena\source\repos\WindowsService1\dotNetClassLibrary\bin\Release\dotNetClassLibrary.pdb
+C:\Users\chena\source\repos\WindowsService1\dotNetClassLibrary\obj\Release\dotNetClassLibrary.csproj.AssemblyReference.cache
+C:\Users\chena\source\repos\WindowsService1\dotNetClassLibrary\obj\Release\dotNetClassLibrary.csproj.CoreCompileInputs.cache
+C:\Users\chena\source\repos\WindowsService1\dotNetClassLibrary\obj\Release\dotNetClassLibrary.dll
+C:\Users\chena\source\repos\WindowsService1\dotNetClassLibrary\obj\Release\dotNetClassLibrary.pdb

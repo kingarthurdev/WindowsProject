@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\E1495970\\source\\repos\\ConsoleApp3\\ConsoleApp3\\ConsoleApp3.csproj": {}
+    "C:\\Users\\E1495970\\source\\repos\\WindowsProject\\ConsoleApp3\\ConsoleApp3\\ConsoleApp3.csproj": {}
   },
   "projects": {
-    "C:\\Users\\E1495970\\source\\repos\\ConsoleApp3\\ConsoleApp3\\ConsoleApp3.csproj": {
+    "C:\\Users\\E1495970\\source\\repos\\WindowsProject\\ConsoleApp3\\ConsoleApp3\\ConsoleApp3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\E1495970\\source\\repos\\ConsoleApp3\\ConsoleApp3\\ConsoleApp3.csproj",
+        "projectUniqueName": "C:\\Users\\E1495970\\source\\repos\\WindowsProject\\ConsoleApp3\\ConsoleApp3\\ConsoleApp3.csproj",
         "projectName": "ConsoleApp3",
-        "projectPath": "C:\\Users\\E1495970\\source\\repos\\ConsoleApp3\\ConsoleApp3\\ConsoleApp3.csproj",
+        "projectPath": "C:\\Users\\E1495970\\source\\repos\\WindowsProject\\ConsoleApp3\\ConsoleApp3\\ConsoleApp3.csproj",
         "packagesPath": "C:\\Users\\E1495970\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\E1495970\\source\\repos\\ConsoleApp3\\ConsoleApp3\\obj\\",
+        "outputPath": "C:\\Users\\E1495970\\source\\repos\\WindowsProject\\ConsoleApp3\\ConsoleApp3\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\E1495970\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\E1495970\\source\\repos\\WindowsService1\\dotNetClassLibrary\\dotNetClassLibrary.csproj": {
-                "projectPath": "C:\\Users\\E1495970\\source\\repos\\WindowsService1\\dotNetClassLibrary\\dotNetClassLibrary.csproj"
+              "C:\\Users\\E1495970\\source\\repos\\WindowsProject\\WindowsService1\\dotNetClassLibrary\\dotNetClassLibrary.csproj": {
+                "projectPath": "C:\\Users\\E1495970\\source\\repos\\WindowsProject\\WindowsService1\\dotNetClassLibrary\\dotNetClassLibrary.csproj"
               }
             }
           }
@@ -68,11 +68,11 @@
         }
       }
     },
-    "C:\\Users\\E1495970\\source\\repos\\WindowsService1\\dotNetClassLibrary\\dotNetClassLibrary.csproj": {
+    "C:\\Users\\E1495970\\source\\repos\\WindowsProject\\WindowsService1\\dotNetClassLibrary\\dotNetClassLibrary.csproj": {
       "restore": {
-        "projectUniqueName": "C:\\Users\\E1495970\\source\\repos\\WindowsService1\\dotNetClassLibrary\\dotNetClassLibrary.csproj",
+        "projectUniqueName": "C:\\Users\\E1495970\\source\\repos\\WindowsProject\\WindowsService1\\dotNetClassLibrary\\dotNetClassLibrary.csproj",
         "projectName": "dotNetClassLibrary",
-        "projectPath": "C:\\Users\\E1495970\\source\\repos\\WindowsService1\\dotNetClassLibrary\\dotNetClassLibrary.csproj",
+        "projectPath": "C:\\Users\\E1495970\\source\\repos\\WindowsProject\\WindowsService1\\dotNetClassLibrary\\dotNetClassLibrary.csproj",
         "frameworks": {
           "net48": {
             "projectReferences": {}

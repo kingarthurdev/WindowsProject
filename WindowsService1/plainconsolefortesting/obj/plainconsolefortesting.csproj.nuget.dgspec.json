@@ -1,14 +1,14 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\E1495970\\source\\repos\\WindowsService1\\plainconsolefortesting\\plainconsolefortesting.csproj": {}
+    "C:\\Users\\E1495970\\source\\repos\\WindowsProject\\WindowsService1\\plainconsolefortesting\\plainconsolefortesting.csproj": {}
   },
   "projects": {
-    "C:\\Users\\E1495970\\source\\repos\\WindowsService1\\dotNetClassLibrary\\dotNetClassLibrary.csproj": {
+    "C:\\Users\\E1495970\\source\\repos\\WindowsProject\\WindowsService1\\dotNetClassLibrary\\dotNetClassLibrary.csproj": {
       "restore": {
-        "projectUniqueName": "C:\\Users\\E1495970\\source\\repos\\WindowsService1\\dotNetClassLibrary\\dotNetClassLibrary.csproj",
+        "projectUniqueName": "C:\\Users\\E1495970\\source\\repos\\WindowsProject\\WindowsService1\\dotNetClassLibrary\\dotNetClassLibrary.csproj",
         "projectName": "dotNetClassLibrary",
-        "projectPath": "C:\\Users\\E1495970\\source\\repos\\WindowsService1\\dotNetClassLibrary\\dotNetClassLibrary.csproj",
+        "projectPath": "C:\\Users\\E1495970\\source\\repos\\WindowsProject\\WindowsService1\\dotNetClassLibrary\\dotNetClassLibrary.csproj",
         "frameworks": {
           "net48": {
             "projectReferences": {}
@@ -19,14 +19,14 @@
         "net48": {}
       }
     },
-    "C:\\Users\\E1495970\\source\\repos\\WindowsService1\\plainconsolefortesting\\plainconsolefortesting.csproj": {
+    "C:\\Users\\E1495970\\source\\repos\\WindowsProject\\WindowsService1\\plainconsolefortesting\\plainconsolefortesting.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\E1495970\\source\\repos\\WindowsService1\\plainconsolefortesting\\plainconsolefortesting.csproj",
+        "projectUniqueName": "C:\\Users\\E1495970\\source\\repos\\WindowsProject\\WindowsService1\\plainconsolefortesting\\plainconsolefortesting.csproj",
         "projectName": "plainconsolefortesting",
-        "projectPath": "C:\\Users\\E1495970\\source\\repos\\WindowsService1\\plainconsolefortesting\\plainconsolefortesting.csproj",
+        "projectPath": "C:\\Users\\E1495970\\source\\repos\\WindowsProject\\WindowsService1\\plainconsolefortesting\\plainconsolefortesting.csproj",
         "packagesPath": "C:\\Users\\E1495970\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\E1495970\\source\\repos\\WindowsService1\\plainconsolefortesting\\obj\\",
+        "outputPath": "C:\\Users\\E1495970\\source\\repos\\WindowsProject\\WindowsService1\\plainconsolefortesting\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\E1495970\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -43,8 +43,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\E1495970\\source\\repos\\WindowsService1\\dotNetClassLibrary\\dotNetClassLibrary.csproj": {
-                "projectPath": "C:\\Users\\E1495970\\source\\repos\\WindowsService1\\dotNetClassLibrary\\dotNetClassLibrary.csproj"
+              "C:\\Users\\E1495970\\source\\repos\\WindowsProject\\WindowsService1\\dotNetClassLibrary\\dotNetClassLibrary.csproj": {
+                "projectPath": "C:\\Users\\E1495970\\source\\repos\\WindowsProject\\WindowsService1\\dotNetClassLibrary\\dotNetClassLibrary.csproj"
               }
             }
           }
