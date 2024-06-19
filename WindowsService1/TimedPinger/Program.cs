@@ -8,6 +8,8 @@ namespace TimedPinger
 {
     internal class Pinger
     {
+        public static int listeningPort = 1543;
+        public static int destinationPort = 12000;
         static void Main(string[] args)
         {
             try
@@ -21,7 +23,7 @@ namespace TimedPinger
 
                 //recipient address and port
                 IPAddress broadcast = IPAddress.Parse(Console.ReadLine());
-                IPEndPoint endpoint = new IPEndPoint(broadcast, 1001);
+                IPEndPoint endpoint = new IPEndPoint(broadcast, destinationPort);
 
                 //the parameters are: specifies that communicates with ipv4, socket will use datagrams -- independent messages with udp  ,socket will use udp 
                 Socket sock = new Socket(AddressFamily.InterNetwork, SocketType.Dgram, ProtocolType.Udp);
@@ -43,9 +45,9 @@ namespace TimedPinger
 
         public static void listenForACK()
         {
-            Console.WriteLine("Listening on port 1543 for ack responses");
-            UdpClient listener = new UdpClient(1543);
-            IPEndPoint groupEP = new IPEndPoint(IPAddress.Any, 1543);
+            Console.WriteLine($"Listening on port {listeningPort} for ack responses");
+            UdpClient listener = new UdpClient(listeningPort);
+            IPEndPoint groupEP = new IPEndPoint(IPAddress.Any, listeningPort);
             while (true)
             {
                 byte[] bytes = listener.Receive(ref groupEP);

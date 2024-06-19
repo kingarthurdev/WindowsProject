@@ -8,3 +8,13 @@ C:\Users\E1495970\source\repos\WindowsProject\WindowsService1\RateFilter\bin\Deb
 C:\Users\E1495970\source\repos\WindowsProject\WindowsService1\RateFilter\obj\Debug\RateFilter.csproj.Up2Date
 C:\Users\E1495970\source\repos\WindowsProject\WindowsService1\RateFilter\obj\Debug\RateFilter.exe
 C:\Users\E1495970\source\repos\WindowsProject\WindowsService1\RateFilter\obj\Debug\RateFilter.pdb
+C:\Users\E1495970\source\repos\WindowsService1\RateFilter\bin\Debug\RateFilter.exe.config
+C:\Users\E1495970\source\repos\WindowsService1\RateFilter\bin\Debug\RateFilter.exe
+C:\Users\E1495970\source\repos\WindowsService1\RateFilter\bin\Debug\RateFilter.pdb
+C:\Users\E1495970\source\repos\WindowsService1\RateFilter\bin\Debug\dotNetClassLibrary.dll
+C:\Users\E1495970\source\repos\WindowsService1\RateFilter\bin\Debug\dotNetClassLibrary.pdb
+C:\Users\E1495970\source\repos\WindowsService1\RateFilter\obj\Debug\RateFilter.csproj.AssemblyReference.cache
+C:\Users\E1495970\source\repos\WindowsService1\RateFilter\obj\Debug\RateFilter.csproj.CoreCompileInputs.cache
+C:\Users\E1495970\source\repos\WindowsService1\RateFilter\obj\Debug\RateFilter.csproj.Up2Date
+C:\Users\E1495970\source\repos\WindowsService1\RateFilter\obj\Debug\RateFilter.exe
+C:\Users\E1495970\source\repos\WindowsService1\RateFilter\obj\Debug\RateFilter.pdb

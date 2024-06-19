@@ -23,6 +23,7 @@ namespace dotNetClassLibrary
 
             byte[] finalArr = new byte[uintArr.Length + charArr.Length + xmlArr.Length];
 
+            //copy to final array
             Buffer.BlockCopy(uintArr, 0, finalArr, 0, uintArr.Length);
             Buffer.BlockCopy(charArr, 0, finalArr, uintArr.Length, charArr.Length);
             Buffer.BlockCopy(xmlArr, 0, finalArr, uintArr.Length + charArr.Length, xmlArr.Length);
@@ -121,7 +122,7 @@ namespace dotNetClassLibrary
 
         }
 
-        //not necessary? 
+        // todo: remove not necessary? 
         public static double getLatency(byte[] ack)
         {
             DateTime sentTime = DateTime.FromBinary(BitConverter.ToInt64(ack, 0));
@@ -129,6 +130,6 @@ namespace dotNetClassLibrary
 
         }
 
-        // have another one, communicate this way, but with upstream filtering 
+        //todo: have another one, communicate this way, but with upstream filtering 
     }
 }

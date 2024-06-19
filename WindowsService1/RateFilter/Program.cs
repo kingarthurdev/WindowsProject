@@ -12,6 +12,9 @@ namespace RateFilter
 {
     internal class Program
     {
+        public static int listeningPort = 1543;
+        public static int destinationPort = 12000;
+
         public static Dictionary<string, int> ipCount = new Dictionary<string, int>();
         public static List<string> Blacklist = new List<string>();
         public static int clearCount = 0;
@@ -21,15 +24,65 @@ namespace RateFilter
             Thread clear = new Thread(new ThreadStart(clearDict));
             clear.Start();
 
-            UdpClient listener = new UdpClient(1001);
-            IPEndPoint groupEP = new IPEndPoint(IPAddress.Any, 1001);
+            try
+            {
+                Thread listener = new Thread(new ThreadStart(listenForACK));
+                listener.Start();
+
+                byte[] sendBytes;
+                uint count = 1;
+                Console.WriteLine("Enter the IP of where you would like to send timed messages:");
+
+                //recipient address and port
+                IPAddress broadcast = IPAddress.Parse(Console.ReadLine());
+                IPEndPoint endpoint = new IPEndPoint(broadcast, destinationPort);
+
+                //the parameters are: specifies that communicates with ipv4, socket will use datagrams -- independent messages with udp  ,socket will use udp 
+                Socket sock = new Socket(AddressFamily.InterNetwork, SocketType.Dgram, ProtocolType.Udp);
+
+                while (true)
+                {
+                    sendBytes = ProcessContent.convertToTimestampedBytes(count, ';', "ping");
+                    sock.SendTo(sendBytes, endpoint);
+                    Console.WriteLine("Ping sent");
+                    count++;
+                    Thread.Sleep(1000);
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred: " + ex.Message);
+            }
+
+            
+        }
+        static void clearDict()
+        {
+            while (true)
+            {
+                if(clearCount == 15)
+                {
+                    clearCount = 0;
+                    Blacklist.Clear();
+                }
+                ipCount.Clear();
+                Thread.Sleep(2000);
+                clearCount++;
+                Console.WriteLine("CLEAR");
+            }
+            
+        }
+        static void listenForACK()
+        {
+            UdpClient listener = new UdpClient(listeningPort);
+            IPEndPoint groupEP = new IPEndPoint(IPAddress.Any, listeningPort);
             while (true)
             {
                 byte[] bytes = listener.Receive(ref groupEP);
                 string ip = groupEP.Address.ToString();
                 if (!Blacklist.Contains(ip))
                 {
-                    if (ipCount.ContainsKey(ip)) 
+                    if (ipCount.ContainsKey(ip))
                     {
                         ipCount[ip] += 1;
                         if (ipCount[ip] > 50)
@@ -68,25 +121,9 @@ namespace RateFilter
                         Console.WriteLine("Invalid data sent to ack port!");
                     }
                 }
-               
+
 
             }
-        }
-        static void clearDict()
-        {
-            while (true)
-            {
-                if(clearCount == 15)
-                {
-                    clearCount = 0;
-                    Blacklist.Clear();
-                }
-                ipCount.Clear();
-                Thread.Sleep(2000);
-                clearCount++;
-                Console.WriteLine("CLEAR");
-            }
-            
         }
     }
 }
