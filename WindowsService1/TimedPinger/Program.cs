@@ -4,6 +4,8 @@ using System.Net;
 using System.Text;
 using System.Threading;
 using dotNetClassLibrary;
+using System.Data.SqlTypes;
+using System.Xml.Linq;
 namespace TimedPinger
 {
     internal class Pinger
@@ -55,17 +57,33 @@ namespace TimedPinger
                 try
                 {
 
-                    //Format: first 8 are for datetime, next 3 are ack, last 4 are message num
+                    //Format: first 8 are for datetime, next 3 are ack, 4 are message num, last however many are xml data
                     //indexes 0-14
-                    //last 4 bytes are uint coding for message #
+
                     if (Encoding.ASCII.GetString(bytes, 8, 3).Equals("ack"))
                     {
                         DateTime send = DateTime.FromBinary(BitConverter.ToInt64(bytes, 0));
                         double latencyMilliseconds = (DateTime.Now - send).Milliseconds;
-                        uint MessageNum = BitConverter.ToUInt32(bytes, bytes.Length-4);
+                        uint MessageNum = BitConverter.ToUInt32(bytes, 11); // start index comes from 8 +3 --> 8 = time, 3 = "ack"
 
-                        Console.WriteLine($"ACK #{MessageNum} recieved from {groupEP.Address.ToString()}, " + latencyMilliseconds + "ms of latency");
-                        ProcessContent.WriteToFile($"ACK #{MessageNum} recieved from {groupEP.Address.ToString()}, " + latencyMilliseconds + "ms of latency");
+
+                        byte[] XMLBytes = new byte[bytes.Length - 15];
+                        Buffer.BlockCopy(bytes, 15, XMLBytes, 0, XMLBytes.Length);
+                        string xmlString = Encoding.ASCII.GetString(XMLBytes, 0, XMLBytes.Length);
+
+
+                        Console.WriteLine($"Response #{MessageNum} recieved from {groupEP.Address.ToString()}, " + latencyMilliseconds + "ms of latency");
+                        ProcessContent.WriteToFile($"Response #{MessageNum} recieved from {groupEP.Address.ToString()}, " + latencyMilliseconds + "ms of latency");
+                        try
+                        {
+                            Console.WriteLine(XElement.Parse(xmlString).ToString() + "\n\n\n");
+                            ProcessContent.WriteToFile("Content:" + XElement.Parse(xmlString).ToString() + "\n\n\n");
+                        }
+                        catch
+                        {
+                            Console.WriteLine("Invalid XML Recieved");
+                            ProcessContent.WriteToFile("Invalid XML Recieved");
+                        }
 
                     }
                     else

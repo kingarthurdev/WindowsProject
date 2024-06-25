@@ -19,6 +19,7 @@ class Program
     public static (Socket, IPEndPoint) setup(int port)
     {
         Console.WriteLine("Enter the IP of where you would like to send a message:");
+
         //recipient address and port
         IPAddress broadcast = IPAddress.Parse(Console.ReadLine());
         IPEndPoint endpoint = new IPEndPoint(broadcast, port);
@@ -88,7 +89,8 @@ class Program
             try
             {
                 //last 4 bytes are uint coding for message #
-                if (Encoding.ASCII.GetString(bytes, 8, bytes.Length - 8).Equals("ack"))
+                //TODO: will implement actually recieving, validating and processing xml data from the ack response
+                if (Encoding.ASCII.GetString(bytes, 8, 3).Equals("ack"))  // goes from index 8 (end of timestamp) to 11, end of ack
                 {
                     DateTime send = DateTime.FromBinary(BitConverter.ToInt64(bytes, 0));
                     double latencyMilliseconds = (DateTime.Now - send).Milliseconds;
@@ -110,4 +112,6 @@ class Program
 
         }
     }
+
+    public static void 
 }   

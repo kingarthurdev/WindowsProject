@@ -57,6 +57,8 @@ namespace dotNetService
                 ProcessContent.WriteToFile($"\nReceived broadcast from {groupEP}");
                 ProcessContent.WriteToFile($"Recieved time: {DateTime.Now}, Sent time: {sendTime}, Latency: {(DateTime.Now - sendTime).Milliseconds}ms");
                 ProcessContent.WriteToFile($" {total}\n");
+
+                //emulating actual data being sent back 
                 ProcessContent.sendACK(bytes, groupEP.Address.ToString());
 
             }

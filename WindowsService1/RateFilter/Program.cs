@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using dotNetClassLibrary;
 using System.Threading;
+using System.Xml.Linq;
 
 namespace RateFilter
 {
@@ -60,7 +61,7 @@ namespace RateFilter
         {
             while (true)
             {
-                if(clearCount == 15)
+                if(clearCount == 120)
                 {
                     clearCount = 0;
                     Blacklist.Clear();
@@ -68,7 +69,7 @@ namespace RateFilter
                 ipCount.Clear();
                 Thread.Sleep(2000);
                 clearCount++;
-                Console.WriteLine("CLEAR");
+                //Console.WriteLine("CLEAR");
             }
             
         }
@@ -104,10 +105,25 @@ namespace RateFilter
                         {
                             DateTime send = DateTime.FromBinary(BitConverter.ToInt64(bytes, 0));
                             double latencyMilliseconds = (DateTime.Now - send).Milliseconds;
-                            uint MessageNum = BitConverter.ToUInt32(bytes, bytes.Length - 4);
+                            uint MessageNum = BitConverter.ToUInt32(bytes, 11); // start index comes from 8 +3 --> 8 = time, 3 = "ack"
 
-                            Console.WriteLine($"ACK #{MessageNum} recieved from {groupEP.Address.ToString()}, " + latencyMilliseconds + "ms of latency");
-                            ProcessContent.WriteToFile($"ACK #{MessageNum} recieved from {groupEP.Address.ToString()}, " + latencyMilliseconds + "ms of latency");
+                            byte[] XMLBytes = new byte[bytes.Length - 15];
+                            Buffer.BlockCopy(bytes, 15, XMLBytes, 0, XMLBytes.Length);
+                            string xmlString = Encoding.ASCII.GetString(XMLBytes, 0, XMLBytes.Length);
+
+
+                            Console.WriteLine($"Response #{MessageNum} recieved from {groupEP.Address.ToString()}, " + latencyMilliseconds + "ms of latency");
+                            ProcessContent.WriteToFile($"Response #{MessageNum} recieved from {groupEP.Address.ToString()}, " + latencyMilliseconds + "ms of latency");
+                            try
+                            {
+                                Console.WriteLine(XElement.Parse(xmlString).ToString() + "\n\n\n");
+                                ProcessContent.WriteToFile("Content:" + XElement.Parse(xmlString).ToString() + "\n\n\n");
+                            }
+                            catch
+                            {
+                                Console.WriteLine("Invalid XML Recieved");
+                                ProcessContent.WriteToFile("Invalid XML Recieved");
+                            }
 
                         }
                         else
