@@ -36,7 +36,7 @@ namespace TimedPinger
                     sock.SendTo(sendBytes, endpoint);
                     Console.WriteLine("Ping sent");
                     count++;
-                    Thread.Sleep(1000);
+                    Thread.Sleep(10);
                 }
             }
             catch (Exception ex)

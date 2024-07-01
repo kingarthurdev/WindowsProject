@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("plainconsolefortesting")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b68a85f7b01b99f435e086c303877bc94017b53b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ee58ed4c12f8e24e4fdb2cef1b59fe4f64d80ce6")]
 [assembly: System.Reflection.AssemblyProductAttribute("plainconsolefortesting")]
 [assembly: System.Reflection.AssemblyTitleAttribute("plainconsolefortesting")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
