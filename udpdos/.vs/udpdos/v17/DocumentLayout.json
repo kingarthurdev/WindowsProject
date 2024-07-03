@@ -3,12 +3,6 @@
   "WorkspaceRootPath": "C:\\Users\\E1495970\\source\\repos\\udpdos\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\E1495970\\source\\repos\\WindowsService1\\Project\\TimedPinger\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\E1495970\\source\\repos\\WindowsService1\\Project\\dotNetService\\Service1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{CCDBA7E3-5A36-492C-BACE-51EAB0829A65}|udpdos\\udpdos.csproj|c:\\users\\e1495970\\source\\repos\\udpdos\\udpdos\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CCDBA7E3-5A36-492C-BACE-51EAB0829A65}|udpdos\\udpdos.csproj|solutionrelative:udpdos\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -26,37 +20,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\E1495970\\source\\repos\\WindowsService1\\Project\\TimedPinger\\Program.cs",
-              "RelativeDocumentMoniker": "..\\WindowsService1\\Project\\TimedPinger\\Program.cs",
-              "ToolTip": "C:\\Users\\E1495970\\source\\repos\\WindowsService1\\Project\\TimedPinger\\Program.cs",
-              "RelativeToolTip": "..\\WindowsService1\\Project\\TimedPinger\\Program.cs",
-              "ViewState": "AQIAAEgAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-21T17:31:58.437Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Service1.cs",
-              "DocumentMoniker": "C:\\Users\\E1495970\\source\\repos\\WindowsService1\\Project\\dotNetService\\Service1.cs",
-              "RelativeDocumentMoniker": "..\\WindowsService1\\Project\\dotNetService\\Service1.cs",
-              "ToolTip": "C:\\Users\\E1495970\\source\\repos\\WindowsService1\\Project\\dotNetService\\Service1.cs",
-              "RelativeToolTip": "..\\WindowsService1\\Project\\dotNetService\\Service1.cs",
-              "ViewState": "AQIAACEAAAAAAAAAAAAAACoAAAA4AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-21T17:31:00.582Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\E1495970\\source\\repos\\udpdos\\udpdos\\Program.cs",
               "RelativeDocumentMoniker": "udpdos\\Program.cs",
               "ToolTip": "C:\\Users\\E1495970\\source\\repos\\udpdos\\udpdos\\Program.cs",
               "RelativeToolTip": "udpdos\\Program.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAAwBgAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-04T21:52:39.39Z",
               "EditorCaption": ""

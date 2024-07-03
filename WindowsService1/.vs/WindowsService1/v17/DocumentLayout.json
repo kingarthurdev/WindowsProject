@@ -3,32 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\E1495970\\source\\repos\\WindowsService1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6877B8C2-9D67-4092-AA3C-75C9540AB77C}|dotNetClassLibrary\\dotNetClassLibrary.csproj|C:\\Users\\E1495970\\source\\repos\\WindowsService1\\dotnetclasslibrary\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6877B8C2-9D67-4092-AA3C-75C9540AB77C}|dotNetClassLibrary\\dotNetClassLibrary.csproj|solutionrelative:dotnetclasslibrary\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C0DB4B8A-C687-4B9C-A63A-9CDF5E105B4A}|plainconsolefortesting\\plainconsolefortesting.csproj|c:\\users\\e1495970\\source\\repos\\windowsservice1\\plainconsolefortesting\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0DB4B8A-C687-4B9C-A63A-9CDF5E105B4A}|plainconsolefortesting\\plainconsolefortesting.csproj|solutionrelative:plainconsolefortesting\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{21C0A6AB-ED9C-49FA-BDEF-2159DF31C970}|TimedPinger\\TimedPinger.csproj|c:\\users\\e1495970\\source\\repos\\windowsservice1\\timedpinger\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{21C0A6AB-ED9C-49FA-BDEF-2159DF31C970}|TimedPinger\\TimedPinger.csproj|solutionrelative:timedpinger\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C0DB4B8A-C687-4B9C-A63A-9CDF5E105B4A}|plainconsolefortesting\\plainconsolefortesting.csproj|c:\\users\\e1495970\\source\\repos\\windowsservice1\\plainconsolefortesting\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C0DB4B8A-C687-4B9C-A63A-9CDF5E105B4A}|plainconsolefortesting\\plainconsolefortesting.csproj|solutionrelative:plainconsolefortesting\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{92514F15-198C-4000-8218-7582D7A3FE5C}|arpspoof\\arpspoof.csproj|C:\\Users\\E1495970\\source\\repos\\WindowsService1\\arpspoof\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{92514F15-198C-4000-8218-7582D7A3FE5C}|arpspoof\\arpspoof.csproj|solutionrelative:arpspoof\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3FEF4C0D-C357-41DE-98F5-E7ECD4BD9466}|RateFilter\\RateFilter.csproj|C:\\Users\\E1495970\\source\\repos\\WindowsService1\\ratefilter\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3FEF4C0D-C357-41DE-98F5-E7ECD4BD9466}|RateFilter\\RateFilter.csproj|solutionrelative:ratefilter\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{215E20C6-E18A-400A-97F0-B49366089069}|dotNetService\\dotNetService.csproj|C:\\Users\\E1495970\\source\\repos\\WindowsService1\\dotnetservice\\service1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{215E20C6-E18A-400A-97F0-B49366089069}|dotNetService\\dotNetService.csproj|solutionrelative:dotnetservice\\service1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{215E20C6-E18A-400A-97F0-B49366089069}|dotNetService\\dotNetService.csproj|C:\\Users\\E1495970\\source\\repos\\WindowsService1\\dotnetservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{215E20C6-E18A-400A-97F0-B49366089069}|dotNetService\\dotNetService.csproj|solutionrelative:dotnetservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2017109A-A22F-40D7-92BC-24639B71970C}|EncryptionDecryption\\EncryptionDecryption.csproj|c:\\users\\e1495970\\source\\repos\\windowsservice1\\encryptiondecryption\\encryptiondecryption.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2017109A-A22F-40D7-92BC-24639B71970C}|EncryptionDecryption\\EncryptionDecryption.csproj|solutionrelative:encryptiondecryption\\encryptiondecryption.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,45 +22,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\E1495970\\source\\repos\\WindowsService1\\plainconsolefortesting\\Program.cs",
-              "RelativeDocumentMoniker": "plainconsolefortesting\\Program.cs",
-              "ToolTip": "C:\\Users\\E1495970\\source\\repos\\WindowsService1\\plainconsolefortesting\\Program.cs",
-              "RelativeToolTip": "plainconsolefortesting\\Program.cs",
-              "ViewState": "AQIAADEAAAAAAAAAAAAQwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-26T20:04:40.977Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Class1.cs",
-              "DocumentMoniker": "C:\\Users\\E1495970\\source\\repos\\WindowsService1\\arpspoof\\Class1.cs",
-              "RelativeDocumentMoniker": "arpspoof\\Class1.cs",
-              "ToolTip": "C:\\Users\\E1495970\\source\\repos\\WindowsService1\\arpspoof\\Class1.cs",
-              "RelativeToolTip": "arpspoof\\Class1.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA0AAAAgAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-26T13:03:42.184Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Class1.cs",
-              "DocumentMoniker": "C:\\Users\\E1495970\\source\\repos\\WindowsService1\\dotNetClassLibrary\\Class1.cs",
-              "RelativeDocumentMoniker": "dotNetClassLibrary\\Class1.cs",
-              "ToolTip": "C:\\Users\\E1495970\\source\\repos\\WindowsService1\\dotNetClassLibrary\\Class1.cs",
-              "RelativeToolTip": "dotNetClassLibrary\\Class1.cs",
-              "ViewState": "AQIAAFAAAAAAAAAAAAAkwFoAAABWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-21T20:28:02.872Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -85,47 +32,36 @@
               "RelativeDocumentMoniker": "TimedPinger\\Program.cs",
               "ToolTip": "C:\\Users\\E1495970\\source\\repos\\WindowsService1\\TimedPinger\\Program.cs",
               "RelativeToolTip": "TimedPinger\\Program.cs",
-              "ViewState": "AQIAABQAAAAAAAAAAAAnwCYAAAAiAAAA",
+              "ViewState": "AQIAADcAAAAAAAAAAAAQwEUAAABOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T14:02:01.985Z",
+              "WhenOpened": "2024-07-02T20:07:57.534Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\E1495970\\source\\repos\\WindowsService1\\RateFilter\\Program.cs",
-              "RelativeDocumentMoniker": "RateFilter\\Program.cs",
-              "ToolTip": "C:\\Users\\E1495970\\source\\repos\\WindowsService1\\RateFilter\\Program.cs",
-              "RelativeToolTip": "RateFilter\\Program.cs",
-              "ViewState": "AQIAAGgAAAAAAAAAAAAgwA0AAAAaAAAA",
+              "DocumentMoniker": "C:\\Users\\E1495970\\source\\repos\\WindowsService1\\plainconsolefortesting\\Program.cs",
+              "RelativeDocumentMoniker": "plainconsolefortesting\\Program.cs",
+              "ToolTip": "C:\\Users\\E1495970\\source\\repos\\WindowsService1\\plainconsolefortesting\\Program.cs",
+              "RelativeToolTip": "plainconsolefortesting\\Program.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAAwCgAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-17T19:23:29.559Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Service1.cs",
-              "DocumentMoniker": "C:\\Users\\E1495970\\source\\repos\\WindowsService1\\dotNetService\\Service1.cs",
-              "RelativeDocumentMoniker": "dotNetService\\Service1.cs",
-              "ToolTip": "C:\\Users\\E1495970\\source\\repos\\WindowsService1\\dotNetService\\Service1.cs",
-              "RelativeToolTip": "dotNetService\\Service1.cs",
-              "ViewState": "AQIAACsAAAAAAAAAAAAkwDwAAAA4AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-07T21:20:44.664Z",
+              "WhenOpened": "2024-07-02T19:25:09.729Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\E1495970\\source\\repos\\WindowsService1\\dotNetService\\Program.cs",
-              "RelativeDocumentMoniker": "dotNetService\\Program.cs",
-              "ToolTip": "C:\\Users\\E1495970\\source\\repos\\WindowsService1\\dotNetService\\Program.cs",
-              "RelativeToolTip": "dotNetService\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAFAAAA",
+              "DocumentIndex": 2,
+              "Title": "EncryptionDecryption.cs",
+              "DocumentMoniker": "C:\\Users\\E1495970\\source\\repos\\WindowsService1\\EncryptionDecryption\\EncryptionDecryption.cs",
+              "RelativeDocumentMoniker": "EncryptionDecryption\\EncryptionDecryption.cs",
+              "ToolTip": "C:\\Users\\E1495970\\source\\repos\\WindowsService1\\EncryptionDecryption\\EncryptionDecryption.cs",
+              "RelativeToolTip": "EncryptionDecryption\\EncryptionDecryption.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-07T16:04:02.174Z"
+              "WhenOpened": "2024-07-02T15:59:28.57Z",
+              "EditorCaption": ""
             }
           ]
         }

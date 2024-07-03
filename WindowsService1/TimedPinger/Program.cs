@@ -4,39 +4,53 @@ using System.Net;
 using System.Text;
 using System.Threading;
 using dotNetClassLibrary;
-using System.Data.SqlTypes;
 using System.Xml.Linq;
+using EncryptionDecryption;
 namespace TimedPinger
 {
     internal class Pinger
     {
-        public static int listeningPort = 1543;
-        public static int destinationPort = 12000;
+        static int listeningPort = 1543;
+        static int destinationPort = 12000;
+        static byte[] sendBytes;
+        static uint count = 1;
+        static bool RSAEstablished = false;
+
         static void Main(string[] args)
         {
+            string privkey;
+            string pubkey;
+            (pubkey, privkey) = EncryptionDecryption.EncryptionDecryption.GenerateRSAKeys();
+
             try
             {
                 Thread listener = new Thread(new ThreadStart(listenForACK));
                 listener.Start();
-                
-                byte[] sendBytes;
-                uint count = 1;
+                                
                 Console.WriteLine("Enter the IP of where you would like to send a message:");
 
                 //recipient address and port
-                IPAddress broadcast = IPAddress.Parse(Console.ReadLine());
-                IPEndPoint endpoint = new IPEndPoint(broadcast, destinationPort);
+                IPEndPoint endpoint = new IPEndPoint(IPAddress.Parse(Console.ReadLine()), destinationPort);
 
                 //the parameters are: specifies that communicates with ipv4, socket will use datagrams -- independent messages with udp  ,socket will use udp 
                 Socket sock = new Socket(AddressFamily.InterNetwork, SocketType.Dgram, ProtocolType.Udp);
 
+                while (!RSAEstablished)
+                {
+                    sendBytes = Encoding.ASCII.GetBytes(pubkey);
+                    sock.SendTo(sendBytes, endpoint);
+                    Console.WriteLine("Public Key Sent");
+                    Thread.Sleep(1000);
+                }
+
+
                 while (true)
                 {
-                    sendBytes = ProcessContent.convertToTimestampedBytes(count, ';', "ping");
+                    sendBytes = ProcessContent.convertToTimestampedBytes(count, ';', "Request For Data");
                     sock.SendTo(sendBytes, endpoint);
-                    Console.WriteLine("Ping sent");
+                    Console.WriteLine("Data request sent");
                     count++;
-                    Thread.Sleep(10);
+                    Thread.Sleep(1000);
                 }
             }
             catch (Exception ex)
@@ -50,13 +64,20 @@ namespace TimedPinger
             Console.WriteLine($"Listening on port {listeningPort} for ack responses");
             UdpClient listener = new UdpClient(listeningPort);
             IPEndPoint groupEP = new IPEndPoint(IPAddress.Any, listeningPort);
+            while (!RSAEstablished)
+            {
+                byte[] bytes = listener.Receive(ref groupEP);
+                if(Encoding.ASCII.GetString(bytes).Equals("Public Key Recieved"))
+                {
+                    RSAEstablished = true;
+                }
+            }
             while (true)
             {
                 byte[] bytes = listener.Receive(ref groupEP);
 
                 try
                 {
-
                     //Format: first 8 are for datetime, next 3 are ack, 4 are message num, last however many are xml data
                     //indexes 0-14
 

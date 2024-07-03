@@ -19,8 +19,12 @@ namespace RateFilter
         public static Dictionary<string, int> ipCount = new Dictionary<string, int>();
         public static List<string> Blacklist = new List<string>();
         public static int clearCount = 0;
+        static bool RSAEstablished = false;
         static void Main(string[] args)
         {
+            string privkey;
+            string pubkey;
+            (pubkey, privkey) = EncryptionDecryption.EncryptionDecryption.GenerateRSAKeys();
 
             Thread clear = new Thread(new ThreadStart(clearDict));
             clear.Start();
@@ -40,6 +44,13 @@ namespace RateFilter
 
                 //the parameters are: specifies that communicates with ipv4, socket will use datagrams -- independent messages with udp  ,socket will use udp 
                 Socket sock = new Socket(AddressFamily.InterNetwork, SocketType.Dgram, ProtocolType.Udp);
+                while (!RSAEstablished)
+                {
+                    sendBytes = Encoding.ASCII.GetBytes(pubkey);
+                    sock.SendTo(sendBytes, endpoint);
+                    Console.WriteLine("Public Key Sent");
+                    Thread.Sleep(1000);
+                }
 
                 while (true)
                 {
@@ -77,6 +88,14 @@ namespace RateFilter
         {
             UdpClient listener = new UdpClient(listeningPort);
             IPEndPoint groupEP = new IPEndPoint(IPAddress.Any, listeningPort);
+            while (!RSAEstablished)
+            {
+                byte[] bytes = listener.Receive(ref groupEP);
+                if (Encoding.ASCII.GetString(bytes).Equals("Public Key Recieved"))
+                {
+                    RSAEstablished = true;
+                }
+            }
             while (true)
             {
                 byte[] bytes = listener.Receive(ref groupEP);

@@ -10,6 +10,15 @@
         "runtime": {
           "bin/placeholder/dotNetClassLibrary.dll": {}
         }
+      },
+      "EncryptionDecryption/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/EncryptionDecryption.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/EncryptionDecryption.dll": {}
+        }
       }
     }
   },
@@ -18,10 +27,16 @@
       "type": "project",
       "path": "../dotNetClassLibrary/dotNetClassLibrary.csproj",
       "msbuildProject": "../dotNetClassLibrary/dotNetClassLibrary.csproj"
+    },
+    "EncryptionDecryption/1.0.0": {
+      "type": "project",
+      "path": "../EncryptionDecryption/EncryptionDecryption.csproj",
+      "msbuildProject": "../EncryptionDecryption/EncryptionDecryption.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "EncryptionDecryption >= 1.0.0",
       "dotNetClassLibrary >= 1.0.0"
     ]
   },
@@ -54,6 +69,9 @@
           "projectReferences": {
             "C:\\Users\\E1495970\\source\\repos\\WindowsService1\\dotNetClassLibrary\\dotNetClassLibrary.csproj": {
               "projectPath": "C:\\Users\\E1495970\\source\\repos\\WindowsService1\\dotNetClassLibrary\\dotNetClassLibrary.csproj"
+            },
+            "C:\\Users\\E1495970\\source\\repos\\WindowsService1\\EncryptionDecryption\\EncryptionDecryption.csproj": {
+              "projectPath": "C:\\Users\\E1495970\\source\\repos\\WindowsService1\\EncryptionDecryption\\EncryptionDecryption.csproj"
             }
           }
         }

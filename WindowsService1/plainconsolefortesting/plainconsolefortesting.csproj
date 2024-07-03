@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\dotNetClassLibrary\dotNetClassLibrary.csproj" />
+    <ProjectReference Include="..\EncryptionDecryption\EncryptionDecryption.csproj" />
   </ItemGroup>
 
 </Project>

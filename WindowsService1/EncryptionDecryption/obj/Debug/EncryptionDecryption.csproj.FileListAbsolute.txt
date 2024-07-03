@@ -1,0 +1,6 @@
+C:\Users\E1495970\source\repos\WindowsService1\EncryptionDecryption\bin\Debug\EncryptionDecryption.dll
+C:\Users\E1495970\source\repos\WindowsService1\EncryptionDecryption\bin\Debug\EncryptionDecryption.pdb
+C:\Users\E1495970\source\repos\WindowsService1\EncryptionDecryption\obj\Debug\EncryptionDecryption.csproj.AssemblyReference.cache
+C:\Users\E1495970\source\repos\WindowsService1\EncryptionDecryption\obj\Debug\EncryptionDecryption.csproj.CoreCompileInputs.cache
+C:\Users\E1495970\source\repos\WindowsService1\EncryptionDecryption\obj\Debug\EncryptionDecryption.dll
+C:\Users\E1495970\source\repos\WindowsService1\EncryptionDecryption\obj\Debug\EncryptionDecryption.pdb

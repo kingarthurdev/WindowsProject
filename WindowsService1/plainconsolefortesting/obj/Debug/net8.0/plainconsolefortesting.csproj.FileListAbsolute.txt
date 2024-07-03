@@ -55,3 +55,5 @@ C:\Users\E1495970\source\repos\WindowsProject\WindowsService1\plainconsolefortes
 C:\Users\E1495970\source\repos\WindowsProject\WindowsService1\plainconsolefortesting\obj\Debug\net8.0\plainconsolefortesting.genruntimeconfig.cache
 C:\Users\E1495970\source\repos\WindowsProject\WindowsService1\plainconsolefortesting\obj\Debug\net8.0\ref\plainconsolefortesting.dll
 C:\Users\E1495970\source\repos\WindowsService1\plainconsolefortesting\obj\Debug\net8.0\plainconsolefortesting.sourcelink.json
+C:\Users\E1495970\source\repos\WindowsService1\plainconsolefortesting\bin\Debug\net8.0\EncryptionDecryption.dll
+C:\Users\E1495970\source\repos\WindowsService1\plainconsolefortesting\bin\Debug\net8.0\EncryptionDecryption.pdb

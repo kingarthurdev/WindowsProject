@@ -5,7 +5,6 @@ using System.ServiceProcess;
 using System.Threading;
 using dotNetClassLibrary;
 
-
 namespace dotNetService
 {
     public partial class Service1 : ServiceBase

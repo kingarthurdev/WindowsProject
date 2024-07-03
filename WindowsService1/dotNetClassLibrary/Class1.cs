@@ -77,7 +77,6 @@ namespace dotNetClassLibrary
         }
 
         //send an acknowledgement with the timestamp of when the original request was first recieved
-        //TODO: actually respond with valid xml data as well as ack messages
         public static void sendACK(byte[] recieved, string ip)
         {
             //get the message #
