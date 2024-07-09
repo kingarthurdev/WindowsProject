@@ -7,7 +7,7 @@
       "RelativeMoniker": "D:0:0:{6877B8C2-9D67-4092-AA3C-75C9540AB77C}|dotNetClassLibrary\\dotNetClassLibrary.csproj|solutionrelative:dotnetclasslibrary\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A5E6FB5F-7E28-4EA3-A8EB-38A44F6AABE8}|testproj\\EncryptedDataProvider.csproj|c:\\users\\e1495970\\source\\repos\\windowsservice1\\testproj\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A5E6FB5F-7E28-4EA3-A8EB-38A44F6AABE8}|testproj\\EncryptedDataProvider.csproj|C:\\Users\\E1495970\\source\\repos\\WindowsService1\\testproj\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A5E6FB5F-7E28-4EA3-A8EB-38A44F6AABE8}|testproj\\EncryptedDataProvider.csproj|solutionrelative:testproj\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -43,8 +43,7 @@
               "RelativeToolTip": "testproj\\Program.cs",
               "ViewState": "AQIAAD0AAAAAAAAAAAAjwEoAAAATAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-09T16:48:58.836Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-09T16:48:58.836Z"
             }
           ]
         }

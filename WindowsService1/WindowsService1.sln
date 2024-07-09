@@ -21,8 +21,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EncryptedDataProvider", "te
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EncryptedTimedPinger", "TimedPingerWIthEncryption\EncryptedTimedPinger.csproj", "{014796BF-C5C9-498B-A96C-38EC295ABCAA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "burnerProj", "burnerProj\burnerProj.csproj", "{87523A4E-2612-4950-B3FC-95C48F578C33}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -65,10 +63,6 @@ Global
 		{014796BF-C5C9-498B-A96C-38EC295ABCAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{014796BF-C5C9-498B-A96C-38EC295ABCAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{014796BF-C5C9-498B-A96C-38EC295ABCAA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{87523A4E-2612-4950-B3FC-95C48F578C33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{87523A4E-2612-4950-B3FC-95C48F578C33}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{87523A4E-2612-4950-B3FC-95C48F578C33}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{87523A4E-2612-4950-B3FC-95C48F578C33}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
