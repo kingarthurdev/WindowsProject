@@ -1,0 +1,12 @@
+C:\Users\E1495970\source\repos\WindowsService1\testproj\bin\Debug\testproj.exe.config
+C:\Users\E1495970\source\repos\WindowsService1\testproj\bin\Debug\testproj.exe
+C:\Users\E1495970\source\repos\WindowsService1\testproj\bin\Debug\testproj.pdb
+C:\Users\E1495970\source\repos\WindowsService1\testproj\bin\Debug\dotNetClassLibrary.dll
+C:\Users\E1495970\source\repos\WindowsService1\testproj\bin\Debug\EncryptionDecryption.dll
+C:\Users\E1495970\source\repos\WindowsService1\testproj\bin\Debug\dotNetClassLibrary.pdb
+C:\Users\E1495970\source\repos\WindowsService1\testproj\bin\Debug\EncryptionDecryption.pdb
+C:\Users\E1495970\source\repos\WindowsService1\testproj\obj\Debug\testproj.csproj.AssemblyReference.cache
+C:\Users\E1495970\source\repos\WindowsService1\testproj\obj\Debug\testproj.csproj.CoreCompileInputs.cache
+C:\Users\E1495970\source\repos\WindowsService1\testproj\obj\Debug\testproj.csproj.Up2Date
+C:\Users\E1495970\source\repos\WindowsService1\testproj\obj\Debug\testproj.exe
+C:\Users\E1495970\source\repos\WindowsService1\testproj\obj\Debug\testproj.pdb

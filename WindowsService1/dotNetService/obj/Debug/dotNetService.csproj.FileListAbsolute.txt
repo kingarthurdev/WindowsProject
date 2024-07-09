@@ -34,3 +34,5 @@ C:\Users\E1495970\source\repos\WindowsProject\WindowsService1\dotNetService\bin\
 C:\Users\E1495970\source\repos\WindowsProject\WindowsService1\dotNetService\bin\Debug\dotNetService.exe
 C:\Users\E1495970\source\repos\WindowsProject\WindowsService1\dotNetService\bin\Debug\dotNetService.pdb
 C:\Users\E1495970\source\repos\WindowsProject\WindowsService1\dotNetService\obj\Debug\dotNetSe.42C5F813.Up2Date
+C:\Users\E1495970\source\repos\WindowsService1\dotNetService\bin\Debug\EncryptionDecryption.dll
+C:\Users\E1495970\source\repos\WindowsService1\dotNetService\bin\Debug\EncryptionDecryption.pdb

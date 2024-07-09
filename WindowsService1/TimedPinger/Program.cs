@@ -5,7 +5,6 @@ using System.Text;
 using System.Threading;
 using dotNetClassLibrary;
 using System.Xml.Linq;
-using EncryptionDecryption;
 namespace TimedPinger
 {
     internal class Pinger
@@ -14,14 +13,10 @@ namespace TimedPinger
         static int destinationPort = 12000;
         static byte[] sendBytes;
         static uint count = 1;
-        static bool RSAEstablished = false;
-
+        
         static void Main(string[] args)
         {
-            string privkey;
-            string pubkey;
-            (pubkey, privkey) = EncryptionDecryption.EncryptionDecryption.GenerateRSAKeys();
-
+            
             try
             {
                 Thread listener = new Thread(new ThreadStart(listenForACK));
@@ -34,15 +29,6 @@ namespace TimedPinger
 
                 //the parameters are: specifies that communicates with ipv4, socket will use datagrams -- independent messages with udp  ,socket will use udp 
                 Socket sock = new Socket(AddressFamily.InterNetwork, SocketType.Dgram, ProtocolType.Udp);
-
-                while (!RSAEstablished)
-                {
-                    sendBytes = Encoding.ASCII.GetBytes(pubkey);
-                    sock.SendTo(sendBytes, endpoint);
-                    Console.WriteLine("Public Key Sent");
-                    Thread.Sleep(1000);
-                }
-
 
                 while (true)
                 {
@@ -64,14 +50,7 @@ namespace TimedPinger
             Console.WriteLine($"Listening on port {listeningPort} for ack responses");
             UdpClient listener = new UdpClient(listeningPort);
             IPEndPoint groupEP = new IPEndPoint(IPAddress.Any, listeningPort);
-            while (!RSAEstablished)
-            {
-                byte[] bytes = listener.Receive(ref groupEP);
-                if(Encoding.ASCII.GetString(bytes).Equals("Public Key Recieved"))
-                {
-                    RSAEstablished = true;
-                }
-            }
+           
             while (true)
             {
                 byte[] bytes = listener.Receive(ref groupEP);

@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 using dotNetClassLibrary;
 using System.Threading;
 using System.Xml.Linq;
+using EncryptionDecryptionLibrary;
 
 namespace RateFilter
 {
@@ -24,7 +25,7 @@ namespace RateFilter
         {
             string privkey;
             string pubkey;
-            (pubkey, privkey) = EncryptionDecryption.EncryptionDecryption.GenerateRSAKeys();
+            (pubkey, privkey) = EncryptionDecryption.GenerateRSAKeys();
 
             Thread clear = new Thread(new ThreadStart(clearDict));
             clear.Start();
@@ -93,6 +94,7 @@ namespace RateFilter
                 byte[] bytes = listener.Receive(ref groupEP);
                 if (Encoding.ASCII.GetString(bytes).Equals("Public Key Recieved"))
                 {
+                    Console.WriteLine("Encryption established!");
                     RSAEstablished = true;
                 }
             }

@@ -1,20 +1,21 @@
 ﻿using System.Net.Sockets;
 using System.Net;
 using dotNetClassLibrary;
-using System.Text;
-using EncryptionDecryption;
+
 
 
 namespace dotNetService
 {
     public class Service
     {
-        
+
+        static bool pubkeyrecieved = false;
+        static Dictionary<string, string> keyip = new Dictionary<string, string>();
 
         public static void Main(string[] args)
         {
 
-            /*ProcessContent.WriteToFile("Service started at " + DateTime.Now);
+            ProcessContent.WriteToFile("Service started at " + DateTime.Now);
 
             try
             {
@@ -25,14 +26,6 @@ namespace dotNetService
             {
                 ProcessContent.WriteToFile(exception.ToString());
             }
-            */
-
-            
-                (string pubkey, string privkey) = EncryptionDecryption.EncryptionDecryption.GenerateRSAKeys();
-                byte[] obama = Encoding.ASCII.GetBytes("adsfsdfaadaafdafsdadf");
-                
-                Console.WriteLine(Encoding.ASCII.GetString(EncryptionDecryption.EncryptionDecryption.decryptMessage(EncryptionDecryption.EncryptionDecryption.encryptMessage(obama, pubkey), privkey)));
-            
 
         }
 
@@ -42,6 +35,7 @@ namespace dotNetService
             ProcessContent.WriteToFile("Listening on port 12000");
             UdpClient listener = new UdpClient(12000);
             IPEndPoint groupEP = new IPEndPoint(IPAddress.Any, 12000);
+
             while (true)
             {
                 byte[] bytes = listener.Receive(ref groupEP);
@@ -60,7 +54,6 @@ namespace dotNetService
             }
 
         }
-
 
     }
 }

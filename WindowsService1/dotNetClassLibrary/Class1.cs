@@ -5,7 +5,7 @@ using System.Xml.Linq;
 using System.Net.Sockets;
 using System.Net;
 using System.Text;
-
+using EncryptionDecryptionLibrary;
 namespace dotNetClassLibrary
 {
    
@@ -69,16 +69,34 @@ namespace dotNetClassLibrary
         /// <returns>returns uint, char, string, date</returns>
         public static (uint, char, string, DateTime) convertFromTimestampedBytes(byte[] bytes)
         {
-            DateTime sentTime = DateTime.FromBinary(BitConverter.ToInt64(bytes, 0));
+            long time = BitConverter.ToInt64(bytes, 0);
+            try
+            {
+                DateTime sentTime2 = DateTime.FromBinary(time);
+                byte[] timeless2 = new byte[bytes.Length - 8];
+                Buffer.BlockCopy(bytes, 8, timeless2, 0, timeless2.Length);
+                (uint tempUint2, char tempChar2, string tempMessage2) = convertFromByteArray(timeless2);
+                return (tempUint2, tempChar2, tempMessage2, sentTime2);
+            }
+            catch
+            {
+                Console.WriteLine("There is something very wrong with this datetime: " + BitConverter.ToInt64(bytes, 0));
+            }
+            DateTime sentTime = DateTime.FromBinary(time);
             byte[] timeless = new byte[bytes.Length - 8];
             Buffer.BlockCopy(bytes, 8, timeless, 0, timeless.Length);
             (uint tempUint, char tempChar, string tempMessage) = convertFromByteArray(timeless);
-            return (tempUint,  tempChar,  tempMessage, sentTime);
+            return (tempUint, tempChar, tempMessage, sentTime);
+
         }
 
         //send an acknowledgement with the timestamp of when the original request was first recieved
-        public static void sendACK(byte[] recieved, string ip)
+        //the iv parameter is for decrypting the original message, will send new iv in new mssg 
+        public static void sendACK(byte[] recieved, string ip, byte[] key, byte[] iv)
         {
+
+            //recieved = EncryptionDecryption.AESDecrypt(recieved, key, iv);
+
             //get the message #
             var parsed = convertFromTimestampedBytes(recieved);
             byte[] uintbytes = BitConverter.GetBytes(parsed.Item1);
@@ -87,10 +105,50 @@ namespace dotNetClassLibrary
 
             byte[] final = new byte[ack.Length+ 8+4 +xmlBytes.Length]; //8 comes from timestamp, 4 comes from uint
 
+            //this format so far: timestamp, "ack", uint message #, xml message --> 8, 3, 4, possibly a bunch of bytes
+            byte[] timestampReformatted = BitConverter.GetBytes(parsed.Item4.Ticks);
+            Buffer.BlockCopy(timestampReformatted, 0, final, 0, 8); //index 0-7            -- This is supposed to send over the original timestamp 
+
+            Buffer.BlockCopy(ack, 0, final, 8, ack.Length); //index 8-10
+            Buffer.BlockCopy(uintbytes, 0, final, 8+ ack.Length, uintbytes.Length); //index 11-14
+            Buffer.BlockCopy(xmlBytes, 0, final, 8 + 3 + 4, xmlBytes.Length); //index 15 - 15+xmlLength
+
+            //todo: remove duplicate code 
+            //recipient address and 'port', sends ack to port 1543
+            IPEndPoint endpoint = new IPEndPoint(IPAddress.Parse(ip), 1543);
+
+            Console.WriteLine("Encrypted Response Sent.");
+
+            //the parameters are: specifies that communicates with ipv4, socket will use datagrams -- independent messages with udp  ,socket will use udp 
+            Socket sock = new Socket(AddressFamily.InterNetwork, SocketType.Dgram, ProtocolType.Udp);
+
+            byte[] encryptedMessage = EncryptionDecryption.AESEncrypt(Encoding.UTF8.GetBytes(Encoding.ASCII.GetString(final)), key, iv);
+            byte[] finalWithIVPlainText = new byte[encryptedMessage.Length + 16];
+
+            iv = EncryptionDecryption.generateRandomAESIV();
+
+            Buffer.BlockCopy(iv, 0, finalWithIVPlainText, 0, iv.Length);
+            Buffer.BlockCopy(encryptedMessage, 0, finalWithIVPlainText, iv.Length, encryptedMessage.Length);
+            sock.SendTo(finalWithIVPlainText, endpoint);
+            
+            //sock.SendTo(final, endpoint);
+        }
+
+        //send ack but without encryption.
+        public static void sendACK(byte[] recieved, string ip)
+        {
+            //get the message #
+            var parsed = convertFromTimestampedBytes(recieved);
+            byte[] uintbytes = BitConverter.GetBytes(parsed.Item1);
+            byte[] xmlBytes = genXMLBytes();
+            byte[] ack = Encoding.ASCII.GetBytes("ack");
+
+            byte[] final = new byte[ack.Length + 8 + 4 + xmlBytes.Length]; //8 comes from timestamp, 4 comes from uint
+
             //sends in this format: timestamp, "ack", uint message #, xml message --> 8, 3, 4, possibly a bunch of bytes
             Buffer.BlockCopy(recieved, 0, final, 0, 8); //index 0-7
             Buffer.BlockCopy(ack, 0, final, 8, ack.Length); //index 8-10
-            Buffer.BlockCopy(uintbytes, 0, final, 8+ ack.Length, uintbytes.Length); //index 11-14
+            Buffer.BlockCopy(uintbytes, 0, final, 8 + ack.Length, uintbytes.Length); //index 11-14
             Buffer.BlockCopy(xmlBytes, 0, final, 8 + 3 + 4, xmlBytes.Length); //index 15 - 15+xmlLength
 
             //todo: remove duplicate code 
@@ -100,10 +158,10 @@ namespace dotNetClassLibrary
             //the parameters are: specifies that communicates with ipv4, socket will use datagrams -- independent messages with udp  ,socket will use udp 
             Socket sock = new Socket(AddressFamily.InterNetwork, SocketType.Dgram, ProtocolType.Udp);
             sock.SendTo(final, endpoint);
+            Console.WriteLine("Unencrypted Response Sent.");
 
         }
 
-        
         public static void WriteToFile(string message)
         {
             string path = AppDomain.CurrentDomain.BaseDirectory + "\\logs";

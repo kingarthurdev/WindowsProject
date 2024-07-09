@@ -16,3 +16,6 @@ C:\Users\E1495970\source\repos\WindowsProject\WindowsService1\dotNetClassLibrary
 C:\Users\E1495970\source\repos\WindowsProject\WindowsService1\dotNetClassLibrary\obj\Debug\dotNetClassLibrary.csproj.CoreCompileInputs.cache
 C:\Users\E1495970\source\repos\WindowsProject\WindowsService1\dotNetClassLibrary\obj\Debug\dotNetClassLibrary.dll
 C:\Users\E1495970\source\repos\WindowsProject\WindowsService1\dotNetClassLibrary\obj\Debug\dotNetClassLibrary.pdb
+C:\Users\E1495970\source\repos\WindowsService1\dotNetClassLibrary\bin\Debug\EncryptionDecryption.dll
+C:\Users\E1495970\source\repos\WindowsService1\dotNetClassLibrary\bin\Debug\EncryptionDecryption.pdb
+C:\Users\E1495970\source\repos\WindowsService1\dotNetClassLibrary\obj\Debug\dotNetCl.8F0DDCFD.Up2Date

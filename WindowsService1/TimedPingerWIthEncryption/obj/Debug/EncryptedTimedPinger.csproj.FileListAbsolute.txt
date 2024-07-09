@@ -1,0 +1,12 @@
+C:\Users\E1495970\source\repos\WindowsService1\TimedPingerWIthEncryption\bin\Debug\TimedPingerWIthEncryption.exe.config
+C:\Users\E1495970\source\repos\WindowsService1\TimedPingerWIthEncryption\bin\Debug\TimedPingerWIthEncryption.exe
+C:\Users\E1495970\source\repos\WindowsService1\TimedPingerWIthEncryption\bin\Debug\TimedPingerWIthEncryption.pdb
+C:\Users\E1495970\source\repos\WindowsService1\TimedPingerWIthEncryption\bin\Debug\dotNetClassLibrary.dll
+C:\Users\E1495970\source\repos\WindowsService1\TimedPingerWIthEncryption\bin\Debug\EncryptionDecryption.dll
+C:\Users\E1495970\source\repos\WindowsService1\TimedPingerWIthEncryption\bin\Debug\dotNetClassLibrary.pdb
+C:\Users\E1495970\source\repos\WindowsService1\TimedPingerWIthEncryption\bin\Debug\EncryptionDecryption.pdb
+C:\Users\E1495970\source\repos\WindowsService1\TimedPingerWIthEncryption\obj\Debug\EncryptedTimedPinger.csproj.AssemblyReference.cache
+C:\Users\E1495970\source\repos\WindowsService1\TimedPingerWIthEncryption\obj\Debug\EncryptedTimedPinger.csproj.CoreCompileInputs.cache
+C:\Users\E1495970\source\repos\WindowsService1\TimedPingerWIthEncryption\obj\Debug\Encrypte.88698388.Up2Date
+C:\Users\E1495970\source\repos\WindowsService1\TimedPingerWIthEncryption\obj\Debug\TimedPingerWIthEncryption.exe
+C:\Users\E1495970\source\repos\WindowsService1\TimedPingerWIthEncryption\obj\Debug\TimedPingerWIthEncryption.pdb

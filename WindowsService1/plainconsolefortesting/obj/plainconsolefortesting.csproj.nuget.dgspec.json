@@ -11,7 +11,11 @@
         "projectPath": "C:\\Users\\E1495970\\source\\repos\\WindowsService1\\dotNetClassLibrary\\dotNetClassLibrary.csproj",
         "frameworks": {
           "net48": {
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\E1495970\\source\\repos\\WindowsService1\\EncryptionDecryption\\EncryptionDecryption.csproj": {
+                "projectPath": "C:\\Users\\E1495970\\source\\repos\\WindowsService1\\EncryptionDecryption\\EncryptionDecryption.csproj"
+              }
+            }
           }
         }
       },

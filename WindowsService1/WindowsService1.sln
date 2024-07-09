@@ -3,19 +3,25 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.34928.147
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp3", "..\ConsoleApp3\ConsoleApp3\ConsoleApp3.csproj", "{8F0A0EA7-C0A6-4A93-8F9C-2F629FBC01B7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnencryptedManualDataRequester", "..\ConsoleApp3\ConsoleApp3\UnencryptedManualDataRequester.csproj", "{8F0A0EA7-C0A6-4A93-8F9C-2F629FBC01B7}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "plainconsolefortesting", "plainconsolefortesting\plainconsolefortesting.csproj", "{C0DB4B8A-C687-4B9C-A63A-9CDF5E105B4A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnencryptedDataSender", "plainconsolefortesting\UnencryptedDataSender.csproj", "{C0DB4B8A-C687-4B9C-A63A-9CDF5E105B4A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotNetService", "dotNetService\dotNetService.csproj", "{215E20C6-E18A-400A-97F0-B49366089069}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnencryptedListenerService", "dotNetService\UnencryptedListenerService.csproj", "{215E20C6-E18A-400A-97F0-B49366089069}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotNetClassLibrary", "dotNetClassLibrary\dotNetClassLibrary.csproj", "{6877B8C2-9D67-4092-AA3C-75C9540AB77C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimedPinger", "TimedPinger\TimedPinger.csproj", "{21C0A6AB-ED9C-49FA-BDEF-2159DF31C970}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnencryptedTimedPinger", "TimedPinger\UnencryptedTimedPinger.csproj", "{21C0A6AB-ED9C-49FA-BDEF-2159DF31C970}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RateFilter", "RateFilter\RateFilter.csproj", "{3FEF4C0D-C357-41DE-98F5-E7ECD4BD9466}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnencryptedRateFilter", "RateFilter\UnencryptedRateFilter.csproj", "{3FEF4C0D-C357-41DE-98F5-E7ECD4BD9466}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EncryptionDecryption", "EncryptionDecryption\EncryptionDecryption.csproj", "{2017109A-A22F-40D7-92BC-24639B71970C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EncryptedDataProvider", "testproj\EncryptedDataProvider.csproj", "{A5E6FB5F-7E28-4EA3-A8EB-38A44F6AABE8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EncryptedTimedPinger", "TimedPingerWIthEncryption\EncryptedTimedPinger.csproj", "{014796BF-C5C9-498B-A96C-38EC295ABCAA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "burnerProj", "burnerProj\burnerProj.csproj", "{87523A4E-2612-4950-B3FC-95C48F578C33}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +57,18 @@ Global
 		{2017109A-A22F-40D7-92BC-24639B71970C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2017109A-A22F-40D7-92BC-24639B71970C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2017109A-A22F-40D7-92BC-24639B71970C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5E6FB5F-7E28-4EA3-A8EB-38A44F6AABE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5E6FB5F-7E28-4EA3-A8EB-38A44F6AABE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5E6FB5F-7E28-4EA3-A8EB-38A44F6AABE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5E6FB5F-7E28-4EA3-A8EB-38A44F6AABE8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{014796BF-C5C9-498B-A96C-38EC295ABCAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{014796BF-C5C9-498B-A96C-38EC295ABCAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{014796BF-C5C9-498B-A96C-38EC295ABCAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{014796BF-C5C9-498B-A96C-38EC295ABCAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87523A4E-2612-4950-B3FC-95C48F578C33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87523A4E-2612-4950-B3FC-95C48F578C33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87523A4E-2612-4950-B3FC-95C48F578C33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87523A4E-2612-4950-B3FC-95C48F578C33}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

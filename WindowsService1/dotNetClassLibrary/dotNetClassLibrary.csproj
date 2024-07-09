@@ -45,5 +45,11 @@
     <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EncryptionDecryption\EncryptionDecryption.csproj">
+      <Project>{2017109a-a22f-40d7-92bc-24639b71970c}</Project>
+      <Name>EncryptionDecryption</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

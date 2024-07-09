@@ -1,0 +1,12 @@
+C:\Users\E1495970\source\repos\WindowsService1\RateFilter\bin\Debug\RateFilter.exe.config
+C:\Users\E1495970\source\repos\WindowsService1\RateFilter\bin\Debug\RateFilter.exe
+C:\Users\E1495970\source\repos\WindowsService1\RateFilter\bin\Debug\RateFilter.pdb
+C:\Users\E1495970\source\repos\WindowsService1\RateFilter\bin\Debug\dotNetClassLibrary.dll
+C:\Users\E1495970\source\repos\WindowsService1\RateFilter\bin\Debug\EncryptionDecryption.dll
+C:\Users\E1495970\source\repos\WindowsService1\RateFilter\bin\Debug\dotNetClassLibrary.pdb
+C:\Users\E1495970\source\repos\WindowsService1\RateFilter\bin\Debug\EncryptionDecryption.pdb
+C:\Users\E1495970\source\repos\WindowsService1\RateFilter\obj\Debug\UnencryptedRateFilter.csproj.AssemblyReference.cache
+C:\Users\E1495970\source\repos\WindowsService1\RateFilter\obj\Debug\UnencryptedRateFilter.csproj.CoreCompileInputs.cache
+C:\Users\E1495970\source\repos\WindowsService1\RateFilter\obj\Debug\Unencryp.5C28A77F.Up2Date
+C:\Users\E1495970\source\repos\WindowsService1\RateFilter\obj\Debug\RateFilter.exe
+C:\Users\E1495970\source\repos\WindowsService1\RateFilter\obj\Debug\RateFilter.pdb

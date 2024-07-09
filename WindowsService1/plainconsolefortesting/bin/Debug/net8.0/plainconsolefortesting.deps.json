@@ -16,6 +16,9 @@
         }
       },
       "dotNetClassLibrary/1.0.0": {
+        "dependencies": {
+          "EncryptionDecryption": "1.0.0"
+        },
         "runtime": {
           "dotNetClassLibrary.dll": {}
         }

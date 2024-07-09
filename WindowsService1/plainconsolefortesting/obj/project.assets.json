@@ -4,6 +4,9 @@
     "net8.0": {
       "dotNetClassLibrary/1.0.0": {
         "type": "project",
+        "dependencies": {
+          "EncryptionDecryption": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/dotNetClassLibrary.dll": {}
         },
@@ -46,9 +49,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\E1495970\\source\\repos\\WindowsService1\\plainconsolefortesting\\plainconsolefortesting.csproj",
-      "projectName": "plainconsolefortesting",
-      "projectPath": "C:\\Users\\E1495970\\source\\repos\\WindowsService1\\plainconsolefortesting\\plainconsolefortesting.csproj",
+      "projectUniqueName": "C:\\Users\\E1495970\\source\\repos\\WindowsService1\\plainconsolefortesting\\unencryptedDataSender.csproj",
+      "projectName": "unencryptedDataSender",
+      "projectPath": "C:\\Users\\E1495970\\source\\repos\\WindowsService1\\plainconsolefortesting\\unencryptedDataSender.csproj",
       "packagesPath": "C:\\Users\\E1495970\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\E1495970\\source\\repos\\WindowsService1\\plainconsolefortesting\\obj\\",
       "projectStyle": "PackageReference",

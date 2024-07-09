@@ -18,3 +18,5 @@ C:\Users\E1495970\source\repos\WindowsService1\TimedPinger\obj\Debug\TimedPinger
 C:\Users\E1495970\source\repos\WindowsService1\TimedPinger\obj\Debug\TimedPin.B1514305.Up2Date
 C:\Users\E1495970\source\repos\WindowsService1\TimedPinger\obj\Debug\TimedPinger.exe
 C:\Users\E1495970\source\repos\WindowsService1\TimedPinger\obj\Debug\TimedPinger.pdb
+C:\Users\E1495970\source\repos\WindowsService1\TimedPinger\bin\Debug\EncryptionDecryption.dll
+C:\Users\E1495970\source\repos\WindowsService1\TimedPinger\bin\Debug\EncryptionDecryption.pdb

@@ -39,6 +39,8 @@ namespace dotNetService
 
         public static void listen()
         {
+            
+
             ProcessContent.WriteToFile("Listening on port 12000");
             UdpClient listener = new UdpClient(12000);
             IPEndPoint groupEP = new IPEndPoint(IPAddress.Any, 12000);
