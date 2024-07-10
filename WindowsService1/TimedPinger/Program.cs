@@ -23,9 +23,13 @@ namespace TimedPinger
                 listener.Start();
                                 
                 Console.WriteLine("Enter the IP of where you would like to send a message:");
+                IPAddress ip = IPAddress.Parse(Console.ReadLine());
+
+                Console.WriteLine("Enter the port of where you would like to send to (default = 12000, 12001 if you would like to use a proxy):");
+                destinationPort = Int32.Parse(Console.ReadLine());
 
                 //recipient address and port
-                IPEndPoint endpoint = new IPEndPoint(IPAddress.Parse(Console.ReadLine()), destinationPort);
+                IPEndPoint endpoint = new IPEndPoint(ip, destinationPort);
 
                 //the parameters are: specifies that communicates with ipv4, socket will use datagrams -- independent messages with udp  ,socket will use udp 
                 Socket sock = new Socket(AddressFamily.InterNetwork, SocketType.Dgram, ProtocolType.Udp);

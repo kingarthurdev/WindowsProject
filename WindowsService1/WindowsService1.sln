@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EncryptedDataProvider", "te
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EncryptedTimedPinger", "TimedPingerWIthEncryption\EncryptedTimedPinger.csproj", "{014796BF-C5C9-498B-A96C-38EC295ABCAA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnencryptedUpstreamRateManager", "UnencryptedUpstreamRateManager\UnencryptedUpstreamRateManager.csproj", "{CB96EB8A-8641-4D83-9EE8-14C28502937C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{014796BF-C5C9-498B-A96C-38EC295ABCAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{014796BF-C5C9-498B-A96C-38EC295ABCAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{014796BF-C5C9-498B-A96C-38EC295ABCAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CB96EB8A-8641-4D83-9EE8-14C28502937C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB96EB8A-8641-4D83-9EE8-14C28502937C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB96EB8A-8641-4D83-9EE8-14C28502937C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB96EB8A-8641-4D83-9EE8-14C28502937C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -11,11 +11,12 @@ namespace dotNetService
 
         static bool pubkeyrecieved = false;
         static Dictionary<string, string> keyip = new Dictionary<string, string>();
-
+        static bool usingProxy = false;
+        static int proxyListeningForAckPort = 1544; 
         public static void Main(string[] args)
         {
 
-            ProcessContent.WriteToFile("Service started at " + DateTime.Now);
+            //ProcessContent.WriteToFile("Service started at " + DateTime.Now);
 
             try
             {
@@ -39,7 +40,6 @@ namespace dotNetService
             while (true)
             {
                 byte[] bytes = listener.Receive(ref groupEP);
-                //string representation = Encoding.ASCII.GetString(bytes, 0, bytes.Length);
                 (uint num, char delim, string message, DateTime sendTime) = ProcessContent.convertFromTimestampedBytes(bytes);
 
 
@@ -49,7 +49,15 @@ namespace dotNetService
                 ProcessContent.WriteToFile($"\nReceived broadcast from {groupEP}");
                 ProcessContent.WriteToFile($"Recieved time: {DateTime.Now}, Sent time: {sendTime}, Latency: {(DateTime.Now - sendTime).Milliseconds}ms");
                 ProcessContent.WriteToFile($" {total}\n");
-                ProcessContent.sendACK(bytes, groupEP.Address.ToString());
+
+                if (usingProxy)
+                {
+                    ProcessContent.sendACK(bytes, groupEP.Address.ToString(), proxyListeningForAckPort);
+                }
+                else
+                {
+                    ProcessContent.sendACK(bytes, groupEP.Address.ToString());
+                }
 
             }
 

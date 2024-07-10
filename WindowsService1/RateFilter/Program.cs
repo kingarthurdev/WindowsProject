@@ -8,7 +8,6 @@ using System.Threading.Tasks;
 using dotNetClassLibrary;
 using System.Threading;
 using System.Xml.Linq;
-using EncryptionDecryptionLibrary;
 
 namespace RateFilter
 {
@@ -20,13 +19,8 @@ namespace RateFilter
         public static Dictionary<string, int> ipCount = new Dictionary<string, int>();
         public static List<string> Blacklist = new List<string>();
         public static int clearCount = 0;
-        static bool RSAEstablished = false;
         static void Main(string[] args)
         {
-            string privkey;
-            string pubkey;
-            (pubkey, privkey) = EncryptionDecryption.GenerateRSAKeys();
-
             Thread clear = new Thread(new ThreadStart(clearDict));
             clear.Start();
 
@@ -37,25 +31,21 @@ namespace RateFilter
 
                 byte[] sendBytes;
                 uint count = 1;
-                Console.WriteLine("Enter the IP of where you would like to send timed messages:");
+                Console.WriteLine("Enter the IP of where you would like to send a message:");
+                IPAddress ip = IPAddress.Parse(Console.ReadLine());
+
+                Console.WriteLine("Enter the port of where you would like to send to (default = 12000, 12001 if you would like to use a proxy):");
+                destinationPort = Int32.Parse(Console.ReadLine());
 
                 //recipient address and port
-                IPAddress broadcast = IPAddress.Parse(Console.ReadLine());
-                IPEndPoint endpoint = new IPEndPoint(broadcast, destinationPort);
+                IPEndPoint endpoint = new IPEndPoint(ip, destinationPort);
 
                 //the parameters are: specifies that communicates with ipv4, socket will use datagrams -- independent messages with udp  ,socket will use udp 
                 Socket sock = new Socket(AddressFamily.InterNetwork, SocketType.Dgram, ProtocolType.Udp);
-                while (!RSAEstablished)
-                {
-                    sendBytes = Encoding.ASCII.GetBytes(pubkey);
-                    sock.SendTo(sendBytes, endpoint);
-                    Console.WriteLine("Public Key Sent");
-                    Thread.Sleep(1000);
-                }
 
                 while (true)
                 {
-                    sendBytes = ProcessContent.convertToTimestampedBytes(count, ';', "ping");
+                    sendBytes = ProcessContent.convertToTimestampedBytes(count, ';', "Request For Data");
                     sock.SendTo(sendBytes, endpoint);
                     Console.WriteLine("Ping sent");
                     count++;
@@ -89,15 +79,7 @@ namespace RateFilter
         {
             UdpClient listener = new UdpClient(listeningPort);
             IPEndPoint groupEP = new IPEndPoint(IPAddress.Any, listeningPort);
-            while (!RSAEstablished)
-            {
-                byte[] bytes = listener.Receive(ref groupEP);
-                if (Encoding.ASCII.GetString(bytes).Equals("Public Key Recieved"))
-                {
-                    Console.WriteLine("Encryption established!");
-                    RSAEstablished = true;
-                }
-            }
+            
             while (true)
             {
                 byte[] bytes = listener.Receive(ref groupEP);

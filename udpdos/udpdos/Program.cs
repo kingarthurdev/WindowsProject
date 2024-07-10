@@ -8,7 +8,7 @@ using System.Timers;
 public class udpdos
 {
     public static int count = 0;
-    public static byte[] sendbuf = new byte[0]; //Encoding.ASCII.GetBytes("hello");
+    public static byte[] sendbuf = new byte[0];
     public static string ipaddr;
     public static Random rnd = new Random();
     public static int port;

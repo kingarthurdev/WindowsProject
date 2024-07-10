@@ -162,6 +162,35 @@ namespace dotNetClassLibrary
 
         }
 
+
+        //send ack but without encryption, and to an arbitrary port (for proxy usecase)
+        public static void sendACK(byte[] recieved, string ip, int arbitraryPort)
+        {
+            //get the message #
+            var parsed = convertFromTimestampedBytes(recieved);
+            byte[] uintbytes = BitConverter.GetBytes(parsed.Item1);
+            byte[] xmlBytes = genXMLBytes();
+            byte[] ack = Encoding.ASCII.GetBytes("ack");
+
+            byte[] final = new byte[ack.Length + 8 + 4 + xmlBytes.Length]; //8 comes from timestamp, 4 comes from uint
+
+            //sends in this format: timestamp, "ack", uint message #, xml message --> 8, 3, 4, possibly a bunch of bytes
+            Buffer.BlockCopy(recieved, 0, final, 0, 8); //index 0-7
+            Buffer.BlockCopy(ack, 0, final, 8, ack.Length); //index 8-10
+            Buffer.BlockCopy(uintbytes, 0, final, 8 + ack.Length, uintbytes.Length); //index 11-14
+            Buffer.BlockCopy(xmlBytes, 0, final, 8 + 3 + 4, xmlBytes.Length); //index 15 - 15+xmlLength
+
+            //todo: remove duplicate code 
+            //recipient address and 'port', sends ack to port 1543
+            IPEndPoint endpoint = new IPEndPoint(IPAddress.Parse(ip), arbitraryPort);
+
+            //the parameters are: specifies that communicates with ipv4, socket will use datagrams -- independent messages with udp  ,socket will use udp 
+            Socket sock = new Socket(AddressFamily.InterNetwork, SocketType.Dgram, ProtocolType.Udp);
+            sock.SendTo(final, endpoint);
+            Console.WriteLine("Unencrypted Response Sent.");
+
+        }
+
         public static void WriteToFile(string message)
         {
             string path = AppDomain.CurrentDomain.BaseDirectory + "\\logs";
