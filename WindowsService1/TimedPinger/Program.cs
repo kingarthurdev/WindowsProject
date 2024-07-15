@@ -19,9 +19,7 @@ namespace TimedPinger
             
             try
             {
-                Thread listener = new Thread(new ThreadStart(listenForACK));
-                listener.Start();
-                                
+                         
                 Console.WriteLine("Enter the IP of where you would like to send a message:");
                 IPAddress ip = IPAddress.Parse(Console.ReadLine());
 
@@ -33,6 +31,9 @@ namespace TimedPinger
 
                 //the parameters are: specifies that communicates with ipv4, socket will use datagrams -- independent messages with udp  ,socket will use udp 
                 Socket sock = new Socket(AddressFamily.InterNetwork, SocketType.Dgram, ProtocolType.Udp);
+
+                Thread listener = new Thread(new ThreadStart(listenForACK));
+                listener.Start();
 
                 while (true)
                 {

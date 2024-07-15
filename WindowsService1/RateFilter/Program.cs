@@ -17,7 +17,7 @@ namespace RateFilter
         public static int destinationPort = 12000;
 
         public static Dictionary<string, int> ipCount = new Dictionary<string, int>();
-        public static List<string> Blacklist = new List<string>();
+        public static List<string> Blacklist = new List<string>(); // chg to dict? 
         public static int clearCount = 0;
         static void Main(string[] args)
         {
@@ -89,9 +89,9 @@ namespace RateFilter
                     if (ipCount.ContainsKey(ip))
                     {
                         ipCount[ip] += 1;
-                        if (ipCount[ip] > 50)
+                        if (ipCount[ip] > 500)
                         {
-                            Console.WriteLine("SOMEBODY BLOCKED!!!");
+                            Console.WriteLine("IP Address Blocked!");
                             Blacklist.Add(ip);
                         }
                     }

@@ -5,18 +5,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{CB96EB8A-8641-4D83-9EE8-14C28502937C}|UnencryptedUpstreamRateManager\\UnencryptedUpstreamRateManager.csproj|c:\\users\\e1495970\\source\\repos\\windowsservice1\\unencryptedupstreamratemanager\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CB96EB8A-8641-4D83-9EE8-14C28502937C}|UnencryptedUpstreamRateManager\\UnencryptedUpstreamRateManager.csproj|solutionrelative:unencryptedupstreamratemanager\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3FEF4C0D-C357-41DE-98F5-E7ECD4BD9466}|RateFilter\\UnencryptedRateFilter.csproj|C:\\Users\\E1495970\\source\\repos\\WindowsService1\\ratefilter\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3FEF4C0D-C357-41DE-98F5-E7ECD4BD9466}|RateFilter\\UnencryptedRateFilter.csproj|solutionrelative:ratefilter\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C0DB4B8A-C687-4B9C-A63A-9CDF5E105B4A}|plainconsolefortesting\\UnencryptedDataSender.csproj|c:\\users\\e1495970\\source\\repos\\windowsservice1\\plainconsolefortesting\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C0DB4B8A-C687-4B9C-A63A-9CDF5E105B4A}|plainconsolefortesting\\UnencryptedDataSender.csproj|solutionrelative:plainconsolefortesting\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6877B8C2-9D67-4092-AA3C-75C9540AB77C}|dotNetClassLibrary\\dotNetClassLibrary.csproj|C:\\Users\\E1495970\\source\\repos\\WindowsService1\\dotnetclasslibrary\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6877B8C2-9D67-4092-AA3C-75C9540AB77C}|dotNetClassLibrary\\dotNetClassLibrary.csproj|solutionrelative:dotnetclasslibrary\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,47 +14,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\E1495970\\source\\repos\\WindowsService1\\RateFilter\\Program.cs",
-              "RelativeDocumentMoniker": "RateFilter\\Program.cs",
-              "ToolTip": "C:\\Users\\E1495970\\source\\repos\\WindowsService1\\RateFilter\\Program.cs",
-              "RelativeToolTip": "RateFilter\\Program.cs",
-              "ViewState": "AQIAACUAAAAAAAAAAAAQwC8AAAAuAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-10T16:14:00.64Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\E1495970\\source\\repos\\WindowsService1\\plainconsolefortesting\\Program.cs",
-              "RelativeDocumentMoniker": "plainconsolefortesting\\Program.cs",
-              "ToolTip": "C:\\Users\\E1495970\\source\\repos\\WindowsService1\\plainconsolefortesting\\Program.cs",
-              "RelativeToolTip": "plainconsolefortesting\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAA0AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-10T16:01:13.642Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Class1.cs",
-              "DocumentMoniker": "C:\\Users\\E1495970\\source\\repos\\WindowsService1\\dotNetClassLibrary\\Class1.cs",
-              "RelativeDocumentMoniker": "dotNetClassLibrary\\Class1.cs",
-              "ToolTip": "C:\\Users\\E1495970\\source\\repos\\WindowsService1\\dotNetClassLibrary\\Class1.cs",
-              "RelativeToolTip": "dotNetClassLibrary\\Class1.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAAQwDoAAABFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-10T15:59:13.3Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -75,9 +24,9 @@
               "RelativeDocumentMoniker": "UnencryptedUpstreamRateManager\\Program.cs",
               "ToolTip": "C:\\Users\\E1495970\\source\\repos\\WindowsService1\\UnencryptedUpstreamRateManager\\Program.cs",
               "RelativeToolTip": "UnencryptedUpstreamRateManager\\Program.cs",
-              "ViewState": "AQIAAJgAAAAAAAAAAAAuwKoAAAAAAAAA",
+              "ViewState": "AQIAAKIAAAAAAAAAAAAowLgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-10T13:39:01.997Z",
+              "WhenOpened": "2024-07-11T19:31:32.069Z",
               "EditorCaption": ""
             }
           ]
