@@ -3,7 +3,17 @@
   "WorkspaceRootPath": "C:\\Users\\E1495970\\source\\repos\\WindowsService1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CB96EB8A-8641-4D83-9EE8-14C28502937C}|UnencryptedUpstreamRateManager\\UnencryptedUpstreamRateManager.csproj|c:\\users\\e1495970\\source\\repos\\windowsservice1\\unencryptedupstreamratemanager\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C0DB4B8A-C687-4B9C-A63A-9CDF5E105B4A}|plainconsolefortesting\\UnencryptedDataSender.csproj|c:\\users\\e1495970\\source\\repos\\windowsservice1\\plainconsolefortesting\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0DB4B8A-C687-4B9C-A63A-9CDF5E105B4A}|plainconsolefortesting\\UnencryptedDataSender.csproj|solutionrelative:plainconsolefortesting\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F0A0EA7-C0A6-4A93-8F9C-2F629FBC01B7}|..\\ConsoleApp3\\ConsoleApp3\\UnencryptedManualDataRequester.csproj|c:\\users\\e1495970\\source\\repos\\consoleapp3\\consoleapp3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F0A0EA7-C0A6-4A93-8F9C-2F629FBC01B7}|..\\ConsoleApp3\\ConsoleApp3\\UnencryptedManualDataRequester.csproj|c:\\users\\e1495970\\source\\repos\\consoleapp3\\consoleapp3\\unencryptedmanualdatarequester.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB96EB8A-8641-4D83-9EE8-14C28502937C}|UnencryptedUpstreamRateManager\\UnencryptedUpstreamRateManager.csproj|C:\\Users\\E1495970\\source\\repos\\WindowsService1\\unencryptedupstreamratemanager\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CB96EB8A-8641-4D83-9EE8-14C28502937C}|UnencryptedUpstreamRateManager\\UnencryptedUpstreamRateManager.csproj|solutionrelative:unencryptedupstreamratemanager\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -20,14 +30,51 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\E1495970\\source\\repos\\WindowsService1\\plainconsolefortesting\\Program.cs",
+              "RelativeDocumentMoniker": "plainconsolefortesting\\Program.cs",
+              "ToolTip": "C:\\Users\\E1495970\\source\\repos\\WindowsService1\\plainconsolefortesting\\Program.cs",
+              "RelativeToolTip": "plainconsolefortesting\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-16T03:56:28.902Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\E1495970\\source\\repos\\ConsoleApp3\\ConsoleApp3\\Program.cs",
+              "RelativeDocumentMoniker": "..\\ConsoleApp3\\ConsoleApp3\\Program.cs",
+              "ToolTip": "C:\\Users\\E1495970\\source\\repos\\ConsoleApp3\\ConsoleApp3\\Program.cs",
+              "RelativeToolTip": "..\\ConsoleApp3\\ConsoleApp3\\Program.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAAYwCoAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-15T15:53:00.286Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UnencryptedManualDataRequester.csproj",
+              "DocumentMoniker": "C:\\Users\\E1495970\\source\\repos\\ConsoleApp3\\ConsoleApp3\\UnencryptedManualDataRequester.csproj",
+              "RelativeDocumentMoniker": "..\\ConsoleApp3\\ConsoleApp3\\UnencryptedManualDataRequester.csproj",
+              "ToolTip": "C:\\Users\\E1495970\\source\\repos\\ConsoleApp3\\ConsoleApp3\\UnencryptedManualDataRequester.csproj",
+              "RelativeToolTip": "..\\ConsoleApp3\\ConsoleApp3\\UnencryptedManualDataRequester.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-07-15T15:52:50.298Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\E1495970\\source\\repos\\WindowsService1\\UnencryptedUpstreamRateManager\\Program.cs",
               "RelativeDocumentMoniker": "UnencryptedUpstreamRateManager\\Program.cs",
               "ToolTip": "C:\\Users\\E1495970\\source\\repos\\WindowsService1\\UnencryptedUpstreamRateManager\\Program.cs",
               "RelativeToolTip": "UnencryptedUpstreamRateManager\\Program.cs",
-              "ViewState": "AQIAAKIAAAAAAAAAAAAowLgAAAAAAAAA",
+              "ViewState": "AQIAAKUAAAAAAAAAAAAowLgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-11T19:31:32.069Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-11T19:31:32.069Z"
             }
           ]
         }

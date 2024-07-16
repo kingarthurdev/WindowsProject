@@ -11,7 +11,7 @@ namespace dotNetService
 
         static bool pubkeyrecieved = false;
         static Dictionary<string, string> keyip = new Dictionary<string, string>();
-        static bool usingProxy = false;
+        static bool usingProxy = true;
         static int proxyListeningForAckPort = 1544; 
         public static void Main(string[] args)
         {
