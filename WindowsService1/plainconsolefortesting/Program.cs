@@ -9,8 +9,6 @@ namespace dotNetService
     public class Service
     {
 
-        static bool pubkeyrecieved = false;
-        static Dictionary<string, string> keyip = new Dictionary<string, string>();
         static bool usingProxy = true;
         static int proxyListeningForAckPort = 1544; 
         public static void Main(string[] args)
