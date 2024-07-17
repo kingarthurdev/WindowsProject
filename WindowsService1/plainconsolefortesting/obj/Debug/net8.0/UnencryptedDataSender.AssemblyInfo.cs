@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("UnencryptedDataSender")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+75de3360ac30d1d1cdbf4d43a113216992fca21e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+91294d4326c50e87a6cfa6e946073059ac243521")]
 [assembly: System.Reflection.AssemblyProductAttribute("UnencryptedDataSender")]
 [assembly: System.Reflection.AssemblyTitleAttribute("UnencryptedDataSender")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,0 +1,14 @@
+C:\Users\E1495970\source\repos\WindowsService1\SQLRCE\bin\Debug\SQLRCE.exe.config
+C:\Users\E1495970\source\repos\WindowsService1\SQLRCE\bin\Debug\SQLRCE.exe
+C:\Users\E1495970\source\repos\WindowsService1\SQLRCE\bin\Debug\SQLRCE.pdb
+C:\Users\E1495970\source\repos\WindowsService1\SQLRCE\bin\Debug\MySql.Data.dll
+C:\Users\E1495970\source\repos\WindowsService1\SQLRCE\bin\Debug\System.Memory.dll
+C:\Users\E1495970\source\repos\WindowsService1\SQLRCE\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\E1495970\source\repos\WindowsService1\SQLRCE\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\E1495970\source\repos\WindowsService1\SQLRCE\bin\Debug\System.Buffers.dll
+C:\Users\E1495970\source\repos\WindowsService1\SQLRCE\bin\Debug\MySql.Data.xml
+C:\Users\E1495970\source\repos\WindowsService1\SQLRCE\obj\Debug\SQLRCE.csproj.AssemblyReference.cache
+C:\Users\E1495970\source\repos\WindowsService1\SQLRCE\obj\Debug\SQLRCE.csproj.CoreCompileInputs.cache
+C:\Users\E1495970\source\repos\WindowsService1\SQLRCE\obj\Debug\SQLRCE.csproj.Up2Date
+C:\Users\E1495970\source\repos\WindowsService1\SQLRCE\obj\Debug\SQLRCE.exe
+C:\Users\E1495970\source\repos\WindowsService1\SQLRCE\obj\Debug\SQLRCE.pdb
