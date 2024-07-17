@@ -116343,3 +116343,3045 @@ Content:<XMLDisplayData Name="MockDisplay" Path="Graphics.Displays" SchemaVersio
 
 
 
+Response #1 recieved from 127.0.0.1, 688ms of latency
+Content:<XMLDisplayData Name="MockDisplay" Path="Graphics.Displays" SchemaVersion="1.1.1.2">
+  <Metadata>
+    <LastEditUser>DVADMIN</LastEditUser>
+    <LastEditTime>2024-07-16T08:08:39.6517417-05:00</LastEditTime>
+  </Metadata>
+  <Polygon Name="ControlPolygon">
+    <Height>
+      <Value>3111255</Value>
+    </Height>
+    <Width>
+      <Value>3031336</Value>
+    </Width>
+    <X>
+      <Value>3968295</Value>
+    </X>
+    <Y>
+      <Value>1575831</Value>
+    </Y>
+  </Polygon>
+  <OperatingPercentage>96</OperatingPercentage>
+  <UnresolvedIssues>18</UnresolvedIssues>
+</XMLDisplayData>
+
+
+
+Response #2 recieved from 127.0.0.1, 685ms of latency
+Content:<XMLDisplayData Name="MockDisplay" Path="Graphics.Displays" SchemaVersion="1.1.1.2">
+  <Metadata>
+    <LastEditUser>DVADMIN</LastEditUser>
+    <LastEditTime>2024-07-16T08:08:40.6545736-05:00</LastEditTime>
+  </Metadata>
+  <Polygon Name="ControlPolygon">
+    <Height>
+      <Value>3261768</Value>
+    </Height>
+    <Width>
+      <Value>4341654</Value>
+    </Width>
+    <X>
+      <Value>4223292</Value>
+    </X>
+    <Y>
+      <Value>1366636</Value>
+    </Y>
+  </Polygon>
+  <OperatingPercentage>84</OperatingPercentage>
+  <UnresolvedIssues>18</UnresolvedIssues>
+</XMLDisplayData>
+
+
+
+Response #3 recieved from 127.0.0.1, 716ms of latency
+Content:<XMLDisplayData Name="MockDisplay" Path="Graphics.Displays" SchemaVersion="1.1.1.2">
+  <Metadata>
+    <LastEditUser>DVADMIN</LastEditUser>
+    <LastEditTime>2024-07-16T08:08:41.6873397-05:00</LastEditTime>
+  </Metadata>
+  <Polygon Name="ControlPolygon">
+    <Height>
+      <Value>2401074</Value>
+    </Height>
+    <Width>
+      <Value>2621562</Value>
+    </Width>
+    <X>
+      <Value>3438357</Value>
+    </X>
+    <Y>
+      <Value>1462783</Value>
+    </Y>
+  </Polygon>
+  <OperatingPercentage>92</OperatingPercentage>
+  <UnresolvedIssues>17</UnresolvedIssues>
+</XMLDisplayData>
+
+
+
+Response #4 recieved from 127.0.0.1, 727ms of latency
+Content:<XMLDisplayData Name="MockDisplay" Path="Graphics.Displays" SchemaVersion="1.1.1.2">
+  <Metadata>
+    <LastEditUser>DVADMIN</LastEditUser>
+    <LastEditTime>2024-07-16T08:08:42.706722-05:00</LastEditTime>
+  </Metadata>
+  <Polygon Name="ControlPolygon">
+    <Height>
+      <Value>2716088</Value>
+    </Height>
+    <Width>
+      <Value>4528587</Value>
+    </Width>
+    <X>
+      <Value>3414773</Value>
+    </X>
+    <Y>
+      <Value>1680380</Value>
+    </Y>
+  </Polygon>
+  <OperatingPercentage>97</OperatingPercentage>
+  <UnresolvedIssues>9</UnresolvedIssues>
+</XMLDisplayData>
+
+
+
+Response #5 recieved from 127.0.0.1, 755ms of latency
+Content:<XMLDisplayData Name="MockDisplay" Path="Graphics.Displays" SchemaVersion="1.1.1.2">
+  <Metadata>
+    <LastEditUser>DVADMIN</LastEditUser>
+    <LastEditTime>2024-07-16T08:08:43.7234255-05:00</LastEditTime>
+  </Metadata>
+  <Polygon Name="ControlPolygon">
+    <Height>
+      <Value>3440047</Value>
+    </Height>
+    <Width>
+      <Value>4576721</Value>
+    </Width>
+    <X>
+      <Value>4692575</Value>
+    </X>
+    <Y>
+      <Value>1496527</Value>
+    </Y>
+  </Polygon>
+  <OperatingPercentage>84</OperatingPercentage>
+  <UnresolvedIssues>2</UnresolvedIssues>
+</XMLDisplayData>
+
+
+
+Response #6 recieved from 127.0.0.1, 785ms of latency
+Content:<XMLDisplayData Name="MockDisplay" Path="Graphics.Displays" SchemaVersion="1.1.1.2">
+  <Metadata>
+    <LastEditUser>DVADMIN</LastEditUser>
+    <LastEditTime>2024-07-16T08:08:44.7576407-05:00</LastEditTime>
+  </Metadata>
+  <Polygon Name="ControlPolygon">
+    <Height>
+      <Value>3508047</Value>
+    </Height>
+    <Width>
+      <Value>2719632</Value>
+    </Width>
+    <X>
+      <Value>3513190</Value>
+    </X>
+    <Y>
+      <Value>1602470</Value>
+    </Y>
+  </Polygon>
+  <OperatingPercentage>92</OperatingPercentage>
+  <UnresolvedIssues>18</UnresolvedIssues>
+</XMLDisplayData>
+
+
+
+Response #7 recieved from 127.0.0.1, 816ms of latency
+Content:<XMLDisplayData Name="MockDisplay" Path="Graphics.Displays" SchemaVersion="1.1.1.2">
+  <Metadata>
+    <LastEditUser>DVADMIN</LastEditUser>
+    <LastEditTime>2024-07-16T08:08:45.7973723-05:00</LastEditTime>
+  </Metadata>
+  <Polygon Name="ControlPolygon">
+    <Height>
+      <Value>3672250</Value>
+    </Height>
+    <Width>
+      <Value>3944417</Value>
+    </Width>
+    <X>
+      <Value>4653964</Value>
+    </X>
+    <Y>
+      <Value>1459575</Value>
+    </Y>
+  </Polygon>
+  <OperatingPercentage>97</OperatingPercentage>
+  <UnresolvedIssues>9</UnresolvedIssues>
+</XMLDisplayData>
+
+
+
+Response #8 recieved from 127.0.0.1, 848ms of latency
+Content:<XMLDisplayData Name="MockDisplay" Path="Graphics.Displays" SchemaVersion="1.1.1.2">
+  <Metadata>
+    <LastEditUser>DVADMIN</LastEditUser>
+    <LastEditTime>2024-07-16T08:08:46.8309391-05:00</LastEditTime>
+  </Metadata>
+  <Polygon Name="ControlPolygon">
+    <Height>
+      <Value>3151620</Value>
+    </Height>
+    <Width>
+      <Value>3891703</Value>
+    </Width>
+    <X>
+      <Value>4567659</Value>
+    </X>
+    <Y>
+      <Value>1636229</Value>
+    </Y>
+  </Polygon>
+  <OperatingPercentage>81</OperatingPercentage>
+  <UnresolvedIssues>19</UnresolvedIssues>
+</XMLDisplayData>
+
+
+
+Response #9 recieved from 127.0.0.1, 886ms of latency
+Content:<XMLDisplayData Name="MockDisplay" Path="Graphics.Displays" SchemaVersion="1.1.1.2">
+  <Metadata>
+    <LastEditUser>DVADMIN</LastEditUser>
+    <LastEditTime>2024-07-16T08:08:47.8633916-05:00</LastEditTime>
+  </Metadata>
+  <Polygon Name="ControlPolygon">
+    <Height>
+      <Value>2513165</Value>
+    </Height>
+    <Width>
+      <Value>3279747</Value>
+    </Width>
+    <X>
+      <Value>4450675</Value>
+    </X>
+    <Y>
+      <Value>1646053</Value>
+    </Y>
+  </Polygon>
+  <OperatingPercentage>87</OperatingPercentage>
+  <UnresolvedIssues>13</UnresolvedIssues>
+</XMLDisplayData>
+
+
+
+Response #10 recieved from 127.0.0.1, 918ms of latency
+Content:<XMLDisplayData Name="MockDisplay" Path="Graphics.Displays" SchemaVersion="1.1.1.2">
+  <Metadata>
+    <LastEditUser>DVADMIN</LastEditUser>
+    <LastEditTime>2024-07-16T08:08:48.9028115-05:00</LastEditTime>
+  </Metadata>
+  <Polygon Name="ControlPolygon">
+    <Height>
+      <Value>2948881</Value>
+    </Height>
+    <Width>
+      <Value>2534021</Value>
+    </Width>
+    <X>
+      <Value>4659963</Value>
+    </X>
+    <Y>
+      <Value>1437191</Value>
+    </Y>
+  </Polygon>
+  <OperatingPercentage>99</OperatingPercentage>
+  <UnresolvedIssues>16</UnresolvedIssues>
+</XMLDisplayData>
+
+
+
+Response #11 recieved from 127.0.0.1, 950ms of latency
+Content:<XMLDisplayData Name="MockDisplay" Path="Graphics.Displays" SchemaVersion="1.1.1.2">
+  <Metadata>
+    <LastEditUser>DVADMIN</LastEditUser>
+    <LastEditTime>2024-07-16T08:08:49.9376915-05:00</LastEditTime>
+  </Metadata>
+  <Polygon Name="ControlPolygon">
+    <Height>
+      <Value>2991357</Value>
+    </Height>
+    <Width>
+      <Value>2439749</Value>
+    </Width>
+    <X>
+      <Value>4431042</Value>
+    </X>
+    <Y>
+      <Value>1482516</Value>
+    </Y>
+  </Polygon>
+  <OperatingPercentage>98</OperatingPercentage>
+  <UnresolvedIssues>9</UnresolvedIssues>
+</XMLDisplayData>
+
+
+
+Response #12 recieved from 127.0.0.1, 987ms of latency
+Content:<XMLDisplayData Name="MockDisplay" Path="Graphics.Displays" SchemaVersion="1.1.1.2">
+  <Metadata>
+    <LastEditUser>DVADMIN</LastEditUser>
+    <LastEditTime>2024-07-16T08:08:50.9729506-05:00</LastEditTime>
+  </Metadata>
+  <Polygon Name="ControlPolygon">
+    <Height>
+      <Value>2762765</Value>
+    </Height>
+    <Width>
+      <Value>3991383</Value>
+    </Width>
+    <X>
+      <Value>3555921</Value>
+    </X>
+    <Y>
+      <Value>1319444</Value>
+    </Y>
+  </Polygon>
+  <OperatingPercentage>80</OperatingPercentage>
+  <UnresolvedIssues>12</UnresolvedIssues>
+</XMLDisplayData>
+
+
+
+Response #13 recieved from 127.0.0.1, 19ms of latency
+Content:<XMLDisplayData Name="MockDisplay" Path="Graphics.Displays" SchemaVersion="1.1.1.2">
+  <Metadata>
+    <LastEditUser>DVADMIN</LastEditUser>
+    <LastEditTime>2024-07-16T08:08:52.0137004-05:00</LastEditTime>
+  </Metadata>
+  <Polygon Name="ControlPolygon">
+    <Height>
+      <Value>3293718</Value>
+    </Height>
+    <Width>
+      <Value>4620042</Value>
+    </Width>
+    <X>
+      <Value>3853938</Value>
+    </X>
+    <Y>
+      <Value>1367798</Value>
+    </Y>
+  </Polygon>
+  <OperatingPercentage>91</OperatingPercentage>
+  <UnresolvedIssues>8</UnresolvedIssues>
+</XMLDisplayData>
+
+
+
+Response #14 recieved from 127.0.0.1, 533ms of latency
+Content:<XMLDisplayData Name="MockDisplay" Path="Graphics.Displays" SchemaVersion="1.1.1.2">
+  <Metadata>
+    <LastEditUser>DVADMIN</LastEditUser>
+    <LastEditTime>2024-07-16T08:08:52.5320638-05:00</LastEditTime>
+  </Metadata>
+  <Polygon Name="ControlPolygon">
+    <Height>
+      <Value>3310492</Value>
+    </Height>
+    <Width>
+      <Value>3115149</Value>
+    </Width>
+    <X>
+      <Value>4169320</Value>
+    </X>
+    <Y>
+      <Value>1563267</Value>
+    </Y>
+  </Polygon>
+  <OperatingPercentage>83</OperatingPercentage>
+  <UnresolvedIssues>19</UnresolvedIssues>
+</XMLDisplayData>
+
+
+
+Response #15 recieved from 127.0.0.1, 564ms of latency
+Content:<XMLDisplayData Name="MockDisplay" Path="Graphics.Displays" SchemaVersion="1.1.1.2">
+  <Metadata>
+    <LastEditUser>DVADMIN</LastEditUser>
+    <LastEditTime>2024-07-16T08:08:53.5634439-05:00</LastEditTime>
+  </Metadata>
+  <Polygon Name="ControlPolygon">
+    <Height>
+      <Value>2693528</Value>
+    </Height>
+    <Width>
+      <Value>2525158</Value>
+    </Width>
+    <X>
+      <Value>4054596</Value>
+    </X>
+    <Y>
+      <Value>1526796</Value>
+    </Y>
+  </Polygon>
+  <OperatingPercentage>90</OperatingPercentage>
+  <UnresolvedIssues>5</UnresolvedIssues>
+</XMLDisplayData>
+
+
+
+Response #16 recieved from 127.0.0.1, 602ms of latency
+Content:<XMLDisplayData Name="MockDisplay" Path="Graphics.Displays" SchemaVersion="1.1.1.2">
+  <Metadata>
+    <LastEditUser>DVADMIN</LastEditUser>
+    <LastEditTime>2024-07-16T08:08:54.6041544-05:00</LastEditTime>
+  </Metadata>
+  <Polygon Name="ControlPolygon">
+    <Height>
+      <Value>3668603</Value>
+    </Height>
+    <Width>
+      <Value>3889133</Value>
+    </Width>
+    <X>
+      <Value>4363409</Value>
+    </X>
+    <Y>
+      <Value>1492278</Value>
+    </Y>
+  </Polygon>
+  <OperatingPercentage>91</OperatingPercentage>
+  <UnresolvedIssues>13</UnresolvedIssues>
+</XMLDisplayData>
+
+
+
+Response #17 recieved from 127.0.0.1, 633ms of latency
+Content:<XMLDisplayData Name="MockDisplay" Path="Graphics.Displays" SchemaVersion="1.1.1.2">
+  <Metadata>
+    <LastEditUser>DVADMIN</LastEditUser>
+    <LastEditTime>2024-07-16T08:08:55.6401953-05:00</LastEditTime>
+  </Metadata>
+  <Polygon Name="ControlPolygon">
+    <Height>
+      <Value>2337567</Value>
+    </Height>
+    <Width>
+      <Value>2722089</Value>
+    </Width>
+    <X>
+      <Value>4144804</Value>
+    </X>
+    <Y>
+      <Value>1401410</Value>
+    </Y>
+  </Polygon>
+  <OperatingPercentage>89</OperatingPercentage>
+  <UnresolvedIssues>12</UnresolvedIssues>
+</XMLDisplayData>
+
+
+
+Response #18 recieved from 127.0.0.1, 658ms of latency
+Content:<XMLDisplayData Name="MockDisplay" Path="Graphics.Displays" SchemaVersion="1.1.1.2">
+  <Metadata>
+    <LastEditUser>DVADMIN</LastEditUser>
+    <LastEditTime>2024-07-16T08:08:56.6753736-05:00</LastEditTime>
+  </Metadata>
+  <Polygon Name="ControlPolygon">
+    <Height>
+      <Value>2704005</Value>
+    </Height>
+    <Width>
+      <Value>2362542</Value>
+    </Width>
+    <X>
+      <Value>4334709</Value>
+    </X>
+    <Y>
+      <Value>1605156</Value>
+    </Y>
+  </Polygon>
+  <OperatingPercentage>89</OperatingPercentage>
+  <UnresolvedIssues>19</UnresolvedIssues>
+</XMLDisplayData>
+
+
+
+Response #19 recieved from 127.0.0.1, 686ms of latency
+Content:<XMLDisplayData Name="MockDisplay" Path="Graphics.Displays" SchemaVersion="1.1.1.2">
+  <Metadata>
+    <LastEditUser>DVADMIN</LastEditUser>
+    <LastEditTime>2024-07-16T08:08:57.7145406-05:00</LastEditTime>
+  </Metadata>
+  <Polygon Name="ControlPolygon">
+    <Height>
+      <Value>2649709</Value>
+    </Height>
+    <Width>
+      <Value>4428703</Value>
+    </Width>
+    <X>
+      <Value>4013942</Value>
+    </X>
+    <Y>
+      <Value>1631041</Value>
+    </Y>
+  </Polygon>
+  <OperatingPercentage>84</OperatingPercentage>
+  <UnresolvedIssues>8</UnresolvedIssues>
+</XMLDisplayData>
+
+
+
+Response #20 recieved from 127.0.0.1, 707ms of latency
+Content:<XMLDisplayData Name="MockDisplay" Path="Graphics.Displays" SchemaVersion="1.1.1.2">
+  <Metadata>
+    <LastEditUser>DVADMIN</LastEditUser>
+    <LastEditTime>2024-07-16T08:08:58.7512731-05:00</LastEditTime>
+  </Metadata>
+  <Polygon Name="ControlPolygon">
+    <Height>
+      <Value>3459118</Value>
+    </Height>
+    <Width>
+      <Value>2636967</Value>
+    </Width>
+    <X>
+      <Value>4597123</Value>
+    </X>
+    <Y>
+      <Value>1700170</Value>
+    </Y>
+  </Polygon>
+  <OperatingPercentage>91</OperatingPercentage>
+  <UnresolvedIssues>13</UnresolvedIssues>
+</XMLDisplayData>
+
+
+
+Response #21 recieved from 127.0.0.1, 733ms of latency
+Content:<XMLDisplayData Name="MockDisplay" Path="Graphics.Displays" SchemaVersion="1.1.1.2">
+  <Metadata>
+    <LastEditUser>DVADMIN</LastEditUser>
+    <LastEditTime>2024-07-16T08:08:59.7644723-05:00</LastEditTime>
+  </Metadata>
+  <Polygon Name="ControlPolygon">
+    <Height>
+      <Value>2931301</Value>
+    </Height>
+    <Width>
+      <Value>3268897</Value>
+    </Width>
+    <X>
+      <Value>4261070</Value>
+    </X>
+    <Y>
+      <Value>1518631</Value>
+    </Y>
+  </Polygon>
+  <OperatingPercentage>83</OperatingPercentage>
+  <UnresolvedIssues>12</UnresolvedIssues>
+</XMLDisplayData>
+
+
+
+Response #22 recieved from 127.0.0.1, 770ms of latency
+Content:<XMLDisplayData Name="MockDisplay" Path="Graphics.Displays" SchemaVersion="1.1.1.2">
+  <Metadata>
+    <LastEditUser>DVADMIN</LastEditUser>
+    <LastEditTime>2024-07-16T08:09:00.7981033-05:00</LastEditTime>
+  </Metadata>
+  <Polygon Name="ControlPolygon">
+    <Height>
+      <Value>3186262</Value>
+    </Height>
+    <Width>
+      <Value>4610777</Value>
+    </Width>
+    <X>
+      <Value>4175020</Value>
+    </X>
+    <Y>
+      <Value>1381430</Value>
+    </Y>
+  </Polygon>
+  <OperatingPercentage>81</OperatingPercentage>
+  <UnresolvedIssues>20</UnresolvedIssues>
+</XMLDisplayData>
+
+
+
+Response #23 recieved from 127.0.0.1, 801ms of latency
+Content:<XMLDisplayData Name="MockDisplay" Path="Graphics.Displays" SchemaVersion="1.1.1.2">
+  <Metadata>
+    <LastEditUser>DVADMIN</LastEditUser>
+    <LastEditTime>2024-07-16T08:09:01.8407408-05:00</LastEditTime>
+  </Metadata>
+  <Polygon Name="ControlPolygon">
+    <Height>
+      <Value>3698113</Value>
+    </Height>
+    <Width>
+      <Value>3595339</Value>
+    </Width>
+    <X>
+      <Value>4047745</Value>
+    </X>
+    <Y>
+      <Value>1480286</Value>
+    </Y>
+  </Polygon>
+  <OperatingPercentage>98</OperatingPercentage>
+  <UnresolvedIssues>15</UnresolvedIssues>
+</XMLDisplayData>
+
+
+
+Response #24 recieved from 127.0.0.1, 805ms of latency
+Content:<XMLDisplayData Name="MockDisplay" Path="Graphics.Displays" SchemaVersion="1.1.1.2">
+  <Metadata>
+    <LastEditUser>DVADMIN</LastEditUser>
+    <LastEditTime>2024-07-16T08:09:02.8585117-05:00</LastEditTime>
+  </Metadata>
+  <Polygon Name="ControlPolygon">
+    <Height>
+      <Value>2593571</Value>
+    </Height>
+    <Width>
+      <Value>4284503</Value>
+    </Width>
+    <X>
+      <Value>3595846</Value>
+    </X>
+    <Y>
+      <Value>1503581</Value>
+    </Y>
+  </Polygon>
+  <OperatingPercentage>92</OperatingPercentage>
+  <UnresolvedIssues>9</UnresolvedIssues>
+</XMLDisplayData>
+
+
+
+Response #25 recieved from 127.0.0.1, 815ms of latency
+Content:<XMLDisplayData Name="MockDisplay" Path="Graphics.Displays" SchemaVersion="1.1.1.2">
+  <Metadata>
+    <LastEditUser>DVADMIN</LastEditUser>
+    <LastEditTime>2024-07-16T08:09:03.8733182-05:00</LastEditTime>
+  </Metadata>
+  <Polygon Name="ControlPolygon">
+    <Height>
+      <Value>3276466</Value>
+    </Height>
+    <Width>
+      <Value>2325679</Value>
+    </Width>
+    <X>
+      <Value>4354310</Value>
+    </X>
+    <Y>
+      <Value>1535256</Value>
+    </Y>
+  </Polygon>
+  <OperatingPercentage>88</OperatingPercentage>
+  <UnresolvedIssues>11</UnresolvedIssues>
+</XMLDisplayData>
+
+
+
+Response #26 recieved from 127.0.0.1, 850ms of latency
+Content:<XMLDisplayData Name="MockDisplay" Path="Graphics.Displays" SchemaVersion="1.1.1.2">
+  <Metadata>
+    <LastEditUser>DVADMIN</LastEditUser>
+    <LastEditTime>2024-07-16T08:09:04.9082528-05:00</LastEditTime>
+  </Metadata>
+  <Polygon Name="ControlPolygon">
+    <Height>
+      <Value>2316845</Value>
+    </Height>
+    <Width>
+      <Value>2466472</Value>
+    </Width>
+    <X>
+      <Value>4294405</Value>
+    </X>
+    <Y>
+      <Value>1332415</Value>
+    </Y>
+  </Polygon>
+  <OperatingPercentage>86</OperatingPercentage>
+  <UnresolvedIssues>8</UnresolvedIssues>
+</XMLDisplayData>
+
+
+
+Response #27 recieved from 127.0.0.1, 879ms of latency
+Content:<XMLDisplayData Name="MockDisplay" Path="Graphics.Displays" SchemaVersion="1.1.1.2">
+  <Metadata>
+    <LastEditUser>DVADMIN</LastEditUser>
+    <LastEditTime>2024-07-16T08:09:05.9453229-05:00</LastEditTime>
+  </Metadata>
+  <Polygon Name="ControlPolygon">
+    <Height>
+      <Value>2478784</Value>
+    </Height>
+    <Width>
+      <Value>4636423</Value>
+    </Width>
+    <X>
+      <Value>4383710</Value>
+    </X>
+    <Y>
+      <Value>1627068</Value>
+    </Y>
+  </Polygon>
+  <OperatingPercentage>80</OperatingPercentage>
+  <UnresolvedIssues>18</UnresolvedIssues>
+</XMLDisplayData>
+
+
+
+Response #28 recieved from 127.0.0.1, 892ms of latency
+Content:<XMLDisplayData Name="MockDisplay" Path="Graphics.Displays" SchemaVersion="1.1.1.2">
+  <Metadata>
+    <LastEditUser>DVADMIN</LastEditUser>
+    <LastEditTime>2024-07-16T08:09:06.9800417-05:00</LastEditTime>
+  </Metadata>
+  <Polygon Name="ControlPolygon">
+    <Height>
+      <Value>3242329</Value>
+    </Height>
+    <Width>
+      <Value>3288618</Value>
+    </Width>
+    <X>
+      <Value>3452565</Value>
+    </X>
+    <Y>
+      <Value>1568062</Value>
+    </Y>
+  </Polygon>
+  <OperatingPercentage>85</OperatingPercentage>
+  <UnresolvedIssues>19</UnresolvedIssues>
+</XMLDisplayData>
+
+
+
+Response #29 recieved from 127.0.0.1, 918ms of latency
+Content:<XMLDisplayData Name="MockDisplay" Path="Graphics.Displays" SchemaVersion="1.1.1.2">
+  <Metadata>
+    <LastEditUser>DVADMIN</LastEditUser>
+    <LastEditTime>2024-07-16T08:09:08.008717-05:00</LastEditTime>
+  </Metadata>
+  <Polygon Name="ControlPolygon">
+    <Height>
+      <Value>2316051</Value>
+    </Height>
+    <Width>
+      <Value>2844110</Value>
+    </Width>
+    <X>
+      <Value>4433397</Value>
+    </X>
+    <Y>
+      <Value>1669332</Value>
+    </Y>
+  </Polygon>
+  <OperatingPercentage>99</OperatingPercentage>
+  <UnresolvedIssues>2</UnresolvedIssues>
+</XMLDisplayData>
+
+
+
+Response #30 recieved from 127.0.0.1, 938ms of latency
+Content:<XMLDisplayData Name="MockDisplay" Path="Graphics.Displays" SchemaVersion="1.1.1.2">
+  <Metadata>
+    <LastEditUser>DVADMIN</LastEditUser>
+    <LastEditTime>2024-07-16T08:09:09.0357004-05:00</LastEditTime>
+  </Metadata>
+  <Polygon Name="ControlPolygon">
+    <Height>
+      <Value>2482403</Value>
+    </Height>
+    <Width>
+      <Value>3055186</Value>
+    </Width>
+    <X>
+      <Value>4131639</Value>
+    </X>
+    <Y>
+      <Value>1643791</Value>
+    </Y>
+  </Polygon>
+  <OperatingPercentage>80</OperatingPercentage>
+  <UnresolvedIssues>10</UnresolvedIssues>
+</XMLDisplayData>
+
+
+
+Response #31 recieved from 127.0.0.1, 970ms of latency
+Content:<XMLDisplayData Name="MockDisplay" Path="Graphics.Displays" SchemaVersion="1.1.1.2">
+  <Metadata>
+    <LastEditUser>DVADMIN</LastEditUser>
+    <LastEditTime>2024-07-16T08:09:10.056977-05:00</LastEditTime>
+  </Metadata>
+  <Polygon Name="ControlPolygon">
+    <Height>
+      <Value>2824691</Value>
+    </Height>
+    <Width>
+      <Value>4070693</Value>
+    </Width>
+    <X>
+      <Value>4557323</Value>
+    </X>
+    <Y>
+      <Value>1713925</Value>
+    </Y>
+  </Polygon>
+  <OperatingPercentage>80</OperatingPercentage>
+  <UnresolvedIssues>3</UnresolvedIssues>
+</XMLDisplayData>
+
+
+
+Response #32 recieved from 127.0.0.1, 999ms of latency
+Content:<XMLDisplayData Name="MockDisplay" Path="Graphics.Displays" SchemaVersion="1.1.1.2">
+  <Metadata>
+    <LastEditUser>DVADMIN</LastEditUser>
+    <LastEditTime>2024-07-16T08:09:11.0930735-05:00</LastEditTime>
+  </Metadata>
+  <Polygon Name="ControlPolygon">
+    <Height>
+      <Value>3515858</Value>
+    </Height>
+    <Width>
+      <Value>2498094</Value>
+    </Width>
+    <X>
+      <Value>4397428</Value>
+    </X>
+    <Y>
+      <Value>1483324</Value>
+    </Y>
+  </Polygon>
+  <OperatingPercentage>93</OperatingPercentage>
+  <UnresolvedIssues>10</UnresolvedIssues>
+</XMLDisplayData>
+
+
+
+Response #33 recieved from 127.0.0.1, 8ms of latency
+Content:<XMLDisplayData Name="MockDisplay" Path="Graphics.Displays" SchemaVersion="1.1.1.2">
+  <Metadata>
+    <LastEditUser>DVADMIN</LastEditUser>
+    <LastEditTime>2024-07-16T08:09:12.1236862-05:00</LastEditTime>
+  </Metadata>
+  <Polygon Name="ControlPolygon">
+    <Height>
+      <Value>3309767</Value>
+    </Height>
+    <Width>
+      <Value>2367991</Value>
+    </Width>
+    <X>
+      <Value>3399816</Value>
+    </X>
+    <Y>
+      <Value>1413713</Value>
+    </Y>
+  </Polygon>
+  <OperatingPercentage>91</OperatingPercentage>
+  <UnresolvedIssues>20</UnresolvedIssues>
+</XMLDisplayData>
+
+
+
+Response #34 recieved from 127.0.0.1, 524ms of latency
+Content:<XMLDisplayData Name="MockDisplay" Path="Graphics.Displays" SchemaVersion="1.1.1.2">
+  <Metadata>
+    <LastEditUser>DVADMIN</LastEditUser>
+    <LastEditTime>2024-07-16T08:09:12.6411023-05:00</LastEditTime>
+  </Metadata>
+  <Polygon Name="ControlPolygon">
+    <Height>
+      <Value>3025075</Value>
+    </Height>
+    <Width>
+      <Value>3805402</Value>
+    </Width>
+    <X>
+      <Value>4251167</Value>
+    </X>
+    <Y>
+      <Value>1673057</Value>
+    </Y>
+  </Polygon>
+  <OperatingPercentage>83</OperatingPercentage>
+  <UnresolvedIssues>12</UnresolvedIssues>
+</XMLDisplayData>
+
+
+
+Response #35 recieved from 127.0.0.1, 532ms of latency
+Content:<XMLDisplayData Name="MockDisplay" Path="Graphics.Displays" SchemaVersion="1.1.1.2">
+  <Metadata>
+    <LastEditUser>DVADMIN</LastEditUser>
+    <LastEditTime>2024-07-16T08:09:13.679261-05:00</LastEditTime>
+  </Metadata>
+  <Polygon Name="ControlPolygon">
+    <Height>
+      <Value>3504593</Value>
+    </Height>
+    <Width>
+      <Value>4631562</Value>
+    </Width>
+    <X>
+      <Value>4171192</Value>
+    </X>
+    <Y>
+      <Value>1630760</Value>
+    </Y>
+  </Polygon>
+  <OperatingPercentage>88</OperatingPercentage>
+  <UnresolvedIssues>9</UnresolvedIssues>
+</XMLDisplayData>
+
+
+
+Response #36 recieved from 127.0.0.1, 549ms of latency
+Content:<XMLDisplayData Name="MockDisplay" Path="Graphics.Displays" SchemaVersion="1.1.1.2">
+  <Metadata>
+    <LastEditUser>DVADMIN</LastEditUser>
+    <LastEditTime>2024-07-16T08:09:14.7037079-05:00</LastEditTime>
+  </Metadata>
+  <Polygon Name="ControlPolygon">
+    <Height>
+      <Value>2342827</Value>
+    </Height>
+    <Width>
+      <Value>3550577</Value>
+    </Width>
+    <X>
+      <Value>4467604</Value>
+    </X>
+    <Y>
+      <Value>1331314</Value>
+    </Y>
+  </Polygon>
+  <OperatingPercentage>86</OperatingPercentage>
+  <UnresolvedIssues>7</UnresolvedIssues>
+</XMLDisplayData>
+
+
+
+Response #37 recieved from 127.0.0.1, 580ms of latency
+Content:<XMLDisplayData Name="MockDisplay" Path="Graphics.Displays" SchemaVersion="1.1.1.2">
+  <Metadata>
+    <LastEditUser>DVADMIN</LastEditUser>
+    <LastEditTime>2024-07-16T08:09:15.7334606-05:00</LastEditTime>
+  </Metadata>
+  <Polygon Name="ControlPolygon">
+    <Height>
+      <Value>3535256</Value>
+    </Height>
+    <Width>
+      <Value>3033105</Value>
+    </Width>
+    <X>
+      <Value>4580694</Value>
+    </X>
+    <Y>
+      <Value>1575314</Value>
+    </Y>
+  </Polygon>
+  <OperatingPercentage>94</OperatingPercentage>
+  <UnresolvedIssues>5</UnresolvedIssues>
+</XMLDisplayData>
+
+
+
+Response #38 recieved from 127.0.0.1, 617ms of latency
+Content:<XMLDisplayData Name="MockDisplay" Path="Graphics.Displays" SchemaVersion="1.1.1.2">
+  <Metadata>
+    <LastEditUser>DVADMIN</LastEditUser>
+    <LastEditTime>2024-07-16T08:09:16.77585-05:00</LastEditTime>
+  </Metadata>
+  <Polygon Name="ControlPolygon">
+    <Height>
+      <Value>3560615</Value>
+    </Height>
+    <Width>
+      <Value>2592511</Value>
+    </Width>
+    <X>
+      <Value>4078310</Value>
+    </X>
+    <Y>
+      <Value>1692296</Value>
+    </Y>
+  </Polygon>
+  <OperatingPercentage>98</OperatingPercentage>
+  <UnresolvedIssues>20</UnresolvedIssues>
+</XMLDisplayData>
+
+
+
+Response #39 recieved from 127.0.0.1, 644ms of latency
+Content:<XMLDisplayData Name="MockDisplay" Path="Graphics.Displays" SchemaVersion="1.1.1.2">
+  <Metadata>
+    <LastEditUser>DVADMIN</LastEditUser>
+    <LastEditTime>2024-07-16T08:09:17.8098914-05:00</LastEditTime>
+  </Metadata>
+  <Polygon Name="ControlPolygon">
+    <Height>
+      <Value>2327083</Value>
+    </Height>
+    <Width>
+      <Value>2556082</Value>
+    </Width>
+    <X>
+      <Value>3638671</Value>
+    </X>
+    <Y>
+      <Value>1646714</Value>
+    </Y>
+  </Polygon>
+  <OperatingPercentage>91</OperatingPercentage>
+  <UnresolvedIssues>12</UnresolvedIssues>
+</XMLDisplayData>
+
+
+
+Response #40 recieved from 127.0.0.1, 681ms of latency
+Content:<XMLDisplayData Name="MockDisplay" Path="Graphics.Displays" SchemaVersion="1.1.1.2">
+  <Metadata>
+    <LastEditUser>DVADMIN</LastEditUser>
+    <LastEditTime>2024-07-16T08:09:18.8424727-05:00</LastEditTime>
+  </Metadata>
+  <Polygon Name="ControlPolygon">
+    <Height>
+      <Value>2573690</Value>
+    </Height>
+    <Width>
+      <Value>4611010</Value>
+    </Width>
+    <X>
+      <Value>3996152</Value>
+    </X>
+    <Y>
+      <Value>1475648</Value>
+    </Y>
+  </Polygon>
+  <OperatingPercentage>91</OperatingPercentage>
+  <UnresolvedIssues>6</UnresolvedIssues>
+</XMLDisplayData>
+
+
+
+Response #41 recieved from 127.0.0.1, 719ms of latency
+Content:<XMLDisplayData Name="MockDisplay" Path="Graphics.Displays" SchemaVersion="1.1.1.2">
+  <Metadata>
+    <LastEditUser>DVADMIN</LastEditUser>
+    <LastEditTime>2024-07-16T08:09:19.8808431-05:00</LastEditTime>
+  </Metadata>
+  <Polygon Name="ControlPolygon">
+    <Height>
+      <Value>2549860</Value>
+    </Height>
+    <Width>
+      <Value>3956544</Value>
+    </Width>
+    <X>
+      <Value>3473471</Value>
+    </X>
+    <Y>
+      <Value>1593416</Value>
+    </Y>
+  </Polygon>
+  <OperatingPercentage>83</OperatingPercentage>
+  <UnresolvedIssues>5</UnresolvedIssues>
+</XMLDisplayData>
+
+
+
+Response #43 recieved from 127.0.0.1, 850ms of latency
+Content:<XMLDisplayData Name="MockDisplay" Path="Graphics.Displays" SchemaVersion="1.1.1.2">
+  <Metadata>
+    <LastEditUser>DVADMIN</LastEditUser>
+    <LastEditTime>2024-07-16T08:09:22.0930787-05:00</LastEditTime>
+  </Metadata>
+  <Polygon Name="ControlPolygon">
+    <Height>
+      <Value>2414906</Value>
+    </Height>
+    <Width>
+      <Value>3037985</Value>
+    </Width>
+    <X>
+      <Value>3347519</Value>
+    </X>
+    <Y>
+      <Value>1428848</Value>
+    </Y>
+  </Polygon>
+  <OperatingPercentage>99</OperatingPercentage>
+  <UnresolvedIssues>7</UnresolvedIssues>
+</XMLDisplayData>
+
+
+
+Response #44 recieved from 127.0.0.1, 804ms of latency
+Content:<XMLDisplayData Name="MockDisplay" Path="Graphics.Displays" SchemaVersion="1.1.1.2">
+  <Metadata>
+    <LastEditUser>DVADMIN</LastEditUser>
+    <LastEditTime>2024-07-16T08:09:23.1671375-05:00</LastEditTime>
+  </Metadata>
+  <Polygon Name="ControlPolygon">
+    <Height>
+      <Value>2943710</Value>
+    </Height>
+    <Width>
+      <Value>3625624</Value>
+    </Width>
+    <X>
+      <Value>3857442</Value>
+    </X>
+    <Y>
+      <Value>1346048</Value>
+    </Y>
+  </Polygon>
+  <OperatingPercentage>98</OperatingPercentage>
+  <UnresolvedIssues>20</UnresolvedIssues>
+</XMLDisplayData>
+
+
+
+Response #45 recieved from 127.0.0.1, 833ms of latency
+Content:<XMLDisplayData Name="MockDisplay" Path="Graphics.Displays" SchemaVersion="1.1.1.2">
+  <Metadata>
+    <LastEditUser>DVADMIN</LastEditUser>
+    <LastEditTime>2024-07-16T08:09:24.1992556-05:00</LastEditTime>
+  </Metadata>
+  <Polygon Name="ControlPolygon">
+    <Height>
+      <Value>3227123</Value>
+    </Height>
+    <Width>
+      <Value>2743162</Value>
+    </Width>
+    <X>
+      <Value>4396958</Value>
+    </X>
+    <Y>
+      <Value>1392148</Value>
+    </Y>
+  </Polygon>
+  <OperatingPercentage>88</OperatingPercentage>
+  <UnresolvedIssues>15</UnresolvedIssues>
+</XMLDisplayData>
+
+
+
+Response #46 recieved from 127.0.0.1, 856ms of latency
+Content:<XMLDisplayData Name="MockDisplay" Path="Graphics.Displays" SchemaVersion="1.1.1.2">
+  <Metadata>
+    <LastEditUser>DVADMIN</LastEditUser>
+    <LastEditTime>2024-07-16T08:09:25.2417141-05:00</LastEditTime>
+  </Metadata>
+  <Polygon Name="ControlPolygon">
+    <Height>
+      <Value>3260650</Value>
+    </Height>
+    <Width>
+      <Value>3259853</Value>
+    </Width>
+    <X>
+      <Value>3845266</Value>
+    </X>
+    <Y>
+      <Value>1682330</Value>
+    </Y>
+  </Polygon>
+  <OperatingPercentage>91</OperatingPercentage>
+  <UnresolvedIssues>11</UnresolvedIssues>
+</XMLDisplayData>
+
+
+
+Response #47 recieved from 127.0.0.1, 887ms of latency
+Content:<XMLDisplayData Name="MockDisplay" Path="Graphics.Displays" SchemaVersion="1.1.1.2">
+  <Metadata>
+    <LastEditUser>DVADMIN</LastEditUser>
+    <LastEditTime>2024-07-16T08:09:26.2754192-05:00</LastEditTime>
+  </Metadata>
+  <Polygon Name="ControlPolygon">
+    <Height>
+      <Value>3458604</Value>
+    </Height>
+    <Width>
+      <Value>4430437</Value>
+    </Width>
+    <X>
+      <Value>3792253</Value>
+    </X>
+    <Y>
+      <Value>1404152</Value>
+    </Y>
+  </Polygon>
+  <OperatingPercentage>80</OperatingPercentage>
+  <UnresolvedIssues>13</UnresolvedIssues>
+</XMLDisplayData>
+
+
+
+Response #48 recieved from 127.0.0.1, 912ms of latency
+Content:<XMLDisplayData Name="MockDisplay" Path="Graphics.Displays" SchemaVersion="1.1.1.2">
+  <Metadata>
+    <LastEditUser>DVADMIN</LastEditUser>
+    <LastEditTime>2024-07-16T08:09:27.3028567-05:00</LastEditTime>
+  </Metadata>
+  <Polygon Name="ControlPolygon">
+    <Height>
+      <Value>3120873</Value>
+    </Height>
+    <Width>
+      <Value>3898703</Value>
+    </Width>
+    <X>
+      <Value>4644168</Value>
+    </X>
+    <Y>
+      <Value>1380685</Value>
+    </Y>
+  </Polygon>
+  <OperatingPercentage>93</OperatingPercentage>
+  <UnresolvedIssues>5</UnresolvedIssues>
+</XMLDisplayData>
+
+
+
+Response #49 recieved from 127.0.0.1, 923ms of latency
+Content:<XMLDisplayData Name="MockDisplay" Path="Graphics.Displays" SchemaVersion="1.1.1.2">
+  <Metadata>
+    <LastEditUser>DVADMIN</LastEditUser>
+    <LastEditTime>2024-07-16T08:09:28.3367277-05:00</LastEditTime>
+  </Metadata>
+  <Polygon Name="ControlPolygon">
+    <Height>
+      <Value>3098903</Value>
+    </Height>
+    <Width>
+      <Value>2459459</Value>
+    </Width>
+    <X>
+      <Value>3448299</Value>
+    </X>
+    <Y>
+      <Value>1510391</Value>
+    </Y>
+  </Polygon>
+  <OperatingPercentage>87</OperatingPercentage>
+  <UnresolvedIssues>12</UnresolvedIssues>
+</XMLDisplayData>
+
+
+
+Response #50 recieved from 127.0.0.1, 960ms of latency
+Content:<XMLDisplayData Name="MockDisplay" Path="Graphics.Displays" SchemaVersion="1.1.1.2">
+  <Metadata>
+    <LastEditUser>DVADMIN</LastEditUser>
+    <LastEditTime>2024-07-16T08:09:29.373251-05:00</LastEditTime>
+  </Metadata>
+  <Polygon Name="ControlPolygon">
+    <Height>
+      <Value>2401765</Value>
+    </Height>
+    <Width>
+      <Value>3297069</Value>
+    </Width>
+    <X>
+      <Value>4338188</Value>
+    </X>
+    <Y>
+      <Value>1375429</Value>
+    </Y>
+  </Polygon>
+  <OperatingPercentage>87</OperatingPercentage>
+  <UnresolvedIssues>13</UnresolvedIssues>
+</XMLDisplayData>
+
+
+
+Response #51 recieved from 127.0.0.1, 63ms of latency
+Content:<XMLDisplayData Name="MockDisplay" Path="Graphics.Displays" SchemaVersion="1.1.1.2">
+  <Metadata>
+    <LastEditUser>DVADMIN</LastEditUser>
+    <LastEditTime>2024-07-16T08:09:30.4107494-05:00</LastEditTime>
+  </Metadata>
+  <Polygon Name="ControlPolygon">
+    <Height>
+      <Value>2478454</Value>
+    </Height>
+    <Width>
+      <Value>4132242</Value>
+    </Width>
+    <X>
+      <Value>4286853</Value>
+    </X>
+    <Y>
+      <Value>1651405</Value>
+    </Y>
+  </Polygon>
+  <OperatingPercentage>94</OperatingPercentage>
+  <UnresolvedIssues>16</UnresolvedIssues>
+</XMLDisplayData>
+
+
+
+Response #62 recieved from 127.0.0.1, 706ms of latency
+Content:<XMLDisplayData Name="MockDisplay" Path="Graphics.Displays" SchemaVersion="1.1.1.2">
+  <Metadata>
+    <LastEditUser>DVADMIN</LastEditUser>
+    <LastEditTime>2024-07-16T08:09:41.4674854-05:00</LastEditTime>
+  </Metadata>
+  <Polygon Name="ControlPolygon">
+    <Height>
+      <Value>2921160</Value>
+    </Height>
+    <Width>
+      <Value>3076658</Value>
+    </Width>
+    <X>
+      <Value>3615523</Value>
+    </X>
+    <Y>
+      <Value>1530554</Value>
+    </Y>
+  </Polygon>
+  <OperatingPercentage>92</OperatingPercentage>
+  <UnresolvedIssues>19</UnresolvedIssues>
+</XMLDisplayData>
+
+
+
+Response #63 recieved from 127.0.0.1, 723ms of latency
+Content:<XMLDisplayData Name="MockDisplay" Path="Graphics.Displays" SchemaVersion="1.1.1.2">
+  <Metadata>
+    <LastEditUser>DVADMIN</LastEditUser>
+    <LastEditTime>2024-07-16T08:09:42.5090994-05:00</LastEditTime>
+  </Metadata>
+  <Polygon Name="ControlPolygon">
+    <Height>
+      <Value>3236750</Value>
+    </Height>
+    <Width>
+      <Value>3308684</Value>
+    </Width>
+    <X>
+      <Value>3667089</Value>
+    </X>
+    <Y>
+      <Value>1543988</Value>
+    </Y>
+  </Polygon>
+  <OperatingPercentage>83</OperatingPercentage>
+  <UnresolvedIssues>12</UnresolvedIssues>
+</XMLDisplayData>
+
+
+
+Response #64 recieved from 127.0.0.1, 754ms of latency
+Content:<XMLDisplayData Name="MockDisplay" Path="Graphics.Displays" SchemaVersion="1.1.1.2">
+  <Metadata>
+    <LastEditUser>DVADMIN</LastEditUser>
+    <LastEditTime>2024-07-16T08:09:43.5373337-05:00</LastEditTime>
+  </Metadata>
+  <Polygon Name="ControlPolygon">
+    <Height>
+      <Value>3064811</Value>
+    </Height>
+    <Width>
+      <Value>3504299</Value>
+    </Width>
+    <X>
+      <Value>4033343</Value>
+    </X>
+    <Y>
+      <Value>1553439</Value>
+    </Y>
+  </Polygon>
+  <OperatingPercentage>88</OperatingPercentage>
+  <UnresolvedIssues>17</UnresolvedIssues>
+</XMLDisplayData>
+
+
+
+Response #65 recieved from 127.0.0.1, 795ms of latency
+Content:<XMLDisplayData Name="MockDisplay" Path="Graphics.Displays" SchemaVersion="1.1.1.2">
+  <Metadata>
+    <LastEditUser>DVADMIN</LastEditUser>
+    <LastEditTime>2024-07-16T08:09:44.5620134-05:00</LastEditTime>
+  </Metadata>
+  <Polygon Name="ControlPolygon">
+    <Height>
+      <Value>2782304</Value>
+    </Height>
+    <Width>
+      <Value>4650399</Value>
+    </Width>
+    <X>
+      <Value>3518976</Value>
+    </X>
+    <Y>
+      <Value>1415408</Value>
+    </Y>
+  </Polygon>
+  <OperatingPercentage>94</OperatingPercentage>
+  <UnresolvedIssues>19</UnresolvedIssues>
+</XMLDisplayData>
+
+
+
+Response #66 recieved from 127.0.0.1, 801ms of latency
+Content:<XMLDisplayData Name="MockDisplay" Path="Graphics.Displays" SchemaVersion="1.1.1.2">
+  <Metadata>
+    <LastEditUser>DVADMIN</LastEditUser>
+    <LastEditTime>2024-07-16T08:09:45.5917973-05:00</LastEditTime>
+  </Metadata>
+  <Polygon Name="ControlPolygon">
+    <Height>
+      <Value>3214374</Value>
+    </Height>
+    <Width>
+      <Value>2881279</Value>
+    </Width>
+    <X>
+      <Value>3861792</Value>
+    </X>
+    <Y>
+      <Value>1362529</Value>
+    </Y>
+  </Polygon>
+  <OperatingPercentage>97</OperatingPercentage>
+  <UnresolvedIssues>4</UnresolvedIssues>
+</XMLDisplayData>
+
+
+
+Response #67 recieved from 127.0.0.1, 832ms of latency
+Content:<XMLDisplayData Name="MockDisplay" Path="Graphics.Displays" SchemaVersion="1.1.1.2">
+  <Metadata>
+    <LastEditUser>DVADMIN</LastEditUser>
+    <LastEditTime>2024-07-16T08:09:46.6335946-05:00</LastEditTime>
+  </Metadata>
+  <Polygon Name="ControlPolygon">
+    <Height>
+      <Value>2386350</Value>
+    </Height>
+    <Width>
+      <Value>3865761</Value>
+    </Width>
+    <X>
+      <Value>4561526</Value>
+    </X>
+    <Y>
+      <Value>1488621</Value>
+    </Y>
+  </Polygon>
+  <OperatingPercentage>82</OperatingPercentage>
+  <UnresolvedIssues>2</UnresolvedIssues>
+</XMLDisplayData>
+
+
+
+Response #68 recieved from 127.0.0.1, 863ms of latency
+Content:<XMLDisplayData Name="MockDisplay" Path="Graphics.Displays" SchemaVersion="1.1.1.2">
+  <Metadata>
+    <LastEditUser>DVADMIN</LastEditUser>
+    <LastEditTime>2024-07-16T08:09:47.6669635-05:00</LastEditTime>
+  </Metadata>
+  <Polygon Name="ControlPolygon">
+    <Height>
+      <Value>3645819</Value>
+    </Height>
+    <Width>
+      <Value>4676390</Value>
+    </Width>
+    <X>
+      <Value>4492220</Value>
+    </X>
+    <Y>
+      <Value>1713276</Value>
+    </Y>
+  </Polygon>
+  <OperatingPercentage>97</OperatingPercentage>
+  <UnresolvedIssues>7</UnresolvedIssues>
+</XMLDisplayData>
+
+
+
+Response #69 recieved from 127.0.0.1, 879ms of latency
+Content:<XMLDisplayData Name="MockDisplay" Path="Graphics.Displays" SchemaVersion="1.1.1.2">
+  <Metadata>
+    <LastEditUser>DVADMIN</LastEditUser>
+    <LastEditTime>2024-07-16T08:09:48.6852861-05:00</LastEditTime>
+  </Metadata>
+  <Polygon Name="ControlPolygon">
+    <Height>
+      <Value>2561687</Value>
+    </Height>
+    <Width>
+      <Value>2961390</Value>
+    </Width>
+    <X>
+      <Value>3431728</Value>
+    </X>
+    <Y>
+      <Value>1343351</Value>
+    </Y>
+  </Polygon>
+  <OperatingPercentage>80</OperatingPercentage>
+  <UnresolvedIssues>6</UnresolvedIssues>
+</XMLDisplayData>
+
+
+
+Response #70 recieved from 127.0.0.1, 916ms of latency
+Content:<XMLDisplayData Name="MockDisplay" Path="Graphics.Displays" SchemaVersion="1.1.1.2">
+  <Metadata>
+    <LastEditUser>DVADMIN</LastEditUser>
+    <LastEditTime>2024-07-16T08:09:49.7245879-05:00</LastEditTime>
+  </Metadata>
+  <Polygon Name="ControlPolygon">
+    <Height>
+      <Value>3191649</Value>
+    </Height>
+    <Width>
+      <Value>3098397</Value>
+    </Width>
+    <X>
+      <Value>3986594</Value>
+    </X>
+    <Y>
+      <Value>1488503</Value>
+    </Y>
+  </Polygon>
+  <OperatingPercentage>84</OperatingPercentage>
+  <UnresolvedIssues>9</UnresolvedIssues>
+</XMLDisplayData>
+
+
+
+Response #71 recieved from 127.0.0.1, 932ms of latency
+Content:<XMLDisplayData Name="MockDisplay" Path="Graphics.Displays" SchemaVersion="1.1.1.2">
+  <Metadata>
+    <LastEditUser>DVADMIN</LastEditUser>
+    <LastEditTime>2024-07-16T08:09:50.754194-05:00</LastEditTime>
+  </Metadata>
+  <Polygon Name="ControlPolygon">
+    <Height>
+      <Value>2377599</Value>
+    </Height>
+    <Width>
+      <Value>3378539</Value>
+    </Width>
+    <X>
+      <Value>4166501</Value>
+    </X>
+    <Y>
+      <Value>1402948</Value>
+    </Y>
+  </Polygon>
+  <OperatingPercentage>83</OperatingPercentage>
+  <UnresolvedIssues>13</UnresolvedIssues>
+</XMLDisplayData>
+
+
+
+Response #72 recieved from 127.0.0.1, 965ms of latency
+Content:<XMLDisplayData Name="MockDisplay" Path="Graphics.Displays" SchemaVersion="1.1.1.2">
+  <Metadata>
+    <LastEditUser>DVADMIN</LastEditUser>
+    <LastEditTime>2024-07-16T08:09:51.7921798-05:00</LastEditTime>
+  </Metadata>
+  <Polygon Name="ControlPolygon">
+    <Height>
+      <Value>3013634</Value>
+    </Height>
+    <Width>
+      <Value>2494562</Value>
+    </Width>
+    <X>
+      <Value>4508440</Value>
+    </X>
+    <Y>
+      <Value>1411589</Value>
+    </Y>
+  </Polygon>
+  <OperatingPercentage>97</OperatingPercentage>
+  <UnresolvedIssues>8</UnresolvedIssues>
+</XMLDisplayData>
+
+
+
+Response #73 recieved from 127.0.0.1, 3ms of latency
+Content:<XMLDisplayData Name="MockDisplay" Path="Graphics.Displays" SchemaVersion="1.1.1.2">
+  <Metadata>
+    <LastEditUser>DVADMIN</LastEditUser>
+    <LastEditTime>2024-07-16T08:09:52.831119-05:00</LastEditTime>
+  </Metadata>
+  <Polygon Name="ControlPolygon">
+    <Height>
+      <Value>3108727</Value>
+    </Height>
+    <Width>
+      <Value>4684157</Value>
+    </Width>
+    <X>
+      <Value>4142722</Value>
+    </X>
+    <Y>
+      <Value>1673897</Value>
+    </Y>
+  </Polygon>
+  <OperatingPercentage>93</OperatingPercentage>
+  <UnresolvedIssues>15</UnresolvedIssues>
+</XMLDisplayData>
+
+
+
+Response #74 recieved from 127.0.0.1, 514ms of latency
+Content:<XMLDisplayData Name="MockDisplay" Path="Graphics.Displays" SchemaVersion="1.1.1.2">
+  <Metadata>
+    <LastEditUser>DVADMIN</LastEditUser>
+    <LastEditTime>2024-07-16T08:09:53.3484057-05:00</LastEditTime>
+  </Metadata>
+  <Polygon Name="ControlPolygon">
+    <Height>
+      <Value>3107464</Value>
+    </Height>
+    <Width>
+      <Value>4282246</Value>
+    </Width>
+    <X>
+      <Value>3756044</Value>
+    </X>
+    <Y>
+      <Value>1644911</Value>
+    </Y>
+  </Polygon>
+  <OperatingPercentage>87</OperatingPercentage>
+  <UnresolvedIssues>13</UnresolvedIssues>
+</XMLDisplayData>
+
+
+
+Response #75 recieved from 127.0.0.1, 532ms of latency
+Content:<XMLDisplayData Name="MockDisplay" Path="Graphics.Displays" SchemaVersion="1.1.1.2">
+  <Metadata>
+    <LastEditUser>DVADMIN</LastEditUser>
+    <LastEditTime>2024-07-16T08:09:54.3797772-05:00</LastEditTime>
+  </Metadata>
+  <Polygon Name="ControlPolygon">
+    <Height>
+      <Value>2882924</Value>
+    </Height>
+    <Width>
+      <Value>3704559</Value>
+    </Width>
+    <X>
+      <Value>4001095</Value>
+    </X>
+    <Y>
+      <Value>1414406</Value>
+    </Y>
+  </Polygon>
+  <OperatingPercentage>88</OperatingPercentage>
+  <UnresolvedIssues>10</UnresolvedIssues>
+</XMLDisplayData>
+
+
+
+Response #102 recieved from 127.0.0.1, 902ms of latency
+Content:<XMLDisplayData Name="MockDisplay" Path="Graphics.Displays" SchemaVersion="1.1.1.2">
+  <Metadata>
+    <LastEditUser>DVADMIN</LastEditUser>
+    <LastEditTime>2024-07-16T08:10:22.8936251-05:00</LastEditTime>
+  </Metadata>
+  <Polygon Name="ControlPolygon">
+    <Height>
+      <Value>3641619</Value>
+    </Height>
+    <Width>
+      <Value>2903252</Value>
+    </Width>
+    <X>
+      <Value>3528627</Value>
+    </X>
+    <Y>
+      <Value>1656995</Value>
+    </Y>
+  </Polygon>
+  <OperatingPercentage>85</OperatingPercentage>
+  <UnresolvedIssues>10</UnresolvedIssues>
+</XMLDisplayData>
+
+
+
+Response #103 recieved from 127.0.0.1, 914ms of latency
+Content:<XMLDisplayData Name="MockDisplay" Path="Graphics.Displays" SchemaVersion="1.1.1.2">
+  <Metadata>
+    <LastEditUser>DVADMIN</LastEditUser>
+    <LastEditTime>2024-07-16T08:10:23.9134733-05:00</LastEditTime>
+  </Metadata>
+  <Polygon Name="ControlPolygon">
+    <Height>
+      <Value>2860016</Value>
+    </Height>
+    <Width>
+      <Value>3098702</Value>
+    </Width>
+    <X>
+      <Value>4033846</Value>
+    </X>
+    <Y>
+      <Value>1393567</Value>
+    </Y>
+  </Polygon>
+  <OperatingPercentage>84</OperatingPercentage>
+  <UnresolvedIssues>15</UnresolvedIssues>
+</XMLDisplayData>
+
+
+
+Response #104 recieved from 127.0.0.1, 938ms of latency
+Content:<XMLDisplayData Name="MockDisplay" Path="Graphics.Displays" SchemaVersion="1.1.1.2">
+  <Metadata>
+    <LastEditUser>DVADMIN</LastEditUser>
+    <LastEditTime>2024-07-16T08:10:24.9448818-05:00</LastEditTime>
+  </Metadata>
+  <Polygon Name="ControlPolygon">
+    <Height>
+      <Value>2857253</Value>
+    </Height>
+    <Width>
+      <Value>2556079</Value>
+    </Width>
+    <X>
+      <Value>3542264</Value>
+    </X>
+    <Y>
+      <Value>1554623</Value>
+    </Y>
+  </Polygon>
+  <OperatingPercentage>96</OperatingPercentage>
+  <UnresolvedIssues>12</UnresolvedIssues>
+</XMLDisplayData>
+
+
+
+Response #105 recieved from 127.0.0.1, 970ms of latency
+Content:<XMLDisplayData Name="MockDisplay" Path="Graphics.Displays" SchemaVersion="1.1.1.2">
+  <Metadata>
+    <LastEditUser>DVADMIN</LastEditUser>
+    <LastEditTime>2024-07-16T08:10:25.9845648-05:00</LastEditTime>
+  </Metadata>
+  <Polygon Name="ControlPolygon">
+    <Height>
+      <Value>3668077</Value>
+    </Height>
+    <Width>
+      <Value>3341861</Value>
+    </Width>
+    <X>
+      <Value>3519297</Value>
+    </X>
+    <Y>
+      <Value>1419001</Value>
+    </Y>
+  </Polygon>
+  <OperatingPercentage>91</OperatingPercentage>
+  <UnresolvedIssues>12</UnresolvedIssues>
+</XMLDisplayData>
+
+
+
+Response #106 recieved from 127.0.0.1, 0ms of latency
+Content:<XMLDisplayData Name="MockDisplay" Path="Graphics.Displays" SchemaVersion="1.1.1.2">
+  <Metadata>
+    <LastEditUser>DVADMIN</LastEditUser>
+    <LastEditTime>2024-07-16T08:10:27.0175586-05:00</LastEditTime>
+  </Metadata>
+  <Polygon Name="ControlPolygon">
+    <Height>
+      <Value>2497096</Value>
+    </Height>
+    <Width>
+      <Value>3901769</Value>
+    </Width>
+    <X>
+      <Value>3933926</Value>
+    </X>
+    <Y>
+      <Value>1361784</Value>
+    </Y>
+  </Polygon>
+  <OperatingPercentage>92</OperatingPercentage>
+  <UnresolvedIssues>19</UnresolvedIssues>
+</XMLDisplayData>
+
+
+
+Response #107 recieved from 127.0.0.1, 516ms of latency
+Content:<XMLDisplayData Name="MockDisplay" Path="Graphics.Displays" SchemaVersion="1.1.1.2">
+  <Metadata>
+    <LastEditUser>DVADMIN</LastEditUser>
+    <LastEditTime>2024-07-16T08:10:27.5361036-05:00</LastEditTime>
+  </Metadata>
+  <Polygon Name="ControlPolygon">
+    <Height>
+      <Value>3570748</Value>
+    </Height>
+    <Width>
+      <Value>3528290</Value>
+    </Width>
+    <X>
+      <Value>4411351</Value>
+    </X>
+    <Y>
+      <Value>1710505</Value>
+    </Y>
+  </Polygon>
+  <OperatingPercentage>94</OperatingPercentage>
+  <UnresolvedIssues>9</UnresolvedIssues>
+</XMLDisplayData>
+
+
+
+Response #108 recieved from 127.0.0.1, 553ms of latency
+Content:<XMLDisplayData Name="MockDisplay" Path="Graphics.Displays" SchemaVersion="1.1.1.2">
+  <Metadata>
+    <LastEditUser>DVADMIN</LastEditUser>
+    <LastEditTime>2024-07-16T08:10:28.571375-05:00</LastEditTime>
+  </Metadata>
+  <Polygon Name="ControlPolygon">
+    <Height>
+      <Value>2467616</Value>
+    </Height>
+    <Width>
+      <Value>3720597</Value>
+    </Width>
+    <X>
+      <Value>4232313</Value>
+    </X>
+    <Y>
+      <Value>1582245</Value>
+    </Y>
+  </Polygon>
+  <OperatingPercentage>86</OperatingPercentage>
+  <UnresolvedIssues>4</UnresolvedIssues>
+</XMLDisplayData>
+
+
+
+Response #109 recieved from 127.0.0.1, 584ms of latency
+Content:<XMLDisplayData Name="MockDisplay" Path="Graphics.Displays" SchemaVersion="1.1.1.2">
+  <Metadata>
+    <LastEditUser>DVADMIN</LastEditUser>
+    <LastEditTime>2024-07-16T08:10:29.60513-05:00</LastEditTime>
+  </Metadata>
+  <Polygon Name="ControlPolygon">
+    <Height>
+      <Value>2565041</Value>
+    </Height>
+    <Width>
+      <Value>4317549</Value>
+    </Width>
+    <X>
+      <Value>4132164</Value>
+    </X>
+    <Y>
+      <Value>1624802</Value>
+    </Y>
+  </Polygon>
+  <OperatingPercentage>97</OperatingPercentage>
+  <UnresolvedIssues>19</UnresolvedIssues>
+</XMLDisplayData>
+
+
+
+Response #110 recieved from 127.0.0.1, 600ms of latency
+Content:<XMLDisplayData Name="MockDisplay" Path="Graphics.Displays" SchemaVersion="1.1.1.2">
+  <Metadata>
+    <LastEditUser>DVADMIN</LastEditUser>
+    <LastEditTime>2024-07-16T08:10:30.6335667-05:00</LastEditTime>
+  </Metadata>
+  <Polygon Name="ControlPolygon">
+    <Height>
+      <Value>2535727</Value>
+    </Height>
+    <Width>
+      <Value>2898985</Value>
+    </Width>
+    <X>
+      <Value>4126136</Value>
+    </X>
+    <Y>
+      <Value>1628010</Value>
+    </Y>
+  </Polygon>
+  <OperatingPercentage>96</OperatingPercentage>
+  <UnresolvedIssues>11</UnresolvedIssues>
+</XMLDisplayData>
+
+
+
+Response #111 recieved from 127.0.0.1, 640ms of latency
+Content:<XMLDisplayData Name="MockDisplay" Path="Graphics.Displays" SchemaVersion="1.1.1.2">
+  <Metadata>
+    <LastEditUser>DVADMIN</LastEditUser>
+    <LastEditTime>2024-07-16T08:10:31.6562172-05:00</LastEditTime>
+  </Metadata>
+  <Polygon Name="ControlPolygon">
+    <Height>
+      <Value>2911939</Value>
+    </Height>
+    <Width>
+      <Value>2419256</Value>
+    </Width>
+    <X>
+      <Value>4024126</Value>
+    </X>
+    <Y>
+      <Value>1702263</Value>
+    </Y>
+  </Polygon>
+  <OperatingPercentage>87</OperatingPercentage>
+  <UnresolvedIssues>16</UnresolvedIssues>
+</XMLDisplayData>
+
+
+
+Response #112 recieved from 127.0.0.1, 669ms of latency
+Content:<XMLDisplayData Name="MockDisplay" Path="Graphics.Displays" SchemaVersion="1.1.1.2">
+  <Metadata>
+    <LastEditUser>DVADMIN</LastEditUser>
+    <LastEditTime>2024-07-16T08:10:32.6952994-05:00</LastEditTime>
+  </Metadata>
+  <Polygon Name="ControlPolygon">
+    <Height>
+      <Value>2985476</Value>
+    </Height>
+    <Width>
+      <Value>2716480</Value>
+    </Width>
+    <X>
+      <Value>3995370</Value>
+    </X>
+    <Y>
+      <Value>1421797</Value>
+    </Y>
+  </Polygon>
+  <OperatingPercentage>94</OperatingPercentage>
+  <UnresolvedIssues>10</UnresolvedIssues>
+</XMLDisplayData>
+
+
+
+Response #113 recieved from 127.0.0.1, 819ms of latency
+Content:<XMLDisplayData Name="MockDisplay" Path="Graphics.Displays" SchemaVersion="1.1.1.2">
+  <Metadata>
+    <LastEditUser>DVADMIN</LastEditUser>
+    <LastEditTime>2024-07-16T08:10:34.2279005-05:00</LastEditTime>
+  </Metadata>
+  <Polygon Name="ControlPolygon">
+    <Height>
+      <Value>2409915</Value>
+    </Height>
+    <Width>
+      <Value>3445586</Value>
+    </Width>
+    <X>
+      <Value>4234484</Value>
+    </X>
+    <Y>
+      <Value>1616316</Value>
+    </Y>
+  </Polygon>
+  <OperatingPercentage>91</OperatingPercentage>
+  <UnresolvedIssues>3</UnresolvedIssues>
+</XMLDisplayData>
+
+
+
+Response #1 recieved from 127.0.0.1, 848ms of latency
+Content:<XMLDisplayData Name="MockDisplay" Path="Graphics.Displays" SchemaVersion="1.1.1.2">
+  <Metadata>
+    <LastEditUser>DVADMIN</LastEditUser>
+    <LastEditTime>2024-07-16T08:10:59.0514083-05:00</LastEditTime>
+  </Metadata>
+  <Polygon Name="ControlPolygon">
+    <Height>
+      <Value>3391559</Value>
+    </Height>
+    <Width>
+      <Value>2625216</Value>
+    </Width>
+    <X>
+      <Value>3573212</Value>
+    </X>
+    <Y>
+      <Value>1378906</Value>
+    </Y>
+  </Polygon>
+  <OperatingPercentage>82</OperatingPercentage>
+  <UnresolvedIssues>10</UnresolvedIssues>
+</XMLDisplayData>
+
+
+
+Response #2 recieved from 127.0.0.1, 865ms of latency
+Content:<XMLDisplayData Name="MockDisplay" Path="Graphics.Displays" SchemaVersion="1.1.1.2">
+  <Metadata>
+    <LastEditUser>DVADMIN</LastEditUser>
+    <LastEditTime>2024-07-16T08:11:00.083548-05:00</LastEditTime>
+  </Metadata>
+  <Polygon Name="ControlPolygon">
+    <Height>
+      <Value>2421799</Value>
+    </Height>
+    <Width>
+      <Value>3078969</Value>
+    </Width>
+    <X>
+      <Value>4661753</Value>
+    </X>
+    <Y>
+      <Value>1639806</Value>
+    </Y>
+  </Polygon>
+  <OperatingPercentage>82</OperatingPercentage>
+  <UnresolvedIssues>9</UnresolvedIssues>
+</XMLDisplayData>
+
+
+
+Response #3 recieved from 127.0.0.1, 901ms of latency
+Content:<XMLDisplayData Name="MockDisplay" Path="Graphics.Displays" SchemaVersion="1.1.1.2">
+  <Metadata>
+    <LastEditUser>DVADMIN</LastEditUser>
+    <LastEditTime>2024-07-16T08:11:01.122964-05:00</LastEditTime>
+  </Metadata>
+  <Polygon Name="ControlPolygon">
+    <Height>
+      <Value>3619117</Value>
+    </Height>
+    <Width>
+      <Value>2616654</Value>
+    </Width>
+    <X>
+      <Value>4226457</Value>
+    </X>
+    <Y>
+      <Value>1388637</Value>
+    </Y>
+  </Polygon>
+  <OperatingPercentage>85</OperatingPercentage>
+  <UnresolvedIssues>9</UnresolvedIssues>
+</XMLDisplayData>
+
+
+
+Response #4 recieved from 127.0.0.1, 933ms of latency
+Content:<XMLDisplayData Name="MockDisplay" Path="Graphics.Displays" SchemaVersion="1.1.1.2">
+  <Metadata>
+    <LastEditUser>DVADMIN</LastEditUser>
+    <LastEditTime>2024-07-16T08:11:02.1514375-05:00</LastEditTime>
+  </Metadata>
+  <Polygon Name="ControlPolygon">
+    <Height>
+      <Value>2747798</Value>
+    </Height>
+    <Width>
+      <Value>4645116</Value>
+    </Width>
+    <X>
+      <Value>4314471</Value>
+    </X>
+    <Y>
+      <Value>1369565</Value>
+    </Y>
+  </Polygon>
+  <OperatingPercentage>98</OperatingPercentage>
+  <UnresolvedIssues>1</UnresolvedIssues>
+</XMLDisplayData>
+
+
+
+Response #5 recieved from 127.0.0.1, 948ms of latency
+Content:<XMLDisplayData Name="MockDisplay" Path="Graphics.Displays" SchemaVersion="1.1.1.2">
+  <Metadata>
+    <LastEditUser>DVADMIN</LastEditUser>
+    <LastEditTime>2024-07-16T08:11:03.1792706-05:00</LastEditTime>
+  </Metadata>
+  <Polygon Name="ControlPolygon">
+    <Height>
+      <Value>3490014</Value>
+    </Height>
+    <Width>
+      <Value>3967784</Value>
+    </Width>
+    <X>
+      <Value>4174102</Value>
+    </X>
+    <Y>
+      <Value>1703025</Value>
+    </Y>
+  </Polygon>
+  <OperatingPercentage>98</OperatingPercentage>
+  <UnresolvedIssues>7</UnresolvedIssues>
+</XMLDisplayData>
+
+
+
+Response #6 recieved from 127.0.0.1, 978ms of latency
+Content:<XMLDisplayData Name="MockDisplay" Path="Graphics.Displays" SchemaVersion="1.1.1.2">
+  <Metadata>
+    <LastEditUser>DVADMIN</LastEditUser>
+    <LastEditTime>2024-07-16T08:11:04.2011959-05:00</LastEditTime>
+  </Metadata>
+  <Polygon Name="ControlPolygon">
+    <Height>
+      <Value>3421077</Value>
+    </Height>
+    <Width>
+      <Value>4705760</Value>
+    </Width>
+    <X>
+      <Value>3978283</Value>
+    </X>
+    <Y>
+      <Value>1406438</Value>
+    </Y>
+  </Polygon>
+  <OperatingPercentage>80</OperatingPercentage>
+  <UnresolvedIssues>11</UnresolvedIssues>
+</XMLDisplayData>
+
+
+
+Response #7 recieved from 127.0.0.1, 996ms of latency
+Content:<XMLDisplayData Name="MockDisplay" Path="Graphics.Displays" SchemaVersion="1.1.1.2">
+  <Metadata>
+    <LastEditUser>DVADMIN</LastEditUser>
+    <LastEditTime>2024-07-16T08:11:05.2265475-05:00</LastEditTime>
+  </Metadata>
+  <Polygon Name="ControlPolygon">
+    <Height>
+      <Value>2467685</Value>
+    </Height>
+    <Width>
+      <Value>3060652</Value>
+    </Width>
+    <X>
+      <Value>4684513</Value>
+    </X>
+    <Y>
+      <Value>1714396</Value>
+    </Y>
+  </Polygon>
+  <OperatingPercentage>81</OperatingPercentage>
+  <UnresolvedIssues>10</UnresolvedIssues>
+</XMLDisplayData>
+
+
+
+Response #8 recieved from 127.0.0.1, 12ms of latency
+Content:<XMLDisplayData Name="MockDisplay" Path="Graphics.Displays" SchemaVersion="1.1.1.2">
+  <Metadata>
+    <LastEditUser>DVADMIN</LastEditUser>
+    <LastEditTime>2024-07-16T08:11:06.2595758-05:00</LastEditTime>
+  </Metadata>
+  <Polygon Name="ControlPolygon">
+    <Height>
+      <Value>3058696</Value>
+    </Height>
+    <Width>
+      <Value>4591561</Value>
+    </Width>
+    <X>
+      <Value>3851408</Value>
+    </X>
+    <Y>
+      <Value>1586942</Value>
+    </Y>
+  </Polygon>
+  <OperatingPercentage>87</OperatingPercentage>
+  <UnresolvedIssues>9</UnresolvedIssues>
+</XMLDisplayData>
+
+
+
+Response #9 recieved from 127.0.0.1, 522ms of latency
+Content:<XMLDisplayData Name="MockDisplay" Path="Graphics.Displays" SchemaVersion="1.1.1.2">
+  <Metadata>
+    <LastEditUser>DVADMIN</LastEditUser>
+    <LastEditTime>2024-07-16T08:11:06.7825477-05:00</LastEditTime>
+  </Metadata>
+  <Polygon Name="ControlPolygon">
+    <Height>
+      <Value>3032675</Value>
+    </Height>
+    <Width>
+      <Value>2560677</Value>
+    </Width>
+    <X>
+      <Value>4186161</Value>
+    </X>
+    <Y>
+      <Value>1343320</Value>
+    </Y>
+  </Polygon>
+  <OperatingPercentage>82</OperatingPercentage>
+  <UnresolvedIssues>6</UnresolvedIssues>
+</XMLDisplayData>
+
+
+
+Response #10 recieved from 127.0.0.1, 537ms of latency
+Content:<XMLDisplayData Name="MockDisplay" Path="Graphics.Displays" SchemaVersion="1.1.1.2">
+  <Metadata>
+    <LastEditUser>DVADMIN</LastEditUser>
+    <LastEditTime>2024-07-16T08:11:07.8127399-05:00</LastEditTime>
+  </Metadata>
+  <Polygon Name="ControlPolygon">
+    <Height>
+      <Value>3666319</Value>
+    </Height>
+    <Width>
+      <Value>3941950</Value>
+    </Width>
+    <X>
+      <Value>4510687</Value>
+    </X>
+    <Y>
+      <Value>1427684</Value>
+    </Y>
+  </Polygon>
+  <OperatingPercentage>89</OperatingPercentage>
+  <UnresolvedIssues>19</UnresolvedIssues>
+</XMLDisplayData>
+
+
+
+Response #11 recieved from 127.0.0.1, 577ms of latency
+Content:<XMLDisplayData Name="MockDisplay" Path="Graphics.Displays" SchemaVersion="1.1.1.2">
+  <Metadata>
+    <LastEditUser>DVADMIN</LastEditUser>
+    <LastEditTime>2024-07-16T08:11:08.8511924-05:00</LastEditTime>
+  </Metadata>
+  <Polygon Name="ControlPolygon">
+    <Height>
+      <Value>3052101</Value>
+    </Height>
+    <Width>
+      <Value>4216493</Value>
+    </Width>
+    <X>
+      <Value>3666196</Value>
+    </X>
+    <Y>
+      <Value>1664582</Value>
+    </Y>
+  </Polygon>
+  <OperatingPercentage>94</OperatingPercentage>
+  <UnresolvedIssues>10</UnresolvedIssues>
+</XMLDisplayData>
+
+
+
+Response #12 recieved from 127.0.0.1, 597ms of latency
+Content:<XMLDisplayData Name="MockDisplay" Path="Graphics.Displays" SchemaVersion="1.1.1.2">
+  <Metadata>
+    <LastEditUser>DVADMIN</LastEditUser>
+    <LastEditTime>2024-07-16T08:11:09.8845543-05:00</LastEditTime>
+  </Metadata>
+  <Polygon Name="ControlPolygon">
+    <Height>
+      <Value>3678447</Value>
+    </Height>
+    <Width>
+      <Value>2941086</Value>
+    </Width>
+    <X>
+      <Value>4335578</Value>
+    </X>
+    <Y>
+      <Value>1564702</Value>
+    </Y>
+  </Polygon>
+  <OperatingPercentage>91</OperatingPercentage>
+  <UnresolvedIssues>8</UnresolvedIssues>
+</XMLDisplayData>
+
+
+
+Response #13 recieved from 127.0.0.1, 610ms of latency
+Content:<XMLDisplayData Name="MockDisplay" Path="Graphics.Displays" SchemaVersion="1.1.1.2">
+  <Metadata>
+    <LastEditUser>DVADMIN</LastEditUser>
+    <LastEditTime>2024-07-16T08:11:10.8967094-05:00</LastEditTime>
+  </Metadata>
+  <Polygon Name="ControlPolygon">
+    <Height>
+      <Value>2561401</Value>
+    </Height>
+    <Width>
+      <Value>2689158</Value>
+    </Width>
+    <X>
+      <Value>3362675</Value>
+    </X>
+    <Y>
+      <Value>1379994</Value>
+    </Y>
+  </Polygon>
+  <OperatingPercentage>86</OperatingPercentage>
+  <UnresolvedIssues>14</UnresolvedIssues>
+</XMLDisplayData>
+
+
+
+Response #14 recieved from 127.0.0.1, 628ms of latency
+Content:<XMLDisplayData Name="MockDisplay" Path="Graphics.Displays" SchemaVersion="1.1.1.2">
+  <Metadata>
+    <LastEditUser>DVADMIN</LastEditUser>
+    <LastEditTime>2024-07-16T08:11:11.9189576-05:00</LastEditTime>
+  </Metadata>
+  <Polygon Name="ControlPolygon">
+    <Height>
+      <Value>3296343</Value>
+    </Height>
+    <Width>
+      <Value>3737751</Value>
+    </Width>
+    <X>
+      <Value>3863931</Value>
+    </X>
+    <Y>
+      <Value>1429779</Value>
+    </Y>
+  </Polygon>
+  <OperatingPercentage>94</OperatingPercentage>
+  <UnresolvedIssues>1</UnresolvedIssues>
+</XMLDisplayData>
+
+
+
+Response #15 recieved from 127.0.0.1, 649ms of latency
+Content:<XMLDisplayData Name="MockDisplay" Path="Graphics.Displays" SchemaVersion="1.1.1.2">
+  <Metadata>
+    <LastEditUser>DVADMIN</LastEditUser>
+    <LastEditTime>2024-07-16T08:11:12.9549735-05:00</LastEditTime>
+  </Metadata>
+  <Polygon Name="ControlPolygon">
+    <Height>
+      <Value>2964775</Value>
+    </Height>
+    <Width>
+      <Value>2842989</Value>
+    </Width>
+    <X>
+      <Value>4056106</Value>
+    </X>
+    <Y>
+      <Value>1349521</Value>
+    </Y>
+  </Polygon>
+  <OperatingPercentage>88</OperatingPercentage>
+  <UnresolvedIssues>2</UnresolvedIssues>
+</XMLDisplayData>
+
+
+
+Response #16 recieved from 127.0.0.1, 665ms of latency
+Content:<XMLDisplayData Name="MockDisplay" Path="Graphics.Displays" SchemaVersion="1.1.1.2">
+  <Metadata>
+    <LastEditUser>DVADMIN</LastEditUser>
+    <LastEditTime>2024-07-16T08:11:13.9731718-05:00</LastEditTime>
+  </Metadata>
+  <Polygon Name="ControlPolygon">
+    <Height>
+      <Value>2741152</Value>
+    </Height>
+    <Width>
+      <Value>2583768</Value>
+    </Width>
+    <X>
+      <Value>3937212</Value>
+    </X>
+    <Y>
+      <Value>1628218</Value>
+    </Y>
+  </Polygon>
+  <OperatingPercentage>83</OperatingPercentage>
+  <UnresolvedIssues>18</UnresolvedIssues>
+</XMLDisplayData>
+
+
+
+Response #17 recieved from 127.0.0.1, 685ms of latency
+Content:<XMLDisplayData Name="MockDisplay" Path="Graphics.Displays" SchemaVersion="1.1.1.2">
+  <Metadata>
+    <LastEditUser>DVADMIN</LastEditUser>
+    <LastEditTime>2024-07-16T08:11:14.9909278-05:00</LastEditTime>
+  </Metadata>
+  <Polygon Name="ControlPolygon">
+    <Height>
+      <Value>3362198</Value>
+    </Height>
+    <Width>
+      <Value>3331849</Value>
+    </Width>
+    <X>
+      <Value>4386273</Value>
+    </X>
+    <Y>
+      <Value>1447329</Value>
+    </Y>
+  </Polygon>
+  <OperatingPercentage>93</OperatingPercentage>
+  <UnresolvedIssues>6</UnresolvedIssues>
+</XMLDisplayData>
+
+
+
+Response #18 recieved from 127.0.0.1, 723ms of latency
+Content:<XMLDisplayData Name="MockDisplay" Path="Graphics.Displays" SchemaVersion="1.1.1.2">
+  <Metadata>
+    <LastEditUser>DVADMIN</LastEditUser>
+    <LastEditTime>2024-07-16T08:11:16.0234492-05:00</LastEditTime>
+  </Metadata>
+  <Polygon Name="ControlPolygon">
+    <Height>
+      <Value>3374450</Value>
+    </Height>
+    <Width>
+      <Value>3531035</Value>
+    </Width>
+    <X>
+      <Value>4470873</Value>
+    </X>
+    <Y>
+      <Value>1560933</Value>
+    </Y>
+  </Polygon>
+  <OperatingPercentage>95</OperatingPercentage>
+  <UnresolvedIssues>3</UnresolvedIssues>
+</XMLDisplayData>
+
+
+
+Response #19 recieved from 127.0.0.1, 754ms of latency
+Content:<XMLDisplayData Name="MockDisplay" Path="Graphics.Displays" SchemaVersion="1.1.1.2">
+  <Metadata>
+    <LastEditUser>DVADMIN</LastEditUser>
+    <LastEditTime>2024-07-16T08:11:17.0642914-05:00</LastEditTime>
+  </Metadata>
+  <Polygon Name="ControlPolygon">
+    <Height>
+      <Value>3244968</Value>
+    </Height>
+    <Width>
+      <Value>4378611</Value>
+    </Width>
+    <X>
+      <Value>3417102</Value>
+    </X>
+    <Y>
+      <Value>1487665</Value>
+    </Y>
+  </Polygon>
+  <OperatingPercentage>98</OperatingPercentage>
+  <UnresolvedIssues>7</UnresolvedIssues>
+</XMLDisplayData>
+
+
+
+Response #20 recieved from 127.0.0.1, 774ms of latency
+Content:<XMLDisplayData Name="MockDisplay" Path="Graphics.Displays" SchemaVersion="1.1.1.2">
+  <Metadata>
+    <LastEditUser>DVADMIN</LastEditUser>
+    <LastEditTime>2024-07-16T08:11:18.0909597-05:00</LastEditTime>
+  </Metadata>
+  <Polygon Name="ControlPolygon">
+    <Height>
+      <Value>3548999</Value>
+    </Height>
+    <Width>
+      <Value>3468694</Value>
+    </Width>
+    <X>
+      <Value>3833514</Value>
+    </X>
+    <Y>
+      <Value>1552370</Value>
+    </Y>
+  </Polygon>
+  <OperatingPercentage>82</OperatingPercentage>
+  <UnresolvedIssues>18</UnresolvedIssues>
+</XMLDisplayData>
+
+
+
+Response #21 recieved from 127.0.0.1, 802ms of latency
+Content:<XMLDisplayData Name="MockDisplay" Path="Graphics.Displays" SchemaVersion="1.1.1.2">
+  <Metadata>
+    <LastEditUser>DVADMIN</LastEditUser>
+    <LastEditTime>2024-07-16T08:11:19.1118043-05:00</LastEditTime>
+  </Metadata>
+  <Polygon Name="ControlPolygon">
+    <Height>
+      <Value>3094926</Value>
+    </Height>
+    <Width>
+      <Value>4527609</Value>
+    </Width>
+    <X>
+      <Value>3868036</Value>
+    </X>
+    <Y>
+      <Value>1641187</Value>
+    </Y>
+  </Polygon>
+  <OperatingPercentage>94</OperatingPercentage>
+  <UnresolvedIssues>17</UnresolvedIssues>
+</XMLDisplayData>
+
+
+
+Response #22 recieved from 127.0.0.1, 839ms of latency
+Content:<XMLDisplayData Name="MockDisplay" Path="Graphics.Displays" SchemaVersion="1.1.1.2">
+  <Metadata>
+    <LastEditUser>DVADMIN</LastEditUser>
+    <LastEditTime>2024-07-16T08:11:20.152441-05:00</LastEditTime>
+  </Metadata>
+  <Polygon Name="ControlPolygon">
+    <Height>
+      <Value>2708982</Value>
+    </Height>
+    <Width>
+      <Value>4358014</Value>
+    </Width>
+    <X>
+      <Value>3900791</Value>
+    </X>
+    <Y>
+      <Value>1371739</Value>
+    </Y>
+  </Polygon>
+  <OperatingPercentage>92</OperatingPercentage>
+  <UnresolvedIssues>12</UnresolvedIssues>
+</XMLDisplayData>
+
+
+
+Response #23 recieved from 127.0.0.1, 870ms of latency
+Content:<XMLDisplayData Name="MockDisplay" Path="Graphics.Displays" SchemaVersion="1.1.1.2">
+  <Metadata>
+    <LastEditUser>DVADMIN</LastEditUser>
+    <LastEditTime>2024-07-16T08:11:21.1857612-05:00</LastEditTime>
+  </Metadata>
+  <Polygon Name="ControlPolygon">
+    <Height>
+      <Value>3044785</Value>
+    </Height>
+    <Width>
+      <Value>4074592</Value>
+    </Width>
+    <X>
+      <Value>3415442</Value>
+    </X>
+    <Y>
+      <Value>1708859</Value>
+    </Y>
+  </Polygon>
+  <OperatingPercentage>84</OperatingPercentage>
+  <UnresolvedIssues>18</UnresolvedIssues>
+</XMLDisplayData>
+
+
+
+Response #24 recieved from 127.0.0.1, 891ms of latency
+Content:<XMLDisplayData Name="MockDisplay" Path="Graphics.Displays" SchemaVersion="1.1.1.2">
+  <Metadata>
+    <LastEditUser>DVADMIN</LastEditUser>
+    <LastEditTime>2024-07-16T08:11:22.2151228-05:00</LastEditTime>
+  </Metadata>
+  <Polygon Name="ControlPolygon">
+    <Height>
+      <Value>3168531</Value>
+    </Height>
+    <Width>
+      <Value>2991858</Value>
+    </Width>
+    <X>
+      <Value>4518821</Value>
+    </X>
+    <Y>
+      <Value>1505557</Value>
+    </Y>
+  </Polygon>
+  <OperatingPercentage>82</OperatingPercentage>
+  <UnresolvedIssues>10</UnresolvedIssues>
+</XMLDisplayData>
+
+
+
+Response #25 recieved from 127.0.0.1, 924ms of latency
+Content:<XMLDisplayData Name="MockDisplay" Path="Graphics.Displays" SchemaVersion="1.1.1.2">
+  <Metadata>
+    <LastEditUser>DVADMIN</LastEditUser>
+    <LastEditTime>2024-07-16T08:11:23.233747-05:00</LastEditTime>
+  </Metadata>
+  <Polygon Name="ControlPolygon">
+    <Height>
+      <Value>2332186</Value>
+    </Height>
+    <Width>
+      <Value>3486987</Value>
+    </Width>
+    <X>
+      <Value>3565963</Value>
+    </X>
+    <Y>
+      <Value>1604863</Value>
+    </Y>
+  </Polygon>
+  <OperatingPercentage>82</OperatingPercentage>
+  <UnresolvedIssues>15</UnresolvedIssues>
+</XMLDisplayData>
+
+
+
+Response #26 recieved from 127.0.0.1, 933ms of latency
+Content:<XMLDisplayData Name="MockDisplay" Path="Graphics.Displays" SchemaVersion="1.1.1.2">
+  <Metadata>
+    <LastEditUser>DVADMIN</LastEditUser>
+    <LastEditTime>2024-07-16T08:11:24.2703857-05:00</LastEditTime>
+  </Metadata>
+  <Polygon Name="ControlPolygon">
+    <Height>
+      <Value>3206024</Value>
+    </Height>
+    <Width>
+      <Value>3435441</Value>
+    </Width>
+    <X>
+      <Value>4700952</Value>
+    </X>
+    <Y>
+      <Value>1483780</Value>
+    </Y>
+  </Polygon>
+  <OperatingPercentage>85</OperatingPercentage>
+  <UnresolvedIssues>9</UnresolvedIssues>
+</XMLDisplayData>
+
+
+
+Response #27 recieved from 127.0.0.1, 949ms of latency
+Content:<XMLDisplayData Name="MockDisplay" Path="Graphics.Displays" SchemaVersion="1.1.1.2">
+  <Metadata>
+    <LastEditUser>DVADMIN</LastEditUser>
+    <LastEditTime>2024-07-16T08:11:25.2925279-05:00</LastEditTime>
+  </Metadata>
+  <Polygon Name="ControlPolygon">
+    <Height>
+      <Value>2557100</Value>
+    </Height>
+    <Width>
+      <Value>4193350</Value>
+    </Width>
+    <X>
+      <Value>4117367</Value>
+    </X>
+    <Y>
+      <Value>1347502</Value>
+    </Y>
+  </Polygon>
+  <OperatingPercentage>93</OperatingPercentage>
+  <UnresolvedIssues>18</UnresolvedIssues>
+</XMLDisplayData>
+
+
+
+Response #28 recieved from 127.0.0.1, 964ms of latency
+Content:<XMLDisplayData Name="MockDisplay" Path="Graphics.Displays" SchemaVersion="1.1.1.2">
+  <Metadata>
+    <LastEditUser>DVADMIN</LastEditUser>
+    <LastEditTime>2024-07-16T08:11:26.3220149-05:00</LastEditTime>
+  </Metadata>
+  <Polygon Name="ControlPolygon">
+    <Height>
+      <Value>2730430</Value>
+    </Height>
+    <Width>
+      <Value>4485284</Value>
+    </Width>
+    <X>
+      <Value>3384001</Value>
+    </X>
+    <Y>
+      <Value>1429199</Value>
+    </Y>
+  </Polygon>
+  <OperatingPercentage>97</OperatingPercentage>
+  <UnresolvedIssues>2</UnresolvedIssues>
+</XMLDisplayData>
+
+
+
+Response #29 recieved from 127.0.0.1, 2ms of latency
+Content:<XMLDisplayData Name="MockDisplay" Path="Graphics.Displays" SchemaVersion="1.1.1.2">
+  <Metadata>
+    <LastEditUser>DVADMIN</LastEditUser>
+    <LastEditTime>2024-07-16T08:11:27.3616709-05:00</LastEditTime>
+  </Metadata>
+  <Polygon Name="ControlPolygon">
+    <Height>
+      <Value>2498271</Value>
+    </Height>
+    <Width>
+      <Value>2676360</Value>
+    </Width>
+    <X>
+      <Value>4235792</Value>
+    </X>
+    <Y>
+      <Value>1543600</Value>
+    </Y>
+  </Polygon>
+  <OperatingPercentage>81</OperatingPercentage>
+  <UnresolvedIssues>1</UnresolvedIssues>
+</XMLDisplayData>
+
+
+
+Response #30 recieved from 127.0.0.1, 516ms of latency
+Content:<XMLDisplayData Name="MockDisplay" Path="Graphics.Displays" SchemaVersion="1.1.1.2">
+  <Metadata>
+    <LastEditUser>DVADMIN</LastEditUser>
+    <LastEditTime>2024-07-16T08:11:27.8858525-05:00</LastEditTime>
+  </Metadata>
+  <Polygon Name="ControlPolygon">
+    <Height>
+      <Value>2599216</Value>
+    </Height>
+    <Width>
+      <Value>4685453</Value>
+    </Width>
+    <X>
+      <Value>4447764</Value>
+    </X>
+    <Y>
+      <Value>1492197</Value>
+    </Y>
+  </Polygon>
+  <OperatingPercentage>98</OperatingPercentage>
+  <UnresolvedIssues>1</UnresolvedIssues>
+</XMLDisplayData>
+
+
+
+Response #31 recieved from 127.0.0.1, 539ms of latency
+Content:<XMLDisplayData Name="MockDisplay" Path="Graphics.Displays" SchemaVersion="1.1.1.2">
+  <Metadata>
+    <LastEditUser>DVADMIN</LastEditUser>
+    <LastEditTime>2024-07-16T08:11:28.9150642-05:00</LastEditTime>
+  </Metadata>
+  <Polygon Name="ControlPolygon">
+    <Height>
+      <Value>2986454</Value>
+    </Height>
+    <Width>
+      <Value>3932943</Value>
+    </Width>
+    <X>
+      <Value>4531261</Value>
+    </X>
+    <Y>
+      <Value>1363847</Value>
+    </Y>
+  </Polygon>
+  <OperatingPercentage>93</OperatingPercentage>
+  <UnresolvedIssues>19</UnresolvedIssues>
+</XMLDisplayData>
+
+
+
+Response #32 recieved from 127.0.0.1, 552ms of latency
+Content:<XMLDisplayData Name="MockDisplay" Path="Graphics.Displays" SchemaVersion="1.1.1.2">
+  <Metadata>
+    <LastEditUser>DVADMIN</LastEditUser>
+    <LastEditTime>2024-07-16T08:11:29.9328244-05:00</LastEditTime>
+  </Metadata>
+  <Polygon Name="ControlPolygon">
+    <Height>
+      <Value>2677819</Value>
+    </Height>
+    <Width>
+      <Value>3409446</Value>
+    </Width>
+    <X>
+      <Value>4120501</Value>
+    </X>
+    <Y>
+      <Value>1438293</Value>
+    </Y>
+  </Polygon>
+  <OperatingPercentage>95</OperatingPercentage>
+  <UnresolvedIssues>6</UnresolvedIssues>
+</XMLDisplayData>
+
+
+
+Response #33 recieved from 127.0.0.1, 557ms of latency
+Content:<XMLDisplayData Name="MockDisplay" Path="Graphics.Displays" SchemaVersion="1.1.1.2">
+  <Metadata>
+    <LastEditUser>DVADMIN</LastEditUser>
+    <LastEditTime>2024-07-16T08:11:30.9423814-05:00</LastEditTime>
+  </Metadata>
+  <Polygon Name="ControlPolygon">
+    <Height>
+      <Value>3687793</Value>
+    </Height>
+    <Width>
+      <Value>3180527</Value>
+    </Width>
+    <X>
+      <Value>4592932</Value>
+    </X>
+    <Y>
+      <Value>1414248</Value>
+    </Y>
+  </Polygon>
+  <OperatingPercentage>92</OperatingPercentage>
+  <UnresolvedIssues>12</UnresolvedIssues>
+</XMLDisplayData>
+
+
+
+Response #34 recieved from 127.0.0.1, 584ms of latency
+Content:<XMLDisplayData Name="MockDisplay" Path="Graphics.Displays" SchemaVersion="1.1.1.2">
+  <Metadata>
+    <LastEditUser>DVADMIN</LastEditUser>
+    <LastEditTime>2024-07-16T08:11:31.9706451-05:00</LastEditTime>
+  </Metadata>
+  <Polygon Name="ControlPolygon">
+    <Height>
+      <Value>3511407</Value>
+    </Height>
+    <Width>
+      <Value>2485763</Value>
+    </Width>
+    <X>
+      <Value>4018578</Value>
+    </X>
+    <Y>
+      <Value>1653259</Value>
+    </Y>
+  </Polygon>
+  <OperatingPercentage>98</OperatingPercentage>
+  <UnresolvedIssues>10</UnresolvedIssues>
+</XMLDisplayData>
+
+
+
+Response #35 recieved from 127.0.0.1, 616ms of latency
+Content:<XMLDisplayData Name="MockDisplay" Path="Graphics.Displays" SchemaVersion="1.1.1.2">
+  <Metadata>
+    <LastEditUser>DVADMIN</LastEditUser>
+    <LastEditTime>2024-07-16T08:11:33.0073014-05:00</LastEditTime>
+  </Metadata>
+  <Polygon Name="ControlPolygon">
+    <Height>
+      <Value>3453126</Value>
+    </Height>
+    <Width>
+      <Value>2499413</Value>
+    </Width>
+    <X>
+      <Value>3580375</Value>
+    </X>
+    <Y>
+      <Value>1318669</Value>
+    </Y>
+  </Polygon>
+  <OperatingPercentage>82</OperatingPercentage>
+  <UnresolvedIssues>18</UnresolvedIssues>
+</XMLDisplayData>
+
+
+
+Response #36 recieved from 127.0.0.1, 648ms of latency
+Content:<XMLDisplayData Name="MockDisplay" Path="Graphics.Displays" SchemaVersion="1.1.1.2">
+  <Metadata>
+    <LastEditUser>DVADMIN</LastEditUser>
+    <LastEditTime>2024-07-16T08:11:34.037656-05:00</LastEditTime>
+  </Metadata>
+  <Polygon Name="ControlPolygon">
+    <Height>
+      <Value>2728724</Value>
+    </Height>
+    <Width>
+      <Value>3044951</Value>
+    </Width>
+    <X>
+      <Value>4048247</Value>
+    </X>
+    <Y>
+      <Value>1342740</Value>
+    </Y>
+  </Polygon>
+  <OperatingPercentage>92</OperatingPercentage>
+  <UnresolvedIssues>2</UnresolvedIssues>
+</XMLDisplayData>
+
+
+
+Response #37 recieved from 127.0.0.1, 818ms of latency
+Content:<XMLDisplayData Name="MockDisplay" Path="Graphics.Displays" SchemaVersion="1.1.1.2">
+  <Metadata>
+    <LastEditUser>DVADMIN</LastEditUser>
+    <LastEditTime>2024-07-16T08:11:35.2132924-05:00</LastEditTime>
+  </Metadata>
+  <Polygon Name="ControlPolygon">
+    <Height>
+      <Value>2881727</Value>
+    </Height>
+    <Width>
+      <Value>3943864</Value>
+    </Width>
+    <X>
+      <Value>3856378</Value>
+    </X>
+    <Y>
+      <Value>1535292</Value>
+    </Y>
+  </Polygon>
+  <OperatingPercentage>92</OperatingPercentage>
+  <UnresolvedIssues>12</UnresolvedIssues>
+</XMLDisplayData>
+
+
+
+Response #51 recieved from 127.0.0.1, 796ms of latency
+Content:<XMLDisplayData Name="MockDisplay" Path="Graphics.Displays" SchemaVersion="1.1.1.2">
+  <Metadata>
+    <LastEditUser>DVADMIN</LastEditUser>
+    <LastEditTime>2024-07-16T08:11:49.6234498-05:00</LastEditTime>
+  </Metadata>
+  <Polygon Name="ControlPolygon">
+    <Height>
+      <Value>3523751</Value>
+    </Height>
+    <Width>
+      <Value>3335423</Value>
+    </Width>
+    <X>
+      <Value>3580810</Value>
+    </X>
+    <Y>
+      <Value>1367073</Value>
+    </Y>
+  </Polygon>
+  <OperatingPercentage>86</OperatingPercentage>
+  <UnresolvedIssues>19</UnresolvedIssues>
+</XMLDisplayData>
+
+
+
+Response #52 recieved from 127.0.0.1, 816ms of latency
+Content:<XMLDisplayData Name="MockDisplay" Path="Graphics.Displays" SchemaVersion="1.1.1.2">
+  <Metadata>
+    <LastEditUser>DVADMIN</LastEditUser>
+    <LastEditTime>2024-07-16T08:11:50.6574066-05:00</LastEditTime>
+  </Metadata>
+  <Polygon Name="ControlPolygon">
+    <Height>
+      <Value>3699146</Value>
+    </Height>
+    <Width>
+      <Value>2871042</Value>
+    </Width>
+    <X>
+      <Value>4471179</Value>
+    </X>
+    <Y>
+      <Value>1572303</Value>
+    </Y>
+  </Polygon>
+  <OperatingPercentage>81</OperatingPercentage>
+  <UnresolvedIssues>19</UnresolvedIssues>
+</XMLDisplayData>
+
+
+
+Response #53 recieved from 127.0.0.1, 854ms of latency
+Content:<XMLDisplayData Name="MockDisplay" Path="Graphics.Displays" SchemaVersion="1.1.1.2">
+  <Metadata>
+    <LastEditUser>DVADMIN</LastEditUser>
+    <LastEditTime>2024-07-16T08:11:51.6988476-05:00</LastEditTime>
+  </Metadata>
+  <Polygon Name="ControlPolygon">
+    <Height>
+      <Value>3073000</Value>
+    </Height>
+    <Width>
+      <Value>4242242</Value>
+    </Width>
+    <X>
+      <Value>3368279</Value>
+    </X>
+    <Y>
+      <Value>1594675</Value>
+    </Y>
+  </Polygon>
+  <OperatingPercentage>90</OperatingPercentage>
+  <UnresolvedIssues>4</UnresolvedIssues>
+</XMLDisplayData>
+
+
+
+Response #54 recieved from 127.0.0.1, 886ms of latency
+Content:<XMLDisplayData Name="MockDisplay" Path="Graphics.Displays" SchemaVersion="1.1.1.2">
+  <Metadata>
+    <LastEditUser>DVADMIN</LastEditUser>
+    <LastEditTime>2024-07-16T08:11:52.7319778-05:00</LastEditTime>
+  </Metadata>
+  <Polygon Name="ControlPolygon">
+    <Height>
+      <Value>3621322</Value>
+    </Height>
+    <Width>
+      <Value>3230328</Value>
+    </Width>
+    <X>
+      <Value>4280799</Value>
+    </X>
+    <Y>
+      <Value>1644998</Value>
+    </Y>
+  </Polygon>
+  <OperatingPercentage>84</OperatingPercentage>
+  <UnresolvedIssues>2</UnresolvedIssues>
+</XMLDisplayData>
+
+
+

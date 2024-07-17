@@ -1,0 +1,9 @@
+C:\Users\E1495970\source\repos\WindowsService1\EvilClass\bin\Debug\EncryptionDecryption.dll
+C:\Users\E1495970\source\repos\WindowsService1\EvilClass\bin\Debug\EncryptionDecryption.pdb
+C:\Users\E1495970\source\repos\WindowsService1\EvilClass\obj\Debug\EvilClass.csproj.AssemblyReference.cache
+C:\Users\E1495970\source\repos\WindowsService1\EvilClass\obj\Debug\EvilClass.csproj.CoreCompileInputs.cache
+C:\Users\E1495970\source\repos\WindowsService1\EvilClass\obj\Debug\EvilClass.csproj.Up2Date
+C:\Users\E1495970\source\repos\WindowsService1\EvilClass\bin\Debug\dotNetClassLibrary.dll
+C:\Users\E1495970\source\repos\WindowsService1\EvilClass\bin\Debug\dotNetClassLibrary.pdb
+C:\Users\E1495970\source\repos\WindowsService1\EvilClass\obj\Debug\dotNetClassLibrary.dll
+C:\Users\E1495970\source\repos\WindowsService1\EvilClass\obj\Debug\dotNetClassLibrary.pdb

@@ -3,18 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\E1495970\\source\\repos\\WindowsService1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C0DB4B8A-C687-4B9C-A63A-9CDF5E105B4A}|plainconsolefortesting\\UnencryptedDataSender.csproj|c:\\users\\e1495970\\source\\repos\\windowsservice1\\plainconsolefortesting\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C0DB4B8A-C687-4B9C-A63A-9CDF5E105B4A}|plainconsolefortesting\\UnencryptedDataSender.csproj|solutionrelative:plainconsolefortesting\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{21C0A6AB-ED9C-49FA-BDEF-2159DF31C970}|TimedPinger\\UnencryptedTimedPinger.csproj|c:\\users\\e1495970\\source\\repos\\windowsservice1\\timedpinger\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21C0A6AB-ED9C-49FA-BDEF-2159DF31C970}|TimedPinger\\UnencryptedTimedPinger.csproj|solutionrelative:timedpinger\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8F0A0EA7-C0A6-4A93-8F9C-2F629FBC01B7}|..\\ConsoleApp3\\ConsoleApp3\\UnencryptedManualDataRequester.csproj|c:\\users\\e1495970\\source\\repos\\consoleapp3\\consoleapp3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F492BCBD-E4FE-4FE0-B96D-FA3EE0078DFB}|SQLRCE\\SQLRCE.csproj|c:\\users\\e1495970\\source\\repos\\windowsservice1\\sqlrce\\connect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F492BCBD-E4FE-4FE0-B96D-FA3EE0078DFB}|SQLRCE\\SQLRCE.csproj|solutionrelative:sqlrce\\connect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8F0A0EA7-C0A6-4A93-8F9C-2F629FBC01B7}|..\\ConsoleApp3\\ConsoleApp3\\UnencryptedManualDataRequester.csproj|c:\\users\\e1495970\\source\\repos\\consoleapp3\\consoleapp3\\unencryptedmanualdatarequester.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{F492BCBD-E4FE-4FE0-B96D-FA3EE0078DFB}|SQLRCE\\SQLRCE.csproj|c:\\users\\e1495970\\source\\repos\\windowsservice1\\sqlrce\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F492BCBD-E4FE-4FE0-B96D-FA3EE0078DFB}|SQLRCE\\SQLRCE.csproj|solutionrelative:sqlrce\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CB96EB8A-8641-4D83-9EE8-14C28502937C}|UnencryptedUpstreamRateManager\\UnencryptedUpstreamRateManager.csproj|C:\\Users\\E1495970\\source\\repos\\WindowsService1\\unencryptedupstreamratemanager\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CB96EB8A-8641-4D83-9EE8-14C28502937C}|UnencryptedUpstreamRateManager\\UnencryptedUpstreamRateManager.csproj|solutionrelative:unencryptedupstreamratemanager\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CB53AE9F-045F-4823-BB10-C92F8DF81411}|EvilClass\\EvilClass.csproj|C:\\Users\\E1495970\\source\\repos\\WindowsService1\\evilclass\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB53AE9F-045F-4823-BB10-C92F8DF81411}|EvilClass\\EvilClass.csproj|solutionrelative:evilclass\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -24,56 +26,59 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\E1495970\\source\\repos\\WindowsService1\\plainconsolefortesting\\Program.cs",
-              "RelativeDocumentMoniker": "plainconsolefortesting\\Program.cs",
-              "ToolTip": "C:\\Users\\E1495970\\source\\repos\\WindowsService1\\plainconsolefortesting\\Program.cs",
-              "RelativeToolTip": "plainconsolefortesting\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAuAAAA",
+              "DocumentIndex": 1,
+              "Title": "connect.cs",
+              "DocumentMoniker": "C:\\Users\\E1495970\\source\\repos\\WindowsService1\\SQLRCE\\connect.cs",
+              "RelativeDocumentMoniker": "SQLRCE\\connect.cs",
+              "ToolTip": "C:\\Users\\E1495970\\source\\repos\\WindowsService1\\SQLRCE\\connect.cs",
+              "RelativeToolTip": "SQLRCE\\connect.cs",
+              "ViewState": "AQIAACYAAAAAAAAAAAAAwCkAAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-16T03:56:28.902Z",
+              "WhenOpened": "2024-07-17T16:59:06.235Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\E1495970\\source\\repos\\ConsoleApp3\\ConsoleApp3\\Program.cs",
-              "RelativeDocumentMoniker": "..\\ConsoleApp3\\ConsoleApp3\\Program.cs",
-              "ToolTip": "C:\\Users\\E1495970\\source\\repos\\ConsoleApp3\\ConsoleApp3\\Program.cs",
-              "RelativeToolTip": "..\\ConsoleApp3\\ConsoleApp3\\Program.cs",
-              "ViewState": "AQIAACEAAAAAAAAAAAAYwCoAAAAXAAAA",
+              "DocumentMoniker": "C:\\Users\\E1495970\\source\\repos\\WindowsService1\\SQLRCE\\Program.cs",
+              "RelativeDocumentMoniker": "SQLRCE\\Program.cs",
+              "ToolTip": "C:\\Users\\E1495970\\source\\repos\\WindowsService1\\SQLRCE\\Program.cs",
+              "RelativeToolTip": "SQLRCE\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAA/AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-15T15:53:00.286Z"
+              "WhenOpened": "2024-07-17T16:54:25.871Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "UnencryptedManualDataRequester.csproj",
-              "DocumentMoniker": "C:\\Users\\E1495970\\source\\repos\\ConsoleApp3\\ConsoleApp3\\UnencryptedManualDataRequester.csproj",
-              "RelativeDocumentMoniker": "..\\ConsoleApp3\\ConsoleApp3\\UnencryptedManualDataRequester.csproj",
-              "ToolTip": "C:\\Users\\E1495970\\source\\repos\\ConsoleApp3\\ConsoleApp3\\UnencryptedManualDataRequester.csproj",
-              "RelativeToolTip": "..\\ConsoleApp3\\ConsoleApp3\\UnencryptedManualDataRequester.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-07-15T15:52:50.298Z"
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\E1495970\\source\\repos\\WindowsService1\\TimedPinger\\Program.cs",
+              "RelativeDocumentMoniker": "TimedPinger\\Program.cs",
+              "ToolTip": "C:\\Users\\E1495970\\source\\repos\\WindowsService1\\TimedPinger\\Program.cs",
+              "RelativeToolTip": "TimedPinger\\Program.cs",
+              "ViewState": "AQIAAFIAAAAAAAAAAAAUwIwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-16T16:05:17.087Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\E1495970\\source\\repos\\WindowsService1\\UnencryptedUpstreamRateManager\\Program.cs",
-              "RelativeDocumentMoniker": "UnencryptedUpstreamRateManager\\Program.cs",
-              "ToolTip": "C:\\Users\\E1495970\\source\\repos\\WindowsService1\\UnencryptedUpstreamRateManager\\Program.cs",
-              "RelativeToolTip": "UnencryptedUpstreamRateManager\\Program.cs",
-              "ViewState": "AQIAAKUAAAAAAAAAAAAowLgAAAAAAAAA",
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Users\\E1495970\\source\\repos\\WindowsService1\\EvilClass\\Class1.cs",
+              "RelativeDocumentMoniker": "EvilClass\\Class1.cs",
+              "ToolTip": "C:\\Users\\E1495970\\source\\repos\\WindowsService1\\EvilClass\\Class1.cs",
+              "RelativeToolTip": "EvilClass\\Class1.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABAAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-11T19:31:32.069Z"
+              "WhenOpened": "2024-07-16T14:55:00.343Z",
+              "EditorCaption": ""
             }
           ]
         }

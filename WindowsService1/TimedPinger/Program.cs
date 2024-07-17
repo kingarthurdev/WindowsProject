@@ -5,6 +5,12 @@ using System.Text;
 using System.Threading;
 using dotNetClassLibrary;
 using System.Xml.Linq;
+using System.Collections.Generic;
+using System.IO;
+using System.Reflection;
+using System.Linq;
+using System.Windows.Forms;
+
 namespace TimedPinger
 {
     internal class Pinger
@@ -13,14 +19,41 @@ namespace TimedPinger
         static int destinationPort = 12000;
         static byte[] sendBytes;
         static uint count = 1;
-        
-        static void Main(string[] args)
+        static Dictionary<string,string> dllHashes = new Dictionary<string, string>
         {
-            
+            { "dotNetClassLibrary", "6C-BF-5C-D3-44-50-F7-AD-ED-6B-A0-30-1B-24-89-50-95-ED-31-74" }
+        };
+        static void getAndVerifyDlls()
+        {
+            for (int i = 0; i < dllHashes.Count; i++)
+            {
+                var assembly = Assembly.Load(dllHashes.ElementAt(i).Key);
+
+                // Get the directory of the loaded assembly
+                string dllPath = assembly.Location;
+                using (FileStream fop = File.OpenRead(dllPath))
+                {
+                    string chksum = BitConverter.ToString(System.Security.Cryptography.SHA1.Create().ComputeHash(fop));
+                    if (!chksum.Equals(dllHashes.ElementAt(i).Value))
+                    {
+                        Console.WriteLine("Invalid File Signiture ");
+                        string message = "Invalid File Signiture Detected!";
+                        string title = "Critical Error";
+                        MessageBoxButtons buttons = MessageBoxButtons.OK;
+                        MessageBox.Show(message, title, buttons);
+                        System.Environment.Exit(1);
+
+                    }
+                }
+            }
+        }
+            static void Main(string[] args)
+            {
+            getAndVerifyDlls();
             try
             {
                          
-                Console.WriteLine("Enter the IP of where you would like to send a message:");
+                Console.WriteLine("Enter the IP of the computer from which to request data:");
                 IPAddress ip = IPAddress.Parse(Console.ReadLine());
 
                 Console.WriteLine("Enter the port of where you would like to send to (default = 12000, 12001 if you would like to use a proxy):");
