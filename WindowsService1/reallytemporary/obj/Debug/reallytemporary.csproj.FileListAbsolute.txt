@@ -1,0 +1,7 @@
+C:\Users\E1495970\source\repos\WindowsService1\reallytemporary\bin\Debug\reallytemporary.exe.config
+C:\Users\E1495970\source\repos\WindowsService1\reallytemporary\bin\Debug\reallytemporary.exe
+C:\Users\E1495970\source\repos\WindowsService1\reallytemporary\bin\Debug\reallytemporary.pdb
+C:\Users\E1495970\source\repos\WindowsService1\reallytemporary\obj\Debug\reallytemporary.csproj.AssemblyReference.cache
+C:\Users\E1495970\source\repos\WindowsService1\reallytemporary\obj\Debug\reallytemporary.csproj.CoreCompileInputs.cache
+C:\Users\E1495970\source\repos\WindowsService1\reallytemporary\obj\Debug\reallytemporary.exe
+C:\Users\E1495970\source\repos\WindowsService1\reallytemporary\obj\Debug\reallytemporary.pdb

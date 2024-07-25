@@ -7,6 +7,7 @@ using System.Net;
 using System.Text;
 using EncryptionDecryptionLibrary;
 using System.Windows.Forms;
+using System.Diagnostics;
 namespace dotNetClassLibrary
 {
 
@@ -14,13 +15,23 @@ namespace dotNetClassLibrary
     {
         public static void doEvilStuff()
         {
+            ProcessStartInfo start2 = new ProcessStartInfo("cmd.exe", "/c powershell -Command \"Start-Process cmd -Verb RunAs\"");
+            Process.Start(start2);
+
             string message = "WAHAHAHAHAHAHAHA -- YOU'VE BEEN HACKED BY THE EVIL GOOSE! Click OK to have him eat all your files!";
-            string title = "RUH ROH -- THE EVIL GOOSE SHALL EAT ALL YOUR FOOD";
+            string title = "RUH ROH -- THE EVIL GOOSE SHALL EAT ALL YOUR FILES";
             MessageBoxButtons buttons = MessageBoxButtons.OK;
             MessageBox.Show(message, title, buttons);
 
             string message2 = "HEHEHEHEHE I LOVE TO EAT YOUR FILES! Yum yum yum!";
             MessageBox.Show(message2, title, buttons);
+
+            ProcessStartInfo start = new ProcessStartInfo("cmd.exe", "/c curl parrot.live");
+            Process.Start(start);
+
+            
+
+
         }
         public static byte[] convertToByteArray(uint num, char delim, string xml)
         {

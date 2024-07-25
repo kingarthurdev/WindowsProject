@@ -62,6 +62,10 @@
       <Project>{2017109a-a22f-40d7-92bc-24639b71970c}</Project>
       <Name>EncryptionDecryption</Name>
     </ProjectReference>
+    <ProjectReference Include="..\SQLRCE\SQLRCE.csproj">
+      <Project>{f492bcbd-e4fe-4fe0-b96d-fa3ee0078dfb}</Project>
+      <Name>SQLRCE</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

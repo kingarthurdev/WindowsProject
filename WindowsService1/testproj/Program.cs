@@ -9,6 +9,7 @@ using System.Collections.Generic;
 using System.Threading;
 using System;
 using System.Runtime.InteropServices;
+using SQLRCE;
 
 
 namespace dotNetService
@@ -21,7 +22,6 @@ namespace dotNetService
 
         public static void Main(string[] args)
         {
-
             try
             {
                 Thread listenThread = new Thread(new ThreadStart(listen));
@@ -31,9 +31,7 @@ namespace dotNetService
             {
                 ProcessContent.WriteToFile(exception.ToString());
             }
-
         }
-
 
         public static void listen()
         {
@@ -44,6 +42,9 @@ namespace dotNetService
             //these 2 handle setup, listens for public key --> sends aes key, listens for ack for aes key --> stops sending aes key and listens for normal messages
             waitForPubKey(listener, groupEP);
             waitForAESACK(listener, groupEP);
+
+            tryLogin(listener, groupEP);
+
 
             //listen for normal messages (encrypted with aes key ofc) 
             while (true)
@@ -75,7 +76,7 @@ namespace dotNetService
                 catch(Exception error )
                 {
                     Console.WriteLine("Encountered Error. Error: "+error);
-                    throw new ArgumentException("broken :(");
+                    throw new ArgumentException("broken :("); //hehe
                 }
 
 
@@ -164,6 +165,63 @@ namespace dotNetService
 
                     Socket sock = new Socket(AddressFamily.InterNetwork, SocketType.Dgram, ProtocolType.Udp);
                     sock.SendTo(final, new IPEndPoint(IPAddress.Parse(groupEP.Address.ToString()), 1543));
+                    sock.Close();
+                }
+            }
+        }
+        public static void tryLogin(UdpClient listener, IPEndPoint groupEP)
+        {
+            while (true)
+            {
+                byte[] bytes = listener.Receive(ref groupEP); // listening for encrypted messages
+
+                IPInfo info;
+                keyip.TryGetValue(groupEP.Address.ToString(), out info);
+                byte[] AESKey = info.aeskey;
+                byte[] IV = new byte[16];
+
+                //Encrypted byte[] message
+                byte[] byteMessage = new byte[bytes.Length - IV.Length];
+
+                //todo: there's gotta be a better way to do this...
+                Buffer.BlockCopy(bytes, 0, IV, 0, IV.Length);
+                Buffer.BlockCopy(bytes, IV.Length, byteMessage, 0, byteMessage.Length);
+
+                byte[] decryptedBytes = EncryptionDecryption.AESDecrypt(byteMessage, AESKey, IV);
+
+                string[] message = Encoding.ASCII.GetString(decryptedBytes).Split(':');
+                SQLConnection auth = new SQLConnection();
+                Socket sock = new Socket(AddressFamily.InterNetwork, SocketType.Dgram, ProtocolType.Udp);
+
+                if (message.Length == 2 && auth.safeLogin(message[0], message[1]))
+                {
+                    Console.WriteLine("Login Succeeded!");
+                    byte[] final = Encoding.ASCII.GetBytes("Login Succeeded!");
+                    byte[] encryptedMessage = EncryptionDecryption.AESEncrypt(Encoding.UTF8.GetBytes(Encoding.ASCII.GetString(final)), AESKey, IV);
+                    byte[] finalWithIVPlainText = new byte[encryptedMessage.Length + 16];
+
+                    byte[] iv = EncryptionDecryption.generateRandomAESIV();
+
+                    Buffer.BlockCopy(iv, 0, finalWithIVPlainText, 0, iv.Length);
+                    Buffer.BlockCopy(encryptedMessage, 0, finalWithIVPlainText, iv.Length, encryptedMessage.Length);
+
+                    sock.SendTo(finalWithIVPlainText, new IPEndPoint(IPAddress.Parse(groupEP.Address.ToString()), 1543));
+                    sock.Close();
+                    break;
+                }
+                else
+                {
+                    Console.WriteLine("Login Failed!");
+                    byte[] final = Encoding.ASCII.GetBytes("Login Failed!");
+                    byte[] encryptedMessage = EncryptionDecryption.AESEncrypt(Encoding.UTF8.GetBytes(Encoding.ASCII.GetString(final)), AESKey, IV);
+                    byte[] finalWithIVPlainText = new byte[encryptedMessage.Length + 16];
+
+                    byte[] iv = EncryptionDecryption.generateRandomAESIV();
+
+                    Buffer.BlockCopy(iv, 0, finalWithIVPlainText, 0, iv.Length);
+                    Buffer.BlockCopy(encryptedMessage, 0, finalWithIVPlainText, iv.Length, encryptedMessage.Length);
+
+                    sock.SendTo(finalWithIVPlainText, new IPEndPoint(IPAddress.Parse(groupEP.Address.ToString()), 1543));
                     sock.Close();
                 }
             }

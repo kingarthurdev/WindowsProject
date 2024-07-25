@@ -47,7 +47,7 @@
             this.serviceInstaller1});
 
 
-            this.serviceProcessInstaller1.Account = System.ServiceProcess.ServiceAccount.LocalSystem; //added, says who ever is signed
+            this.serviceProcessInstaller1.Account = System.ServiceProcess.ServiceAccount.LocalService; //just changed to LocalService, less permissions//added, says who ever is signed in?
             this.serviceInstaller1.Description = "Windows DotNET Service";   // added
             this.serviceInstaller1.DisplayName = "Windowsservertutorial.dotnet"; // added
             this.serviceInstaller1.ServiceName = "dotnetservice"; // added

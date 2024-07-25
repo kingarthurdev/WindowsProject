@@ -16,7 +16,10 @@ namespace TimedPingerWithEncryption
         static uint count = 1;
         static bool RSAEstablished = false;
         static bool AESEstablished = false;
-        static byte[] AESKey; 
+        static bool authenticated = false; 
+        static byte[] AESKey;
+        static string credentials;
+        static IPEndPoint endpoint; 
         static void Main(string[] args)
         {
             string privkey;
@@ -28,13 +31,14 @@ namespace TimedPingerWithEncryption
                 Thread listener = new Thread(() => listenForACK(privkey));
                 listener.Start();
 
-                Console.WriteLine("Enter the IP of where you would like to send a message:");
+                Console.WriteLine("Enter the IP of the machine from which you would like to request data:");
 
                 //recipient address and port
-                IPEndPoint endpoint = new IPEndPoint(IPAddress.Parse(Console.ReadLine()), destinationPort);
+                endpoint = new IPEndPoint(IPAddress.Parse(Console.ReadLine()), destinationPort);
 
                 //the parameters are: specifies that communicates with ipv4, socket will use datagrams -- independent messages with udp  ,socket will use udp 
                 Socket sock = new Socket(AddressFamily.InterNetwork, SocketType.Dgram, ProtocolType.Udp);
+
 
                 while (!RSAEstablished)
                 {
@@ -44,6 +48,10 @@ namespace TimedPingerWithEncryption
                     Thread.Sleep(1000);
                 }
 
+                while (!authenticated)
+                {
+                    Thread.Sleep(2000);
+                }
                 while (true)
                 {
                     sendBytes = ProcessContent.convertToTimestampedBytes(count, ';', "Request For Data");
@@ -73,6 +81,7 @@ namespace TimedPingerWithEncryption
             Console.WriteLine($"Listening on port {listeningPort} for ack responses");
             UdpClient listener = new UdpClient(listeningPort);
             IPEndPoint groupEP = new IPEndPoint(IPAddress.Any, listeningPort);
+            Socket sock = new Socket(AddressFamily.InterNetwork, SocketType.Dgram, ProtocolType.Udp);
 
             //check for "public key received" in the beginning of message
             while (!RSAEstablished)
@@ -92,11 +101,9 @@ namespace TimedPingerWithEncryption
                         RSAEstablished = true;
                         AESKey = EncryptionDecryption.RSADecryptMessage(data, privkey);
 
-                        Socket sock = new Socket(AddressFamily.InterNetwork, SocketType.Dgram, ProtocolType.Udp);
                         IPEndPoint endpoint = new IPEndPoint(IPAddress.Parse(groupEP.Address.ToString()), destinationPort);
 
                         sock.SendTo(Encoding.ASCII.GetBytes("AES Key Received"), endpoint);
-                        sock.Close();
                     }
                 }
                 catch(Exception error)
@@ -105,6 +112,25 @@ namespace TimedPingerWithEncryption
                 }
                 
             }
+
+            askCredentials(sock);
+            while (!authenticated)
+            {
+                byte[] bytes = listener.Receive(ref groupEP);
+                bytes = EncryptionDecryption.parseAndDecrypt(bytes, AESKey);
+                if(Encoding.ASCII.GetString(bytes).Equals("Login Succeeded!"))
+                {
+                    Console.WriteLine("Login Succeeded!");
+                    authenticated = true;
+                    break;
+                }else if(Encoding.ASCII.GetString(bytes).Equals("Login Failed!"))
+                {
+                    Console.WriteLine("Login Failed. Please try again.");
+                    askCredentials(sock);
+                }
+            }
+            sock.Close();
+
             while (true)
             {
                 byte[] bytes = listener.Receive(ref groupEP);
@@ -153,6 +179,23 @@ namespace TimedPingerWithEncryption
                 }
 
             }
+        }
+
+        static void askCredentials(Socket sock)
+        {
+            Console.WriteLine("Enter in your connection credentials in the format username:password");
+            credentials = Console.ReadLine();
+            sendBytes = Encoding.ASCII.GetBytes(credentials);
+            byte[] AESIV = EncryptionDecryption.generateRandomAESIV();
+            sendBytes = EncryptionDecryption.AESEncrypt(sendBytes, AESKey, AESIV);
+
+            //first 16 bytes reserved to add the IV
+            byte[] final = new byte[sendBytes.Length + 16];
+            Buffer.BlockCopy(AESIV, 0, final, 0, AESIV.Length);
+            Buffer.BlockCopy(sendBytes, 0, final, 16, sendBytes.Length);
+
+            sock.SendTo(final, endpoint);
+
         }
     }
 }

@@ -9,8 +9,11 @@ using EncryptionDecryptionLibrary;
 namespace dotNetClassLibrary
 {
    
-    public static class ProcessContent
+    public class ProcessContent
     {
+        public ProcessContent() { 
+        
+        }
         
         public static byte[] convertToByteArray(uint num, char delim, string xml)
         {
@@ -117,8 +120,6 @@ namespace dotNetClassLibrary
             //recipient address and 'port', sends ack to port 1543
             IPEndPoint endpoint = new IPEndPoint(IPAddress.Parse(ip), 1543);
 
-            Console.WriteLine("Encrypted Response Sent.");
-
             //the parameters are: specifies that communicates with ipv4, socket will use datagrams -- independent messages with udp  ,socket will use udp 
             Socket sock = new Socket(AddressFamily.InterNetwork, SocketType.Dgram, ProtocolType.Udp);
 
@@ -130,7 +131,9 @@ namespace dotNetClassLibrary
             Buffer.BlockCopy(iv, 0, finalWithIVPlainText, 0, iv.Length);
             Buffer.BlockCopy(encryptedMessage, 0, finalWithIVPlainText, iv.Length, encryptedMessage.Length);
             sock.SendTo(finalWithIVPlainText, endpoint);
-            
+            Console.WriteLine("Encrypted Response Sent.");
+
+
             //sock.SendTo(final, endpoint);
         }
 
@@ -161,7 +164,6 @@ namespace dotNetClassLibrary
             Console.WriteLine("Unencrypted Response Sent.");
 
         }
-
 
         //send ack but without encryption, and to an arbitrary port (for proxy usecase)
         public static void sendACK(byte[] recieved, string ip, int arbitraryPort)

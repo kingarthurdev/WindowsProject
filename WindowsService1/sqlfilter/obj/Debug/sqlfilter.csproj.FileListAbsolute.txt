@@ -1,0 +1,7 @@
+C:\Users\E1495970\source\repos\WindowsService1\sqlfilter\bin\Debug\sqlfilter.exe.config
+C:\Users\E1495970\source\repos\WindowsService1\sqlfilter\bin\Debug\sqlfilter.exe
+C:\Users\E1495970\source\repos\WindowsService1\sqlfilter\bin\Debug\sqlfilter.pdb
+C:\Users\E1495970\source\repos\WindowsService1\sqlfilter\obj\Debug\sqlfilter.csproj.AssemblyReference.cache
+C:\Users\E1495970\source\repos\WindowsService1\sqlfilter\obj\Debug\sqlfilter.csproj.CoreCompileInputs.cache
+C:\Users\E1495970\source\repos\WindowsService1\sqlfilter\obj\Debug\sqlfilter.exe
+C:\Users\E1495970\source\repos\WindowsService1\sqlfilter\obj\Debug\sqlfilter.pdb

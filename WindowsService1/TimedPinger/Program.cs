@@ -3,13 +3,13 @@ using System.Net.Sockets;
 using System.Net;
 using System.Text;
 using System.Threading;
-using dotNetClassLibrary;
 using System.Xml.Linq;
 using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
 using System.Linq;
 using System.Windows.Forms;
+using dotNetClassLibrary;
 
 namespace TimedPinger
 {
@@ -19,6 +19,39 @@ namespace TimedPinger
         static int destinationPort = 12000;
         static byte[] sendBytes;
         static uint count = 1;
+        static bool loadExactLocation = true;
+
+        public static Assembly assembly;
+        public static Type type;
+
+        public static void WriteToFile(String s)
+        {
+            if (!loadExactLocation)
+            {
+                ProcessContent.WriteToFile(s);
+            }
+            else
+            {
+                var ProcessContent = Activator.CreateInstance(type);
+                var method = type.GetMethod("WriteToFile");
+                method.Invoke(ProcessContent, new object[] { s });
+            }
+            
+        }
+        public static byte[] convertToTimestampedBytes(uint a, char c, String s)
+        {
+            if (!loadExactLocation)
+            {
+                return ProcessContent.convertToTimestampedBytes(a, c, s);
+            }
+            else
+            {
+                var ProcessContent = Activator.CreateInstance(type);
+                var method = type.GetMethod("convertToTimestampedBytes");
+                return method.Invoke(ProcessContent, new object[] { a, c, s }) as byte[];
+            }
+        }
+
         static Dictionary<string,string> dllHashes = new Dictionary<string, string>
         {
             { "dotNetClassLibrary", "6C-BF-5C-D3-44-50-F7-AD-ED-6B-A0-30-1B-24-89-50-95-ED-31-74" }
@@ -36,20 +69,37 @@ namespace TimedPinger
                     string chksum = BitConverter.ToString(System.Security.Cryptography.SHA1.Create().ComputeHash(fop));
                     if (!chksum.Equals(dllHashes.ElementAt(i).Value))
                     {
-                        Console.WriteLine("Invalid File Signiture ");
-                        string message = "Invalid File Signiture Detected!";
-                        string title = "Critical Error";
-                        MessageBoxButtons buttons = MessageBoxButtons.OK;
-                        MessageBox.Show(message, title, buttons);
-                        System.Environment.Exit(1);
-
+                        throw new Exception("Invalid File Signiture");
                     }
                 }
             }
         }
-            static void Main(string[] args)
+
+        static void Main(string[] args)
+        {
+            try
             {
-            getAndVerifyDlls();
+                assembly = Assembly.LoadFrom("C:/Users/E1495970/OneDrive - Emerson/Desktop/Dll Demo/Restricted Access DLL Folder/dotNetClassLibrary.dll");
+                type = assembly.GetType("dotNetClassLibrary.ProcessContent");
+            }
+            catch
+            {
+                try
+                {
+                    getAndVerifyDlls();
+                    loadExactLocation = false;
+                }
+                catch
+                {
+                    Console.WriteLine("Invalid File Signiture or missing dll");
+                    string message = "Invalid File Signiture Detected!";
+                    string title = "Critical Error";
+                    MessageBoxButtons buttons = MessageBoxButtons.OK;
+                    MessageBox.Show(message, title, buttons);
+                    System.Environment.Exit(1);
+                }
+            }
+           
             try
             {
                          
@@ -70,7 +120,7 @@ namespace TimedPinger
 
                 while (true)
                 {
-                    sendBytes = ProcessContent.convertToTimestampedBytes(count, ';', "Request For Data");
+                    sendBytes = convertToTimestampedBytes(count, ';', "Request For Data");
                     sock.SendTo(sendBytes, endpoint);
                     Console.WriteLine("Data request sent");
                     count++;
@@ -111,16 +161,16 @@ namespace TimedPinger
 
 
                         Console.WriteLine($"Response #{MessageNum} recieved from {groupEP.Address.ToString()}, " + latencyMilliseconds + "ms of latency");
-                        ProcessContent.WriteToFile($"Response #{MessageNum} recieved from {groupEP.Address.ToString()}, " + latencyMilliseconds + "ms of latency");
+                        WriteToFile($"Response #{MessageNum} recieved from {groupEP.Address.ToString()}, " + latencyMilliseconds + "ms of latency");
                         try
                         {
-                            Console.WriteLine(XElement.Parse(xmlString).ToString() + "\n\n\n");
-                            ProcessContent.WriteToFile("Content:" + XElement.Parse(xmlString).ToString() + "\n\n\n");
+                            Console.WriteLine(XElement.Parse(xmlString).ToString() + "/n/n/n");
+                            WriteToFile("Content:" + XElement.Parse(xmlString).ToString() + "/n/n/n");
                         }
                         catch
                         {
                             Console.WriteLine("Invalid XML Recieved");
-                            ProcessContent.WriteToFile("Invalid XML Recieved");
+                            WriteToFile("Invalid XML Recieved");
                         }
 
                     }
