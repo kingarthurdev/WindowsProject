@@ -75,6 +75,25 @@
         "projectPath": "C:\\Users\\E1495970\\source\\repos\\WindowsService1\\dotNetClassLibrary\\dotNetClassLibrary.csproj",
         "frameworks": {
           "net48": {
+            "projectReferences": {
+              "C:\\Users\\E1495970\\source\\repos\\WindowsService1\\EncryptionDecryption\\EncryptionDecryption.csproj": {
+                "projectPath": "C:\\Users\\E1495970\\source\\repos\\WindowsService1\\EncryptionDecryption\\EncryptionDecryption.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net48": {}
+      }
+    },
+    "C:\\Users\\E1495970\\source\\repos\\WindowsService1\\EncryptionDecryption\\EncryptionDecryption.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\E1495970\\source\\repos\\WindowsService1\\EncryptionDecryption\\EncryptionDecryption.csproj",
+        "projectName": "EncryptionDecryption",
+        "projectPath": "C:\\Users\\E1495970\\source\\repos\\WindowsService1\\EncryptionDecryption\\EncryptionDecryption.csproj",
+        "frameworks": {
+          "net48": {
             "projectReferences": {}
           }
         }

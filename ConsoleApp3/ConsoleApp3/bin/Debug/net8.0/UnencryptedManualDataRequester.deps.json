@@ -1,0 +1,49 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "UnencryptedManualDataRequester/1.0.0": {
+        "dependencies": {
+          "dotNetClassLibrary": "1.0.0"
+        },
+        "runtime": {
+          "UnencryptedManualDataRequester.dll": {}
+        }
+      },
+      "dotNetClassLibrary/1.0.0": {
+        "dependencies": {
+          "EncryptionDecryption": "1.0.0"
+        },
+        "runtime": {
+          "dotNetClassLibrary.dll": {}
+        }
+      },
+      "EncryptionDecryption/1.0.0": {
+        "runtime": {
+          "EncryptionDecryption.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "UnencryptedManualDataRequester/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "dotNetClassLibrary/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "EncryptionDecryption/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

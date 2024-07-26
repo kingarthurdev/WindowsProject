@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("udpdos")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3658a8e00be85ea3dcd43449994308ddd3aa8102")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d8a19d0c97a600622ec43d0a5c5b2709a755b30b")]
 [assembly: System.Reflection.AssemblyProductAttribute("udpdos")]
 [assembly: System.Reflection.AssemblyTitleAttribute("udpdos")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

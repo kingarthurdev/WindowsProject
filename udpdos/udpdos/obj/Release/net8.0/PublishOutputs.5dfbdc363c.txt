@@ -1,0 +1,5 @@
+C:\Users\E1495970\source\repos\udpdos\udpdos\bin\Release\net8.0\publish\udpdos.exe
+C:\Users\E1495970\source\repos\udpdos\udpdos\bin\Release\net8.0\publish\udpdos.dll
+C:\Users\E1495970\source\repos\udpdos\udpdos\bin\Release\net8.0\publish\udpdos.deps.json
+C:\Users\E1495970\source\repos\udpdos\udpdos\bin\Release\net8.0\publish\udpdos.runtimeconfig.json
+C:\Users\E1495970\source\repos\udpdos\udpdos\bin\Release\net8.0\publish\udpdos.pdb

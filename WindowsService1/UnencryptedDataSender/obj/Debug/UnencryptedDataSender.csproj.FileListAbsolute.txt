@@ -1,0 +1,12 @@
+C:\Users\E1495970\source\repos\WindowsService1\UnencryptedDataSender\bin\Debug\UnencryptedDataSender.exe.config
+C:\Users\E1495970\source\repos\WindowsService1\UnencryptedDataSender\bin\Debug\UnencryptedDataSender.exe
+C:\Users\E1495970\source\repos\WindowsService1\UnencryptedDataSender\bin\Debug\UnencryptedDataSender.pdb
+C:\Users\E1495970\source\repos\WindowsService1\UnencryptedDataSender\bin\Debug\dotNetClassLibrary.dll
+C:\Users\E1495970\source\repos\WindowsService1\UnencryptedDataSender\bin\Debug\EncryptionDecryption.dll
+C:\Users\E1495970\source\repos\WindowsService1\UnencryptedDataSender\bin\Debug\dotNetClassLibrary.pdb
+C:\Users\E1495970\source\repos\WindowsService1\UnencryptedDataSender\bin\Debug\EncryptionDecryption.pdb
+C:\Users\E1495970\source\repos\WindowsService1\UnencryptedDataSender\obj\Debug\UnencryptedDataSender.csproj.AssemblyReference.cache
+C:\Users\E1495970\source\repos\WindowsService1\UnencryptedDataSender\obj\Debug\UnencryptedDataSender.csproj.CoreCompileInputs.cache
+C:\Users\E1495970\source\repos\WindowsService1\UnencryptedDataSender\obj\Debug\Unencryp.5E4F4E9A.Up2Date
+C:\Users\E1495970\source\repos\WindowsService1\UnencryptedDataSender\obj\Debug\UnencryptedDataSender.exe
+C:\Users\E1495970\source\repos\WindowsService1\UnencryptedDataSender\obj\Debug\UnencryptedDataSender.pdb

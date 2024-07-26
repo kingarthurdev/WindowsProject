@@ -15,8 +15,16 @@
         }
       },
       "dotNetClassLibrary/1.0.0": {
+        "dependencies": {
+          "EncryptionDecryption": "1.0.0"
+        },
         "runtime": {
           "dotNetClassLibrary.dll": {}
+        }
+      },
+      "EncryptionDecryption/1.0.0": {
+        "runtime": {
+          "EncryptionDecryption.dll": {}
         }
       }
     }
@@ -28,6 +36,11 @@
       "sha512": ""
     },
     "dotNetClassLibrary/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "EncryptionDecryption/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

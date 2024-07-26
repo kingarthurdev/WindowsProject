@@ -5,8 +5,6 @@ VisualStudioVersion = 17.10.34928.147
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnencryptedManualDataRequester", "..\ConsoleApp3\ConsoleApp3\UnencryptedManualDataRequester.csproj", "{8F0A0EA7-C0A6-4A93-8F9C-2F629FBC01B7}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnencryptedDataSender", "plainconsolefortesting\UnencryptedDataSender.csproj", "{C0DB4B8A-C687-4B9C-A63A-9CDF5E105B4A}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnencryptedListenerService", "dotNetService\UnencryptedListenerService.csproj", "{215E20C6-E18A-400A-97F0-B49366089069}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotNetClassLibrary", "dotNetClassLibrary\dotNetClassLibrary.csproj", "{6877B8C2-9D67-4092-AA3C-75C9540AB77C}"
@@ -33,6 +31,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sqlfilter", "sqlfilter\sqlf
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "reallytemporary", "reallytemporary\reallytemporary.csproj", "{F796C6DD-CB2E-4652-A8E2-68BE6BA28AFE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnencryptedDataSender", "UnencryptedDataSender\UnencryptedDataSender.csproj", "{9268E71C-A297-4879-A540-9DE68410FBA1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,10 +43,6 @@ Global
 		{8F0A0EA7-C0A6-4A93-8F9C-2F629FBC01B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8F0A0EA7-C0A6-4A93-8F9C-2F629FBC01B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8F0A0EA7-C0A6-4A93-8F9C-2F629FBC01B7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C0DB4B8A-C687-4B9C-A63A-9CDF5E105B4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C0DB4B8A-C687-4B9C-A63A-9CDF5E105B4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C0DB4B8A-C687-4B9C-A63A-9CDF5E105B4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C0DB4B8A-C687-4B9C-A63A-9CDF5E105B4A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{215E20C6-E18A-400A-97F0-B49366089069}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{215E20C6-E18A-400A-97F0-B49366089069}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{215E20C6-E18A-400A-97F0-B49366089069}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -99,6 +95,10 @@ Global
 		{F796C6DD-CB2E-4652-A8E2-68BE6BA28AFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F796C6DD-CB2E-4652-A8E2-68BE6BA28AFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F796C6DD-CB2E-4652-A8E2-68BE6BA28AFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9268E71C-A297-4879-A540-9DE68410FBA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9268E71C-A297-4879-A540-9DE68410FBA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9268E71C-A297-4879-A540-9DE68410FBA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9268E71C-A297-4879-A540-9DE68410FBA1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

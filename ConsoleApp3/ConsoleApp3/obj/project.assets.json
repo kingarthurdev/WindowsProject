@@ -4,11 +4,23 @@
     "net8.0": {
       "dotNetClassLibrary/1.0.0": {
         "type": "project",
+        "dependencies": {
+          "EncryptionDecryption": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/dotNetClassLibrary.dll": {}
         },
         "runtime": {
           "bin/placeholder/dotNetClassLibrary.dll": {}
+        }
+      },
+      "EncryptionDecryption/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/EncryptionDecryption.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/EncryptionDecryption.dll": {}
         }
       }
     }
@@ -18,6 +30,11 @@
       "type": "project",
       "path": "../../WindowsService1/dotNetClassLibrary/dotNetClassLibrary.csproj",
       "msbuildProject": "../../WindowsService1/dotNetClassLibrary/dotNetClassLibrary.csproj"
+    },
+    "EncryptionDecryption/1.0.0": {
+      "type": "project",
+      "path": "../../WindowsService1/EncryptionDecryption/EncryptionDecryption.csproj",
+      "msbuildProject": "../../WindowsService1/EncryptionDecryption/EncryptionDecryption.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -31,9 +48,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\E1495970\\source\\repos\\ConsoleApp3\\ConsoleApp3\\ConsoleApp3.csproj",
-      "projectName": "ConsoleApp3",
-      "projectPath": "C:\\Users\\E1495970\\source\\repos\\ConsoleApp3\\ConsoleApp3\\ConsoleApp3.csproj",
+      "projectUniqueName": "C:\\Users\\E1495970\\source\\repos\\ConsoleApp3\\ConsoleApp3\\UnencryptedManualDataRequester.csproj",
+      "projectName": "UnencryptedManualDataRequester",
+      "projectPath": "C:\\Users\\E1495970\\source\\repos\\ConsoleApp3\\ConsoleApp3\\UnencryptedManualDataRequester.csproj",
       "packagesPath": "C:\\Users\\E1495970\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\E1495970\\source\\repos\\ConsoleApp3\\ConsoleApp3\\obj\\",
       "projectStyle": "PackageReference",

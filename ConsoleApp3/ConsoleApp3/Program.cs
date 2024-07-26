@@ -9,20 +9,22 @@ class Program
     public static void Main(string[] args)
     {
         //ip addr, port
-        var results = setup(12000);
+        var results = setup();
 
         //send the packets based on user input from the console, starts listener for ack responses
         send(results.Item1, results.Item2);
 
     }
 
-    public static (Socket, IPEndPoint) setup(int port)
+    public static (Socket, IPEndPoint) setup()
     {
         Console.WriteLine("Enter the IP of where you would like to send a message:");
 
         //recipient address and port
         IPAddress broadcast = IPAddress.Parse(Console.ReadLine());
-        IPEndPoint endpoint = new IPEndPoint(broadcast, port);
+
+        Console.WriteLine("Enter the port of where you would like to send a message:");
+        IPEndPoint endpoint = new IPEndPoint(broadcast, int.Parse(Console.ReadLine()));
 
         //the parameters are: specifies that communicates with ipv4, socket will use datagrams -- independent messages with udp  ,socket will use udp 
         Socket sock = new Socket(AddressFamily.InterNetwork, SocketType.Dgram, ProtocolType.Udp);
@@ -113,5 +115,5 @@ class Program
         }
     }
 
-    public static void 
+    
 }   
