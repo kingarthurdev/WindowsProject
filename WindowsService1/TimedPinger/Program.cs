@@ -143,7 +143,6 @@ namespace TimedPinger
             while (true)
             {
                 byte[] bytes = listener.Receive(ref groupEP);
-                foreach (byte b in bytes) {  Console.Write(b+", "); }
                 try
                 {
                     //Format: first 8 are for datetime, next 3 are ack, 4 are message num, last however many are xml data
