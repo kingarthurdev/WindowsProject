@@ -32,6 +32,8 @@ namespace TimedPingerWithEncryption
         };
         static void Main(string[] args)
         {
+            Console.Title = "Encrypted Data Requester";
+            overallDllValidation();
             string privkey;
             string pubkey;
             (pubkey, privkey) = EncryptionDecryption.GenerateRSAKeys();
@@ -105,7 +107,7 @@ namespace TimedPingerWithEncryption
                 }
             }
         }
-        public static void overallValidation()
+        public static void overallDllValidation()
         {
             try
             {

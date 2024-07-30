@@ -78,6 +78,8 @@ namespace TimedPinger
 
         static void Main(string[] args)
         {
+            Console.Title = "Unencrypted Data Requester";
+
             try
             {
                 assembly = Assembly.LoadFrom("C:/Users/E1495970/OneDrive - Emerson/Desktop/Dll Demo/Restricted Access DLL Folder/dotNetClassLibrary.dll");

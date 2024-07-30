@@ -29,6 +29,8 @@ namespace UnencryptedUpstreamRateManager
 
         async static Task Main(string[] args)
         {
+            Console.Title = "Upstream Filtering Proxy";
+
             Console.WriteLine("Enter the IP Address listening on port 1543:");
             //recipient address and port
             endpoint1 = new IPEndPoint(IPAddress.Parse(Console.ReadLine()), destinationPort);

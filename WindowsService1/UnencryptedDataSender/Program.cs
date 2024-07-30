@@ -14,6 +14,7 @@ namespace dotNetService
         static int proxyListeningForAckPort = 1544;
         public static void Main(string[] args)
         {
+            Console.Title = "Unencrypted XML Sender";
             //ProcessContent.WriteToFile("Service started at " + DateTime.Now);
 
             try

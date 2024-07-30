@@ -16,12 +16,12 @@ namespace dotNetService
 {
     public class Service
     {
-
         static bool pubkeyreceived = false;
         static Dictionary<string, IPInfo> keyip = new Dictionary<string, IPInfo>();
 
         public static void Main(string[] args)
         {
+            Console.Title = "Encrypted Data Provider";
             try
             {
                 Thread listenThread = new Thread(new ThreadStart(listen));
