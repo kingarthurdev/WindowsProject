@@ -56,12 +56,12 @@ namespace dotNetService
                     IPInfo info;
                     keyip.TryGetValue(groupEP.Address.ToString(), out info);
                     byte[] AESKey = info.aeskey;
-                    byte[] IV = new byte[16];
 
-                    //Encrypted byte[] message
+                    //first 16 bytes of overall message should be the IV
+                    byte[] IV = new byte[16];
+                    //Encrypted byte[] message, will be pulled from the overall encrypted message
                     byte[] byteMessage = new byte[bytes.Length - IV.Length];
 
-                    //todo: there's gotta be a better way to do this...
                     Buffer.BlockCopy(bytes, 0, IV, 0, IV.Length);
                     Buffer.BlockCopy(bytes, IV.Length, byteMessage, 0, byteMessage.Length);
 
@@ -69,9 +69,8 @@ namespace dotNetService
                     //Note: doing a new var for decryptedBytes is important because byteMessage and DecryptedBytes are of different sizes -- I think...???
                     byte[] decryptedBytes = EncryptionDecryption.AESDecrypt(byteMessage, AESKey, IV);
 
-                    (uint num, char delim, string message, DateTime sendTime) = ProcessContent.convertFromTimestampedBytes(decryptedBytes);
- 
-                    ProcessContent.sendACK(decryptedBytes, groupEP.Address.ToString(), AESKey, IV);
+                    //The only thing that decrypted bytes should be is "count;Request For Data"
+                    ProcessContent.sendACK(decryptedBytes, groupEP.Address.ToString(), AESKey);
                 }
                 catch(Exception error )
                 {
@@ -92,7 +91,6 @@ namespace dotNetService
             while (!keyip.ContainsKey(groupEP.Address.ToString()))
             {
                 byte[] bytes = listener.Receive(ref groupEP);
-                Console.WriteLine(Encoding.ASCII.GetString(bytes));
                 try
                 {
 
@@ -142,7 +140,6 @@ namespace dotNetService
             while (true)
             {
                 byte[] bytes = listener.Receive(ref groupEP);
-                Console.WriteLine(Encoding.ASCII.GetString(bytes));
                 if(Encoding.ASCII.GetString(bytes).Equals("AES Key Received"))
                 {
                     break;
@@ -173,57 +170,63 @@ namespace dotNetService
         {
             while (true)
             {
-                byte[] bytes = listener.Receive(ref groupEP); // listening for encrypted messages
-
-                IPInfo info;
-                keyip.TryGetValue(groupEP.Address.ToString(), out info);
-                byte[] AESKey = info.aeskey;
-                byte[] IV = new byte[16];
-
-                //Encrypted byte[] message
-                byte[] byteMessage = new byte[bytes.Length - IV.Length];
-
-                //todo: there's gotta be a better way to do this...
-                Buffer.BlockCopy(bytes, 0, IV, 0, IV.Length);
-                Buffer.BlockCopy(bytes, IV.Length, byteMessage, 0, byteMessage.Length);
-
-                byte[] decryptedBytes = EncryptionDecryption.AESDecrypt(byteMessage, AESKey, IV);
-
-                string[] message = Encoding.ASCII.GetString(decryptedBytes).Split(':');
-                SQLConnection auth = new SQLConnection();
-                Socket sock = new Socket(AddressFamily.InterNetwork, SocketType.Dgram, ProtocolType.Udp);
-
-                if (message.Length == 2 && auth.safeLogin(message[0], message[1]))
+                try
                 {
-                    Console.WriteLine("Login Succeeded!");
-                    byte[] final = Encoding.ASCII.GetBytes("Login Succeeded!");
-                    byte[] encryptedMessage = EncryptionDecryption.AESEncrypt(Encoding.UTF8.GetBytes(Encoding.ASCII.GetString(final)), AESKey, IV);
-                    byte[] finalWithIVPlainText = new byte[encryptedMessage.Length + 16];
+                    byte[] bytes = listener.Receive(ref groupEP); // listening for encrypted messages
 
-                    byte[] iv = EncryptionDecryption.generateRandomAESIV();
+                    IPInfo info;
+                    keyip.TryGetValue(groupEP.Address.ToString(), out info);
+                    byte[] AESKey = info.aeskey;
+                    byte[] IV = new byte[16];
 
-                    Buffer.BlockCopy(iv, 0, finalWithIVPlainText, 0, iv.Length);
-                    Buffer.BlockCopy(encryptedMessage, 0, finalWithIVPlainText, iv.Length, encryptedMessage.Length);
+                    IV = EncryptionDecryption.generateRandomAESIV();
 
-                    sock.SendTo(finalWithIVPlainText, new IPEndPoint(IPAddress.Parse(groupEP.Address.ToString()), 1543));
-                    sock.Close();
-                    break;
+                    //Encrypted byte[] message
+                    byte[] byteMessage = new byte[bytes.Length - IV.Length];
+
+                    //todo: there's gotta be a better way to do this...
+                    Buffer.BlockCopy(bytes, 0, IV, 0, IV.Length);
+                    Buffer.BlockCopy(bytes, IV.Length, byteMessage, 0, byteMessage.Length);
+
+                    byte[] decryptedBytes = EncryptionDecryption.AESDecrypt(byteMessage, AESKey, IV);
+
+                    string[] message = Encoding.ASCII.GetString(decryptedBytes).Split(':');
+                    SQLConnection auth = new SQLConnection();
+                    Socket sock = new Socket(AddressFamily.InterNetwork, SocketType.Dgram, ProtocolType.Udp);
+
+                    if (message.Length == 2 && auth.safeLogin(message[0], message[1]))
+                    {
+                        Console.WriteLine("Login Succeeded!");
+                        byte[] final = Encoding.ASCII.GetBytes("Login Succeeded!");
+                        byte[] encryptedMessage = EncryptionDecryption.AESEncrypt(final, AESKey, IV);
+                        byte[] finalWithIVPlainText = new byte[encryptedMessage.Length + 16];
+
+                        Buffer.BlockCopy(IV, 0, finalWithIVPlainText, 0, IV.Length);
+                        Buffer.BlockCopy(encryptedMessage, 0, finalWithIVPlainText, IV.Length, encryptedMessage.Length);
+
+                        sock.SendTo(finalWithIVPlainText, new IPEndPoint(IPAddress.Parse(groupEP.Address.ToString()), 1543));
+                        sock.Close();
+                        break;
+                    }
+                    else
+                    {
+                        Console.WriteLine("Login Failed!");
+                        byte[] final = Encoding.ASCII.GetBytes("Login Failed!");
+                        byte[] encryptedMessage = EncryptionDecryption.AESEncrypt(final, AESKey, IV);
+                        byte[] finalWithIVPlainText = new byte[encryptedMessage.Length + 16];
+
+                        Buffer.BlockCopy(IV, 0, finalWithIVPlainText, 0, IV.Length);
+                        Buffer.BlockCopy(encryptedMessage, 0, finalWithIVPlainText, IV.Length, encryptedMessage.Length);
+
+                        sock.SendTo(finalWithIVPlainText, new IPEndPoint(IPAddress.Parse(groupEP.Address.ToString()), 1543));
+                        sock.Close();
+                    }
                 }
-                else
+                catch
                 {
-                    Console.WriteLine("Login Failed!");
-                    byte[] final = Encoding.ASCII.GetBytes("Login Failed!");
-                    byte[] encryptedMessage = EncryptionDecryption.AESEncrypt(Encoding.UTF8.GetBytes(Encoding.ASCII.GetString(final)), AESKey, IV);
-                    byte[] finalWithIVPlainText = new byte[encryptedMessage.Length + 16];
-
-                    byte[] iv = EncryptionDecryption.generateRandomAESIV();
-
-                    Buffer.BlockCopy(iv, 0, finalWithIVPlainText, 0, iv.Length);
-                    Buffer.BlockCopy(encryptedMessage, 0, finalWithIVPlainText, iv.Length, encryptedMessage.Length);
-
-                    sock.SendTo(finalWithIVPlainText, new IPEndPoint(IPAddress.Parse(groupEP.Address.ToString()), 1543));
-                    sock.Close();
+                    Console.WriteLine("Invalid data caused errors.");
                 }
+                
             }
         }
     }

@@ -43,13 +43,13 @@ namespace EncryptionDecryptionLibrary
             var key = new byte[16]; // 256 bit aes encryption
             rnd.GetNonZeroBytes(key);
 
+             /* 
             //TEMPORARY, DELETE LATER FOR REAL SECURITY
             for (int i = 0; i < key.Length; i++)
             {
-                key[i] = 0;
-            }
-
-
+                key[i] = 0;//(byte)(256 - i);
+            }*/
+       
 
             return key;
         }
@@ -57,8 +57,12 @@ namespace EncryptionDecryptionLibrary
         //Code provided by microsoft documentation
         public static byte[] AESEncrypt(byte[] UTF8Bytes, byte[] key, byte[] iv)
         {
+
             using (Aes aesAlg = Aes.Create())
             {
+                aesAlg.Mode = CipherMode.CBC; // Ensure the mode is set to CBC
+                aesAlg.Padding = PaddingMode.PKCS7; // Ensure padding is set to PKCS7
+
                 aesAlg.Key = key;
                 aesAlg.IV = iv;
                 ICryptoTransform encryptor = aesAlg.CreateEncryptor(aesAlg.Key, aesAlg.IV);
@@ -78,8 +82,12 @@ namespace EncryptionDecryptionLibrary
         //Code provided by microsoft documentation, edited slightly because repeated conversions btwn utf8 bytes breaks certain things
         public static byte[] AESDecrypt(byte[] ciphertext, byte[] key, byte[] iv)
         {
+
             using (Aes aesAlg = Aes.Create())
             {
+                aesAlg.Mode = CipherMode.CBC; // Ensure the mode is set to CBC
+                aesAlg.Padding = PaddingMode.PKCS7; // Ensure padding is set to PKCS7
+
                 aesAlg.Key = key;
                 aesAlg.IV = iv;
                 ICryptoTransform decryptor = aesAlg.CreateDecryptor(aesAlg.Key, aesAlg.IV);
@@ -115,10 +123,10 @@ namespace EncryptionDecryptionLibrary
             //todo: there's gotta be a better way to do this...
             Buffer.BlockCopy(ciphertext, 0, IV, 0, IV.Length);
             Buffer.BlockCopy(ciphertext, IV.Length, byteMessage, 0, byteMessage.Length);
+            byte[] byteMessage2 = EncryptionDecryption.AESDecrypt(byteMessage, AESKey, IV);
 
-            byteMessage = EncryptionDecryption.AESDecrypt(byteMessage, AESKey, IV);
 
-            return byteMessage;
+            return byteMessage2;
 
         }
 

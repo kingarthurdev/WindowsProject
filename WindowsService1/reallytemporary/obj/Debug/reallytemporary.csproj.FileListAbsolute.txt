@@ -5,3 +5,8 @@ C:\Users\E1495970\source\repos\WindowsService1\reallytemporary\obj\Debug\reallyt
 C:\Users\E1495970\source\repos\WindowsService1\reallytemporary\obj\Debug\reallytemporary.csproj.CoreCompileInputs.cache
 C:\Users\E1495970\source\repos\WindowsService1\reallytemporary\obj\Debug\reallytemporary.exe
 C:\Users\E1495970\source\repos\WindowsService1\reallytemporary\obj\Debug\reallytemporary.pdb
+C:\Users\E1495970\source\repos\WindowsService1\reallytemporary\bin\Debug\EncryptionDecryption.dll
+C:\Users\E1495970\source\repos\WindowsService1\reallytemporary\bin\Debug\EncryptionDecryption.pdb
+C:\Users\E1495970\source\repos\WindowsService1\reallytemporary\obj\Debug\reallyte.81DC4FA3.Up2Date
+C:\Users\E1495970\source\repos\WindowsService1\reallytemporary\bin\Debug\dotNetClassLibrary.dll
+C:\Users\E1495970\source\repos\WindowsService1\reallytemporary\bin\Debug\dotNetClassLibrary.pdb

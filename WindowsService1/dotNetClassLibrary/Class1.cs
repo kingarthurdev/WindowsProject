@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
 using System.Xml.Linq;
 using System.Net.Sockets;
@@ -70,6 +69,8 @@ namespace dotNetClassLibrary
         /// </summary>
         /// <param name="input">byte[] containing time, uint, char, and string</param>
         /// <returns>returns uint, char, string, date</returns>
+        /// potential problem... I don't think this accounts for there being an "ack" message in there...
+
         public static (uint, char, string, DateTime) convertFromTimestampedBytes(byte[] bytes)
         {
             long time = BitConverter.ToInt64(bytes, 0);
@@ -94,11 +95,11 @@ namespace dotNetClassLibrary
         }
 
         //send an acknowledgement with the timestamp of when the original request was first recieved
-        //the iv parameter is for decrypting the original message, will send new iv in new mssg 
-        public static void sendACK(byte[] recieved, string ip, byte[] key, byte[] iv)
+        //takes in decrypted original message 
+        //sends out newly encrypted message. 
+        public static void sendACK(byte[] recieved, string ip, byte[] key)
         {
-
-            //recieved = EncryptionDecryption.AESDecrypt(recieved, key, iv);
+            //recieved should be "count;Request For Data", that's why convertFromTimestampedBytes doesn't account for "ack" message. 
 
             //get the message #
             var parsed = convertFromTimestampedBytes(recieved);
@@ -116,25 +117,25 @@ namespace dotNetClassLibrary
             Buffer.BlockCopy(uintbytes, 0, final, 8+ ack.Length, uintbytes.Length); //index 11-14
             Buffer.BlockCopy(xmlBytes, 0, final, 8 + 3 + 4, xmlBytes.Length); //index 15 - 15+xmlLength
 
-            //todo: remove duplicate code 
+
+            //todo: remove duplicate code if possible. 
             //recipient address and 'port', sends ack to port 1543
             IPEndPoint endpoint = new IPEndPoint(IPAddress.Parse(ip), 1543);
 
-            //the parameters are: specifies that communicates with ipv4, socket will use datagrams -- independent messages with udp  ,socket will use udp 
-            Socket sock = new Socket(AddressFamily.InterNetwork, SocketType.Dgram, ProtocolType.Udp);
 
-            byte[] encryptedMessage = EncryptionDecryption.AESEncrypt(Encoding.UTF8.GetBytes(Encoding.ASCII.GetString(final)), key, iv);
+            byte[] iv = EncryptionDecryption.generateRandomAESIV();
+
+            byte[] encryptedMessage = EncryptionDecryption.AESEncrypt(final, key, iv);
             byte[] finalWithIVPlainText = new byte[encryptedMessage.Length + 16];
 
-            iv = EncryptionDecryption.generateRandomAESIV();
 
             Buffer.BlockCopy(iv, 0, finalWithIVPlainText, 0, iv.Length);
             Buffer.BlockCopy(encryptedMessage, 0, finalWithIVPlainText, iv.Length, encryptedMessage.Length);
+
+            Socket sock = new Socket(AddressFamily.InterNetwork, SocketType.Dgram, ProtocolType.Udp);
             sock.SendTo(finalWithIVPlainText, endpoint);
             Console.WriteLine("Encrypted Response Sent.");
 
-
-            //sock.SendTo(final, endpoint);
         }
 
         //send ack but without encryption.

@@ -49,5 +49,15 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\dotNetClassLibrary\dotNetClassLibrary.csproj">
+      <Project>{6877b8c2-9d67-4092-aa3c-75c9540ab77c}</Project>
+      <Name>dotNetClassLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EncryptionDecryption\EncryptionDecryption.csproj">
+      <Project>{2017109a-a22f-40d7-92bc-24639b71970c}</Project>
+      <Name>EncryptionDecryption</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -54,7 +54,7 @@ namespace TimedPinger
 
         static Dictionary<string,string> dllHashes = new Dictionary<string, string>
         {
-            { "dotNetClassLibrary", "6C-BF-5C-D3-44-50-F7-AD-ED-6B-A0-30-1B-24-89-50-95-ED-31-74" }
+            { "dotNetClassLibrary", "F3-13-83-AA-28-C3-99-99-71-40-0F-67-F0-E8-8E-86-A6-A2-0A-2D" }
         };
         static void getAndVerifyDlls()
         {
@@ -62,13 +62,14 @@ namespace TimedPinger
             {
                 var assembly = Assembly.Load(dllHashes.ElementAt(i).Key);
 
-                // Get the directory of the loaded assembly
+                // Get the directory of the loaded assembly, load file from that location, then use a sha1 sum to check if the dll is known/valid
                 string dllPath = assembly.Location;
                 using (FileStream fop = File.OpenRead(dllPath))
                 {
                     string chksum = BitConverter.ToString(System.Security.Cryptography.SHA1.Create().ComputeHash(fop));
                     if (!chksum.Equals(dllHashes.ElementAt(i).Value))
                     {
+                        //Console.WriteLine(chksum); // uncomment this for later testing.
                         throw new Exception("Invalid File Signiture");
                     }
                 }
@@ -142,7 +143,7 @@ namespace TimedPinger
             while (true)
             {
                 byte[] bytes = listener.Receive(ref groupEP);
-
+                foreach (byte b in bytes) {  Console.Write(b+", "); }
                 try
                 {
                     //Format: first 8 are for datetime, next 3 are ack, 4 are message num, last however many are xml data
