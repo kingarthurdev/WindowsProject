@@ -37,6 +37,7 @@ namespace dotNetService
             if (!Console.ReadLine().Equals("yes"))
             {
                 usingProxy = false;
+                proxyListeningForAckPort = 1543;
             }
 
             Console.WriteLine("Listening on port 12000, sending responses to port " + proxyListeningForAckPort);

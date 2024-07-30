@@ -3,7 +3,19 @@
   "WorkspaceRootPath": "C:\\Users\\E1495970\\source\\repos\\WindowsService1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{21C0A6AB-ED9C-49FA-BDEF-2159DF31C970}|TimedPinger\\UnencryptedTimedPinger.csproj|C:\\Users\\E1495970\\source\\repos\\WindowsService1\\timedpinger\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3FEF4C0D-C357-41DE-98F5-E7ECD4BD9466}|RateFilter\\UnencryptedRateFilter.csproj|c:\\users\\e1495970\\source\\repos\\windowsservice1\\ratefilter\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3FEF4C0D-C357-41DE-98F5-E7ECD4BD9466}|RateFilter\\UnencryptedRateFilter.csproj|solutionrelative:ratefilter\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9268E71C-A297-4879-A540-9DE68410FBA1}|UnencryptedDataSender\\UnencryptedDataSender.csproj|C:\\Users\\E1495970\\source\\repos\\WindowsService1\\unencrypteddatasender\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9268E71C-A297-4879-A540-9DE68410FBA1}|UnencryptedDataSender\\UnencryptedDataSender.csproj|solutionrelative:unencrypteddatasender\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5E6FB5F-7E28-4EA3-A8EB-38A44F6AABE8}|testproj\\EncryptedDataProvider.csproj|C:\\Users\\E1495970\\source\\repos\\WindowsService1\\testproj\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5E6FB5F-7E28-4EA3-A8EB-38A44F6AABE8}|testproj\\EncryptedDataProvider.csproj|solutionrelative:testproj\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21C0A6AB-ED9C-49FA-BDEF-2159DF31C970}|TimedPinger\\UnencryptedTimedPinger.csproj|c:\\users\\e1495970\\source\\repos\\windowsservice1\\timedpinger\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{21C0A6AB-ED9C-49FA-BDEF-2159DF31C970}|TimedPinger\\UnencryptedTimedPinger.csproj|solutionrelative:timedpinger\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -17,14 +29,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{CB96EB8A-8641-4D83-9EE8-14C28502937C}|UnencryptedUpstreamRateManager\\UnencryptedUpstreamRateManager.csproj|C:\\Users\\E1495970\\source\\repos\\WindowsService1\\unencryptedupstreamratemanager\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CB96EB8A-8641-4D83-9EE8-14C28502937C}|UnencryptedUpstreamRateManager\\UnencryptedUpstreamRateManager.csproj|solutionrelative:unencryptedupstreamratemanager\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9268E71C-A297-4879-A540-9DE68410FBA1}|UnencryptedDataSender\\UnencryptedDataSender.csproj|c:\\users\\e1495970\\source\\repos\\windowsservice1\\unencrypteddatasender\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9268E71C-A297-4879-A540-9DE68410FBA1}|UnencryptedDataSender\\UnencryptedDataSender.csproj|solutionrelative:unencrypteddatasender\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A5E6FB5F-7E28-4EA3-A8EB-38A44F6AABE8}|testproj\\EncryptedDataProvider.csproj|C:\\Users\\E1495970\\source\\repos\\WindowsService1\\testproj\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A5E6FB5F-7E28-4EA3-A8EB-38A44F6AABE8}|testproj\\EncryptedDataProvider.csproj|solutionrelative:testproj\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,11 +38,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\E1495970\\source\\repos\\WindowsService1\\testproj\\Program.cs",
               "RelativeDocumentMoniker": "testproj\\Program.cs",
@@ -47,11 +51,25 @@
               "ViewState": "AQIAAAkAAAAAAAAAAAAAAA4AAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-30T15:37:24.774Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\E1495970\\source\\repos\\WindowsService1\\RateFilter\\Program.cs",
+              "RelativeDocumentMoniker": "RateFilter\\Program.cs",
+              "ToolTip": "C:\\Users\\E1495970\\source\\repos\\WindowsService1\\RateFilter\\Program.cs",
+              "RelativeToolTip": "RateFilter\\Program.cs",
+              "ViewState": "AQIAAC4AAAAAAAAAAAAQwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-30T18:43:46.986Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\E1495970\\source\\repos\\WindowsService1\\UnencryptedUpstreamRateManager\\Program.cs",
               "RelativeDocumentMoniker": "UnencryptedUpstreamRateManager\\Program.cs",
@@ -59,25 +77,24 @@
               "RelativeToolTip": "UnencryptedUpstreamRateManager\\Program.cs",
               "ViewState": "AQIAABoAAAAAAAAAAAAAwB8AAAA1AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-30T16:35:56.652Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-30T16:35:56.652Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\E1495970\\source\\repos\\WindowsService1\\UnencryptedDataSender\\Program.cs",
               "RelativeDocumentMoniker": "UnencryptedDataSender\\Program.cs",
               "ToolTip": "C:\\Users\\E1495970\\source\\repos\\WindowsService1\\UnencryptedDataSender\\Program.cs",
               "RelativeToolTip": "UnencryptedDataSender\\Program.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAAgwCIAAAAmAAAA",
+              "ViewState": "AQIAABYAAAAAAAAAAAAgwCIAAABCAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-30T16:35:22.029Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "App.config",
               "DocumentMoniker": "C:\\Users\\E1495970\\source\\repos\\WindowsService1\\TimedPinger\\App.config",
               "RelativeDocumentMoniker": "TimedPinger\\App.config",
@@ -85,12 +102,11 @@
               "RelativeToolTip": "TimedPinger\\App.config",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2024-07-30T14:10:01.892Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-30T14:10:01.892Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\E1495970\\source\\repos\\WindowsService1\\TimedPingerWIthEncryption\\Program.cs",
               "RelativeDocumentMoniker": "TimedPingerWIthEncryption\\Program.cs",
@@ -98,18 +114,17 @@
               "RelativeToolTip": "TimedPingerWIthEncryption\\Program.cs",
               "ViewState": "AQIAAAkAAAAAAAAAAAAAABgAAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-30T12:55:44.169Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-30T12:55:44.169Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\E1495970\\source\\repos\\WindowsService1\\TimedPinger\\Program.cs",
               "RelativeDocumentMoniker": "TimedPinger\\Program.cs",
               "ToolTip": "C:\\Users\\E1495970\\source\\repos\\WindowsService1\\TimedPinger\\Program.cs",
               "RelativeToolTip": "TimedPinger\\Program.cs",
-              "ViewState": "AQIAAGwAAAAAAAAAAAAgwKkAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAHQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-30T12:43:33.971Z",
               "EditorCaption": ""
