@@ -21,6 +21,7 @@ namespace RateFilter
         public static int clearCount = 0;
         static void Main(string[] args)
         {
+            Console.Title = "Unencrypted Rate Limiter";
             Thread clear = new Thread(new ThreadStart(clearDict));
             clear.Start();
 

@@ -15,7 +15,7 @@
       "RelativeMoniker": "D:0:0:{A5E6FB5F-7E28-4EA3-A8EB-38A44F6AABE8}|testproj\\EncryptedDataProvider.csproj|solutionrelative:testproj\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{21C0A6AB-ED9C-49FA-BDEF-2159DF31C970}|TimedPinger\\UnencryptedTimedPinger.csproj|c:\\users\\e1495970\\source\\repos\\windowsservice1\\timedpinger\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{21C0A6AB-ED9C-49FA-BDEF-2159DF31C970}|TimedPinger\\UnencryptedTimedPinger.csproj|C:\\Users\\E1495970\\source\\repos\\WindowsService1\\timedpinger\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{21C0A6AB-ED9C-49FA-BDEF-2159DF31C970}|TimedPinger\\UnencryptedTimedPinger.csproj|solutionrelative:timedpinger\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -51,8 +51,7 @@
               "ViewState": "AQIAAAkAAAAAAAAAAAAAAA4AAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-30T15:37:24.774Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -62,7 +61,7 @@
               "RelativeDocumentMoniker": "RateFilter\\Program.cs",
               "ToolTip": "C:\\Users\\E1495970\\source\\repos\\WindowsService1\\RateFilter\\Program.cs",
               "RelativeToolTip": "RateFilter\\Program.cs",
-              "ViewState": "AQIAAC4AAAAAAAAAAAAQwAAAAAAAAAAA",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAABcAAAA3AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-30T18:43:46.986Z",
               "EditorCaption": ""
@@ -89,8 +88,7 @@
               "RelativeToolTip": "UnencryptedDataSender\\Program.cs",
               "ViewState": "AQIAABYAAAAAAAAAAAAgwCIAAABCAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-30T16:35:22.029Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-30T16:35:22.029Z"
             },
             {
               "$type": "Document",
@@ -126,8 +124,7 @@
               "RelativeToolTip": "TimedPinger\\Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAHQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-30T12:43:33.971Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-30T12:43:33.971Z"
             }
           ]
         }
