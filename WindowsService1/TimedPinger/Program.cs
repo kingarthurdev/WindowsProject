@@ -166,8 +166,7 @@ namespace TimedPinger
                         WriteToFile($"Response #{MessageNum} recieved from {groupEP.Address.ToString()}, " + latencyMilliseconds + "ms of latency");
                         try
                         {
-                            Console.WriteLine(XElement.Parse(xmlString).ToString() + "/n/n/n");
-                            WriteToFile("Content:" + XElement.Parse(xmlString).ToString() + "/n/n/n");
+                            Console.WriteLine(XElement.Parse(xmlString).ToString() + "\n\n");
                         }
                         catch
                         {
