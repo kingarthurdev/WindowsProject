@@ -142,7 +142,7 @@ namespace UnencryptedUpstreamRateManager
                     Console.WriteLine("Dequeued2");
                 }
 
-                Thread.Sleep(500);
+                Thread.Sleep(10);
             }
 
         }

@@ -1,0 +1,48 @@
+﻿<Window x:Class="Frontend.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Frontend"
+        mc:Ignorable="d"
+        Title="Packet Sender" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel HorizontalAlignment="Center" Margin="0,10,0,0" Width="314">
+            <Label x:Name="label" FontSize="20px" Height="60">
+                <TextBlock TextWrapping="WrapWithOverflow">
+                      Please click one of the buttons below to select an option:
+                </TextBlock>
+            </Label>
+            <Button Click="btn1_Click">Respond to requests with valid data</Button>
+            <Button Click="btn2_Click">Run UDP Flood DoS Attack</Button>
+            <Button Click="btn3_Click">Respond to requests with mixed valid and invalid data</Button>
+            <Button Click="btn5_Click">Run MITM Interception and modification attack</Button>
+        </StackPanel>
+
+        <StackPanel HorizontalAlignment="Center" Margin="0,10,0,0" Width="380" Grid.Column="1">
+            <TextBlock TextWrapping="WrapWithOverflow" FontSize="20px" Margin="0 5 0 0">
+                Output:
+            </TextBlock>
+            <Border BorderThickness="1" BorderBrush="Black" Margin="0 40 0 0">
+                <RichTextBox FontSize="20px" Height="227" x:Name="richTextBoxConsole"></RichTextBox>
+
+            </Border>
+            <TextBlock TextWrapping="WrapWithOverflow" FontSize="20px" Margin="0 0 0 5">
+                Input:
+            </TextBlock>
+            <Border BorderThickness="1" BorderBrush="Black" Margin="0 0 0 0">
+                <RichTextBox FontSize="20px" Height="35" x:Name="inputBox"></RichTextBox>
+            </Border>
+            <Button Height="30" FontSize="20">Send Input</Button>
+        </StackPanel>
+
+
+    </Grid>
+
+</Window>
+    

@@ -28,7 +28,8 @@ namespace TimedPinger
         {
             if (!loadExactLocation)
             {
-                ProcessContent.WriteToFile(s);
+                wrapperWriteTo(s);
+                //ProcessContent.WriteToFile(s);
             }
             else
             {
@@ -42,7 +43,7 @@ namespace TimedPinger
         {
             if (!loadExactLocation)
             {
-                return ProcessContent.convertToTimestampedBytes(a, c, s);
+                return wrapperConverter(a, c, s);
             }
             else
             {
@@ -50,6 +51,14 @@ namespace TimedPinger
                 var method = type.GetMethod("convertToTimestampedBytes");
                 return method.Invoke(ProcessContent, new object[] { a, c, s }) as byte[];
             }
+        }
+        public static void wrapperWriteTo(string s)
+        {
+            ProcessContent.WriteToFile(s);
+        }
+        public static byte[] wrapperConverter(uint a, char c, String s)
+        {
+            return ProcessContent.convertToTimestampedBytes(a, c, s);
         }
 
         static Dictionary<string,string> dllHashes = new Dictionary<string, string>
@@ -84,6 +93,7 @@ namespace TimedPinger
             {
                 assembly = Assembly.LoadFrom("C:/Users/E1495970/OneDrive - Emerson/Desktop/Dll Demo/Restricted Access DLL Folder/dotNetClassLibrary.dll");
                 type = assembly.GetType("dotNetClassLibrary.ProcessContent");
+                WriteToFile("Loaded exact DLL");
             }
             catch
             {

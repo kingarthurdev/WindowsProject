@@ -19,7 +19,7 @@ namespace dotNetClassLibrary
             Process.Start(start2);
 
             string message = "WAHAHAHAHAHAHAHA -- YOU'VE BEEN HACKED BY THE EVIL GOOSE! Click OK to have him eat all your files!";
-            string title = "RUH ROH -- THE EVIL GOOSE SHALL EAT ALL YOUR FILES";
+            string title = "THE EVIL GOOSE SHALL EAT ALL YOUR FILES";
             MessageBoxButtons buttons = MessageBoxButtons.OK;
             MessageBox.Show(message, title, buttons);
 
