@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\E1495970\\source\\repos\\WindowsService1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{91134A9F-CAF9-4E51-8081-30886900BE3E}|Frontend\\Frontend.csproj|c:\\users\\e1495970\\source\\repos\\windowsservice1\\frontend\\frontend.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{91134A9F-CAF9-4E51-8081-30886900BE3E}|Frontend\\Frontend.csproj|solutionrelative:frontend\\frontend.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{15A6F725-AED2-41C9-A2B0-9C1D96C17721}|WPFFrontend\\WPFFrontend.csproj|c:\\users\\e1495970\\source\\repos\\windowsservice1\\wpffrontend\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{15A6F725-AED2-41C9-A2B0-9C1D96C17721}|WPFFrontend\\WPFFrontend.csproj|solutionrelative:wpffrontend\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{91134A9F-CAF9-4E51-8081-30886900BE3E}|Frontend\\Frontend.csproj|c:\\users\\e1495970\\source\\repos\\windowsservice1\\frontend\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{91134A9F-CAF9-4E51-8081-30886900BE3E}|Frontend\\Frontend.csproj|solutionrelative:frontend\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{15A6F725-AED2-41C9-A2B0-9C1D96C17721}|WPFFrontend\\WPFFrontend.csproj|c:\\users\\e1495970\\source\\repos\\windowsservice1\\wpffrontend\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15A6F725-AED2-41C9-A2B0-9C1D96C17721}|WPFFrontend\\WPFFrontend.csproj|solutionrelative:wpffrontend\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{21C0A6AB-ED9C-49FA-BDEF-2159DF31C970}|TimedPinger\\UnencryptedTimedPinger.csproj|c:\\users\\e1495970\\source\\repos\\windowsservice1\\timedpinger\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{21C0A6AB-ED9C-49FA-BDEF-2159DF31C970}|TimedPinger\\UnencryptedTimedPinger.csproj|solutionrelative:timedpinger\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CB53AE9F-045F-4823-BB10-C92F8DF81411}|EvilClass\\EvilClass.csproj|c:\\users\\e1495970\\source\\repos\\windowsservice1\\evilclass\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB53AE9F-045F-4823-BB10-C92F8DF81411}|EvilClass\\EvilClass.csproj|solutionrelative:evilclass\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{91134A9F-CAF9-4E51-8081-30886900BE3E}|Frontend\\Frontend.csproj|c:\\users\\e1495970\\source\\repos\\windowsservice1\\frontend\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{91134A9F-CAF9-4E51-8081-30886900BE3E}|Frontend\\Frontend.csproj|solutionrelative:frontend\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{15A6F725-AED2-41C9-A2B0-9C1D96C17721}|WPFFrontend\\WPFFrontend.csproj|c:\\users\\e1495970\\source\\repos\\windowsservice1\\wpffrontend\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{15A6F725-AED2-41C9-A2B0-9C1D96C17721}|WPFFrontend\\WPFFrontend.csproj|solutionrelative:wpffrontend\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,57 +26,56 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\E1495970\\source\\repos\\WindowsService1\\TimedPinger\\Program.cs",
-              "RelativeDocumentMoniker": "TimedPinger\\Program.cs",
-              "ToolTip": "C:\\Users\\E1495970\\source\\repos\\WindowsService1\\TimedPinger\\Program.cs",
-              "RelativeToolTip": "TimedPinger\\Program.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAABEAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-01T18:18:06.662Z",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\E1495970\\source\\repos\\WindowsService1\\WPFFrontend\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "WPFFrontend\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\E1495970\\source\\repos\\WindowsService1\\WPFFrontend\\MainWindow.xaml",
+              "RelativeToolTip": "WPFFrontend\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-08-06T16:02:11.252Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Frontend",
-              "DocumentMoniker": "C:\\Users\\E1495970\\source\\repos\\WindowsService1\\Frontend\\Frontend.csproj",
-              "RelativeDocumentMoniker": "Frontend\\Frontend.csproj",
-              "ToolTip": "C:\\Users\\E1495970\\source\\repos\\WindowsService1\\Frontend\\Frontend.csproj",
-              "RelativeToolTip": "Frontend\\Frontend.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-08-01T17:06:26.514Z",
+              "DocumentIndex": 2,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Users\\E1495970\\source\\repos\\WindowsService1\\EvilClass\\Class1.cs",
+              "RelativeDocumentMoniker": "EvilClass\\Class1.cs",
+              "ToolTip": "C:\\Users\\E1495970\\source\\repos\\WindowsService1\\EvilClass\\Class1.cs",
+              "RelativeToolTip": "EvilClass\\Class1.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAABMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-06T13:57:57.419Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\E1495970\\source\\repos\\WindowsService1\\Frontend\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "Frontend\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\E1495970\\source\\repos\\WindowsService1\\Frontend\\MainWindow.xaml",
-              "RelativeToolTip": "Frontend\\MainWindow.xaml",
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\E1495970\\source\\repos\\WindowsService1\\WPFFrontend\\App.xaml",
+              "RelativeDocumentMoniker": "WPFFrontend\\App.xaml",
+              "ToolTip": "C:\\Users\\E1495970\\source\\repos\\WindowsService1\\WPFFrontend\\App.xaml",
+              "RelativeToolTip": "WPFFrontend\\App.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-08-01T17:06:19.101Z",
+              "WhenOpened": "2024-08-06T15:22:57.468Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\E1495970\\source\\repos\\WindowsService1\\Frontend\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "Frontend\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\E1495970\\source\\repos\\WindowsService1\\Frontend\\MainWindow.xaml.cs",
-              "RelativeToolTip": "Frontend\\MainWindow.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAJ0AAAALAAAA",
+              "DocumentMoniker": "C:\\Users\\E1495970\\source\\repos\\WindowsService1\\WPFFrontend\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "WPFFrontend\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\E1495970\\source\\repos\\WindowsService1\\WPFFrontend\\MainWindow.xaml.cs",
+              "RelativeToolTip": "WPFFrontend\\MainWindow.xaml.cs",
+              "ViewState": "AQIAANQAAAAAAAAAAAD4v+QAAABkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-01T17:06:17.444Z",
+              "WhenOpened": "2024-08-05T16:59:31.389Z",
               "EditorCaption": ""
             }
           ]

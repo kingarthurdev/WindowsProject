@@ -33,7 +33,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "reallytemporary", "reallyte
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnencryptedDataSender", "UnencryptedDataSender\UnencryptedDataSender.csproj", "{9268E71C-A297-4879-A540-9DE68410FBA1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Frontend", "Frontend\Frontend.csproj", "{91134A9F-CAF9-4E51-8081-30886900BE3E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Frontend", "Frontend\Frontend.csproj", "{91134A9F-CAF9-4E51-8081-30886900BE3E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFFrontend", "WPFFrontend\WPFFrontend.csproj", "{15A6F725-AED2-41C9-A2B0-9C1D96C17721}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -105,6 +107,10 @@ Global
 		{91134A9F-CAF9-4E51-8081-30886900BE3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{91134A9F-CAF9-4E51-8081-30886900BE3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{91134A9F-CAF9-4E51-8081-30886900BE3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15A6F725-AED2-41C9-A2B0-9C1D96C17721}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15A6F725-AED2-41C9-A2B0-9C1D96C17721}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15A6F725-AED2-41C9-A2B0-9C1D96C17721}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15A6F725-AED2-41C9-A2B0-9C1D96C17721}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

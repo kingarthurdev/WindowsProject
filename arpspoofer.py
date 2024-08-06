@@ -2,8 +2,8 @@ import scapy.all as scapy
 import time 
 import sys
 
-victimIP = "192.168.0.117" #machine sending ack in this case
-gateway_ip = "192.168.0.132" # Enter your second ip 
+victimIP = "10.223.44.44" #"192.168.0.117" #machine sending ack in this case
+gateway_ip = "10.223.44.1" # Enter your second ip 
 
 if len(sys.argv)>1:
         victimIP =  sys.argv[1]

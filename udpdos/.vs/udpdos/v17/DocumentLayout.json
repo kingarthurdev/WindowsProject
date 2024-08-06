@@ -14,8 +14,12 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -24,7 +28,7 @@
               "RelativeDocumentMoniker": "udpdos\\Program.cs",
               "ToolTip": "C:\\Users\\E1495970\\source\\repos\\udpdos\\udpdos\\Program.cs",
               "RelativeToolTip": "udpdos\\Program.cs",
-              "ViewState": "AQIAABQAAAAAAAAAAAAAwBsAAAAwAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADgAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-04T21:52:39.39Z",
               "EditorCaption": ""
